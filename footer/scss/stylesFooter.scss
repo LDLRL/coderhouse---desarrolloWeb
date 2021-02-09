@@ -1,0 +1,117 @@
+
+
+/*aplicando BEM + SASS en footer*/
+
+$fondoNaranja:#f39233;
+$blancoMarfil:#fcf8e8;
+$blancoTexto:#FFFFFF;
+$azul:#00587a;
+$fuenteTexto:'Quicksand', sans-serif;
+
+
+
+#pieT {
+	grid-area: pieT;	
+	height: 80px;
+	width: 100%;
+}
+
+
+.foot {            
+	display: grid;	
+	width: 100%;
+	height: 100%;
+	grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+	grid-template-areas: 		
+ 		"copy conta rrss";
+
+ 	.copy {
+		width: 100%;
+		grid-area: copy;
+		margin: auto;
+
+		.copy__copyTexto{
+			margin-right: auto;
+			margin-bottom: 0;
+			font-size: 1.1em;
+			color: $blancoTexto;	  	
+		}	
+	}	
+
+	.conta {	
+	width: 100%;
+	grid-area: conta;
+	margin: auto;
+
+		.conta__contaLink {
+		text-decoration: none;
+		color: $azul;
+		text-align: center;
+
+			.conta__contaLink__contaTexto{
+				margin-bottom: 0;
+				font-size: 1.4em;
+				font-family: $fuenteTexto;
+			}
+		}
+	}
+
+	.rrss {
+	width: 100%;
+	grid-area: rrss;
+	margin: auto;	
+
+		.rrss__rrssLink{
+			margin-left: auto;
+
+			.rrss__rrssLink__solo__imgFooter {
+				height: 1.7em;	
+				margin-left: 0.5em;
+			}
+		}
+	}
+}
+
+
+.foot--modif {
+		background-color: $fondoNaranja;
+		font-family: $fuenteTexto;
+		padding-bottom: 10px;
+		padding-top: 10px; 	
+
+	.copy--modif{	
+		width: 80%;
+		display: flex;
+	}
+
+	.rrss--modif{
+		width: 80%;
+		display: flex;
+	}
+}
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
