@@ -1,11 +1,11 @@
 {
-  "name": "footer",
+  "name": "estiloss",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/stylesF.scss css/stylesF.css",
+    "build-css": "node-sass --include-path scss scss/estiloss.scss css/estiloss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",

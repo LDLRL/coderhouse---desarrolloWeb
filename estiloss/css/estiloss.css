@@ -1,0 +1,93 @@
+/*azulCeleste com*/
+/*blancoN com*/
+/*naranja com*/
+/*verde com*/
+/*rosa com*/
+/*gris comodin*/
+/*blanco */
+/* *****    CONTACTO - final ******************************************************************************************************* */
+/* */
+/* */
+/* */
+/* ######  MAIN - fin ############################################################################################################## */
+/* */
+/* */
+/* */
+/* ################################################################################################################################ */
+/* ######           FOOTER - inicio           ##################################################################################### */
+/* ################################################################################################################################ */
+#pieT {
+  grid-area: pieT;
+  width: 100%;
+  grid-template-rows: 1fr 90px;
+  grid-template-areas: "mapa" "foot"; }
+
+.mapa {
+  grid-area: mapa;
+  width: 100%;
+  background-color: #fcf8e8;
+  background-image: url("./img/44.png");
+  background-size: 21%;
+  border-radius: 10px 10px 0 0;
+  border-top: 0.2em solid #3394F3;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  display: flex;
+  padding: 0; }
+  .mapa .rayuela {
+    width: 50%;
+    margin: auto; }
+
+.foot {
+  display: grid;
+  grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  grid-template-areas: "copy conta rrss"; }
+  .foot .copy {
+    grid-area: copy;
+    margin: auto; }
+  .foot .copy__copyTexto {
+    margin-right: auto;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    color: #FFFFFF; }
+
+.conta {
+  width: 100%;
+  grid-area: conta;
+  margin: auto; }
+  .conta .conta__contaLink {
+    text-decoration: none;
+    color: #f3f3f3;
+    text-align: center; }
+    .conta .conta__contaLink .conta__contaLink__contaTexto {
+      margin-bottom: 0;
+      font-size: 1.4em;
+      font-family: "Quicksand", sans-serif; }
+
+.rrss {
+  grid-area: rrss;
+  margin: auto; }
+  .rrss .rrss__rrssLink {
+    margin-left: auto; }
+    .rrss .rrss__rrssLink .rrss__rrssLink__solo__imgFooter {
+      height: 1.7em;
+      margin-left: 0.5em; }
+
+.foot--modif {
+  border-top: 10px solid #fcf8e8;
+  height: 100px;
+  background-color: #3394F3;
+  font-family: "Quicksand", sans-serif;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+  .foot--modif .copy--modif {
+    width: 80%;
+    display: flex; }
+  .foot--modif .rrss--modif {
+    width: 80%;
+    display: flex; }
+
+/* */
+/* #####  FOOTER - fin  ############################################################################################################ */
