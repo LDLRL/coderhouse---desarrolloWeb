@@ -14,19 +14,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" href="responsive.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kalam:wght@300;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-	
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
 </head>
 
 <body id="contenedorT">
 	
+
 
 	<header id="cabeceraT">	
 
@@ -37,11 +37,9 @@
 				<a href="index.html"><h1 class="tituloPri animate__animated animate__fadeInDown animate__delay-0.6s " >Había Una Vez...</h1></a>
 			</div>
 			<div id="tituloSecu">
-				<h2 class="tituloSec animate__animated animate__fadeInUp animate__delay-0.6s " >un NIÑO CON VALORES sólidos que creció seguro y con fortalecidas posibilidades de ser un adulto feliz</h2>
+				<h2 class="tituloSec animate__animated animate__fadeInUp animate__delay-0.6s " >un Niño con Valores sólidos que creció seguro y con fortalecidas posibilidades de ser un adulto feliz</h2>
 			</div>
-
 		</div>
-
 
 
 		<div id="segundo" class="segundo">	
@@ -51,7 +49,7 @@
 					Ganadores del Mes 
 				</button>
 				<ul class="dropdown-menu dropdown-menu-end menuUl" aria-labelledby="dropdownMenuButton2">
-					<h6 class="dropdown-header">Febrero 2021</h6>
+					<h6 class="dropdown-header">Marzo 2021</h6>
 					<li><hr class="dropdown-divider"></li>
 					<li><a class="dropdown-item" href="estanteria.html">1 LUGAR Ver cuento</a></li>
 					<li><a class="dropdown-item" href="estanteria.html">2 LUGAR Ver cuento</a></li>
@@ -98,89 +96,106 @@
 
 	<main id="contenidoT" class="fondoCuenta">
 		
-		<article class="cuentaCuento">
+		<article id="cuentaCuento">
 			
 			<div id="cuenta">
-				<a href="#" class="imgCuentame"><img  src="./img/cuenta.jpg" alt="Frase concurso"></a>	
+				<div  class="imgCuentame" >
+					<img src="./img/cuenta.jpg" alt="Frase concurso">
+				</div>
 				
 
 				<div class="cuentaContenido">
-					<h4 class="alinCentro">Concurso Mensual "Cuenta tu Cuentito"</h4>
-					<p>						
-						Cuéntanos tu cuento y participa. Los 2 cuentos más votados por nuestro jurado compuesto por niños, serán publicados en nuestra página.
-					</p>
-					
-					<div class="pp">
-						<p >Requisitos:</p>
-						<ul >
-							<li>Debe contener mensajes con valores, puedes revisar la sección <a href="index.html">Inicio</a>  y leer las tarjetitas de Valores para mayor referencia.</li>
-							<li> Debe contener como máximo hasta 200 carácteres.</li>
-							<li>Debe ser realizado en lenguaje simple y bajo normas de respeto y cortesía.</li>
-							<li>Confiamos que los valores que aquí enseñamos se respetarán y el cuento va a ser escrito por un niño no mayor a 12 años.</li>
-						</ul>
-					</div>								
+					<div class="alinCentro">
+						<h4 >Concurso Mensual "Cuenta tu Cuentito"</h4>
+					</div>
+					<div class="instrucciones">
+						<p>						
+							Cuéntanos tu cuento y participa. Los 2 cuentos más votados por nuestro jurado serán publicados en nuestra página. El jurado está compuesto por niños ganadores del concuros en meses pasados.. ¡ tú tambien puedes serlo !
+						</p>
+						
+						<div class="pp">
+							<p >Requisitos:</p>
+							<ul >
+								<li>Debe contener mensajes con valores, puedes revisar la sección <a href="index.html">Inicio</a>  y leer las tarjetitas de Valores para mayor referencia.</li>
+								<li> Debe contener como máximo hasta 200 carácteres.</li>
+								<li>Debe ser realizado en lenguaje simple y bajo normas de respeto y cortesía.</li>
+								<li>Confiamos que los valores que aquí enseñamos se respetarán y el cuento va a ser escrito por un niño no mayor a 12 años.</li>
+							</ul>
+						</div>								
 
-					<p>
-						Nota: si no perteneces a nuestro club, deja vacía la casilla de N° Club.
-					</p>
-				</div> 
-				
+						<p>
+							Nota: si no perteneces a nuestro club, deja vacía la casilla de N° Club.
+						</p>
+					</div> 
+				</div>
 			</div>
 
 		</article>
 
 
 
-		<article class="datosRegistro">
+		<article id="datosRegistro">
 			
 			<div class="container"  id="contCuento">
-				<h4 class="alinCentro">Escribe tu Cuentito</h4>
-
+				<div class="alinCentro1">
+					<h4 >Escribe tu Cuentito</h4>
+				</div>
 				<form id="formuEspacio" action="/action_page.php">
 					<div class="form-group">
 						<label for="nombreApellido">Nombre y Apellido:</label>
-						<input type="text" class="form-control shadow-sm" id="nombreApellido" name="nombreApellido">
+						<input type="text" class="form-control shadow-sm cajaForm" id="nombreApellido" name="nombreApellido">
 					</div>
 
 					<div class="form-group">
 						<label for="email">Correo:</label>
-						<input type="email" class="form-control shadow-sm" id="email" name="email">
+						<input type="email" class="form-control shadow-sm cajaForm" id="email" name="email">
 					</div>
 
 					<div class="row">
 						<div class="col">
 							<label for="edad">Edad:</label>
-							<input type="number" class="form-control shadow-sm" id="edad" name="edad">
+							<input type="number" class="form-control shadow-sm cajaForm" id="edad" name="edad">
 						</div>
 						<div class="col">
 							<label for="clubR">N° Club:</label>
-							<input type="number" class="form-control shadow-sm" id="clubR" name="clubR">
+							<input type="number" class="form-control shadow-sm cajaForm" id="clubR" name="clubR">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col">
 							<label for="nombreCuento">Nombre del Cuento:</label>
-							<input type="text" class="form-control shadow-sm" id="nombreCuento" name="nombreCuento">
+							<input type="text" class="form-control shadow-sm cajaForm" id="nombreCuento" name="nombreCuento">
 						</div>
 						<div class="col">
 							<label for="valorEnsenado">Valor - Enseñanza:</label>
-							<input type="text" class="form-control shadow-sm" id="valorEnsenado" name="valorEnsenado">
+							<input type="text" class="form-control shadow-sm cajaForm" id="valorEnsenado" name="valorEnsenado">
 						</div>
 					</div>
 					
 					
 					<div class="form-group">
 						<label for="commentCuento">Escribe tu Cuento:</label>
-						<textarea class="form-control shadow-sm" rows="5" id="commentCuento" name="commentCuento"></textarea>
+						<textarea class="form-control shadow-sm cajaForm" rows="5" id="commentCuento" name="commentCuento"></textarea>
 					</div>
-					<br>
-					<button type="submit" class="btn btn-light shadow-sm botonTexto">Enviar</button>
+					
+					<div id="botonCuenta">
+						<button type="submit" class="btn btn-light shadow-sm botonTexto">Enviar</button>
 
-					<button type="reset" class="btn btn-light shadow-sm botonTexto">Limpiar</button>
+						<button type="reset" class="btn btn-light shadow-sm botonTexto">Limpiar</button>
+					</div>
 				</form>
 			</div>
 
 		</article>
+
+		
+		<section class="separator menuMedio4">				
+			<nav >
+				<a href="cuenta.html">Subir a Menú</a>
+				<a href="index.html">Página Inicio</a>
+				<a href="club.html">Regístrate al club</a>
+			</nav>				
+		</section>
 
 
 
@@ -190,6 +205,13 @@
 	<!-- se aplica medotología BEM a continuación -->
 
 	<footer id="pieT">	<!--//bloque//-->
+
+
+		<section class="mapa mapa2"> <!--//bloque//-->
+			
+			<img class="rayuela" src="./img/cue.png" alt="mapa del sitio - inicio">
+		</section>
+
 
 		<section class="foot foot--modif"> <!--//bloque//-->
 

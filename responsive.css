@@ -29,12 +29,31 @@ padding-top:2em;
 
 .logos {
 	height: 90%;
-	width: auto;
-	
+	width: auto;	
 }
 
+/*PAG ESTANTERIA*/
+.botonCuento{
+width:85%;
+}
+
+/*PAG CLUB*/
+
+#tabla tr td{
+	padding-left: 0.3em;
+}
+
+/*PAG CONTACTO*/
+#fondoCt img{
+width: 75%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:10em;
+}
 
 }
+
 /*####################################################################################################################################*/
 @media (max-width: 1150px){
 
@@ -58,21 +77,53 @@ font-size: 0.7em;
 padding-top:2em;
 }
 
+/*PAG ESTANTERIA*/
+.botonCuento{
+width:89%;
+
+}
+
 /*PÁG CUENTA*/
 
 #cuenta img {
 	
 	background-color: #ffffff;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding: 100% 0 100% 0;
 }
 
+/*PAG CLUB*/
+
+#tablaGanadores {
+	padding: 1em;
+}
+
+/*PAG CONTACTO*/
+#contContenido {
+	background-size: 110%;
+}
+
+/*PAG CONTACTO*/
+#fondoCt img{
+width: 85%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:11em;
+}
+
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 70%;
+}
 
 
 
 }
 /*####################################################################################################################################*/
-@media (max-width: 1070px){
+@media (max-width: 1075px){
 
 /*HEADER*/
 #segundo {
@@ -87,22 +138,15 @@ padding-top:2em;
 }
 
 
-#tituloSec {
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	font-size: 23px;
+#tituloSecu {
 	padding-top:  10px;
-	display: block;
-	z-index: 99;
-	
 }
 
-.tituloSecu {
+.tituloSec {
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
-
+	width: 98%;
+	font-size:1.4em;
 }
 
 #nave nav a {
@@ -120,20 +164,50 @@ font-size: 0.8em;
 .fondoInicio {
 padding-top:1.5em;
 }
-#sliderTa{
-	width: 100%;
-}
 
-#slider {
-	width: 90%;
-}
+/*PAG ESTANTERIA*/
 
+#tituloIndice, #tituloVideoFabulas, #tituloLeerIndice{
+ font-size: 0.7em;
+}
+.botonCuento{
+width:93%;
+
+}
+.botonCuento p{	
+	font-size: 0.9em;
+}
 
 /*PÁG CUENTA*/
 .cuentaCuento, .datosRegistro  {
 	width: 90%;
+
 }
 
+#cuenta img {
+	display: none;
+
+}
+
+/*PAG CONTACTO*/
+#fondoCt img{
+width: 87%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:11em;
+}
+
+#contContenido {
+	width: 80%;
+}
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 75%;
+}
 
 
 }
@@ -168,19 +242,54 @@ font-size: 0.8em;
 padding-top:1em;
 }
 
-#sliderTa {
-	width: 100%;
-}
+
 
 .logos {
 	height: 80%;
-	width: auto;
-	
+	width: auto;	
+}
+
+/*PAG ESTANTERIA*/
+
+
+.botonCuento{
+width:95%;
+
+}
+.botonCuento p{	
+	font-size: 0.8em;
+}
+
+/*PÁG CLUB*/
+
+#tablaGanadores {
+	padding: 0.8em;
+}	
+
+#tabla tr td{
+	padding-left: 0.2em;
+}
+
+/*PAG CONTACTO*/
+#fondoCt img{
+width: 90%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:10.5em;
+}
+
+#contContenido {
+	width: 90%;
 }
 
 
-/*PÁG CUENTA*/
+/*FOOTER*/
 
+
+.rayuela{
+	width: 75%;
+}
 
 
 }
@@ -188,12 +297,10 @@ padding-top:1em;
 @media (max-width: 991px){
 
 
-
-
 #tituloSecu {
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
+	width: 98%;
 	font-size: 0.87em;
 }
 #nave nav a:hover {
@@ -211,13 +318,76 @@ padding-top:1em;
 	width: auto;
 }
 
-#sliderTa{
-	width: 100%;
+/*PAG ESTANTERIA*/
+.fondoEstanteria {	
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+	"cuentosLeer" 
+	"cuentosVideo" 
+	"cuentosGanadores"
+	"menuMedio3";
+
+}	
+
+#leerIndice, #ganadoresIndice  { 
+	grid-template-columns: 80% 20%;
 }
 
+.botonCuento{
+width:47%;
+
+}
+.botonCuento p{	
+	font-size: 1em;
+}
+
+.t > p, .t > h6 {
+	font-size: 1em;
+}
+
+#cuentosVideo {
+	margin: 5% 0 5% 0;
+	padding-left: 30px;
+	padding-right: 30px;	
+}
+
+#videos { 
+	width: 100%;
+	justify-content: inherit;
+}
+.menuMedio3  nav a {
+	font-size: 1em;
+	
+}
 
 /* PAG CUENTA */
 
+/*PÁG CLUB*/
+
+#tablaGanadores {
+	padding: 0.5em;
+}	
+
+#tabla tr td{
+	padding-left: 0.2em;
+}
+
+/*PAG CONTACTO*/
+
+#fondoCt img{
+width: 90%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:9.9em;
+}
+
+#contContenido {
+	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
+}
 
 
 }
@@ -233,7 +403,7 @@ padding-top:1em;
 #tituloSecu {
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
+	width: 98%;
 	font-size: 0.87em;
 	
 }
@@ -246,14 +416,65 @@ font-size: 0-7em;
 	font-size:  0.7em;
 }
 
-/*PÁG INICIO*/
-.fondoInicio {
-padding-top:0;
+/*PAG INICIO*/
+
+
+.registrate{
+	width: 90%;
 }
 
-.logos {
-	display:none;	
+
+.registrate h5 {
+	font-size:1.1em;
+	padding-left: 0.5em;
 }
+
+.registrate h5 a{	
+	padding-left: 1em;
+	font-size:1.2em;
+}
+
+
+
+.fondoInicio {
+		margin: 0 0 5% 0;	
+}
+
+
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 90%;
+}
+
+
+
+#sliderTa {
+	padding: 20px 10px;
+width: 90%;
+
+}
+#carouselExampleFade {
+	width: 50%;
+}
+
+
+
+.carrusel{
+	width: 80%;
+}
+
+.menuMedio2  {
+	width: 90%;
+}
+
+.menuMedio2  nav a, .menuMedio3  nav a {
+	font-size: 1em;
+	
+}
+
+/*PAG ESTANTERIA*/
+
 
 
 /*PÁG CUENTA*/
@@ -261,15 +482,94 @@ padding-top:0;
 
 
 #cuenta img {
-	
 	background-color: #ffffff;
-	padding-top: 6em;
-	padding-bottom: 6em;
+	padding: 100% 0 100% 0;
+	
+}
+
+/*PÁG CLUB*/
+.fondoClub {
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+	"club" 
+	"tablaGanadores";	
+	margin: 5% 0 5% 0;	
+}
+
+#tablaGanadores {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+
+#tabla tr td{
+	padding-left: 2em;
+
 }
 
 
+#tabla tr td{
+	padding-left: 2em;
+
+}
+
+#tabla li{
+	font-size: 1em;
+}
+
+.subtituloTabla{
+	font-size: 1.5em;
+}
+
+/*PAG CONTACTO*/
+#fondoCt img{
+width: 95%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:10.5em;
+}
+
+#contContenido {
+	width: 100%;
+}
+
+/*PAG CONTACTO*/
+#fondoCt img{
+width: 90%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:9em;
+}
+
+#contContenido {
+	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
 
 /*PÁG FOOTER*/
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 70%;
+}
+
+.foot--modif {
+	border-top: 0;
+}
+
+.conta {
+	color: #fcf8e8;
+	text-decoration: none;
+	font-size: 16px;
+}
 
 
 .copy__copyTexto {
@@ -288,6 +588,12 @@ padding-top:0;
 	
 }
 
+.logos {
+	height: 72%;
+	width: auto;
+	
+}
+
 .imgCuentame {
 border: 0px solid;
 }
@@ -300,6 +606,38 @@ border: 0px solid;
 	padding-bottom: 8em;
 
 }
+/*PAG ESTANTERIA*/
+
+.botonCuento{
+width:50%;
+
+}
+.botonCuento p{	
+	font-size: 1em;
+}
+
+#fondoCt img{
+width: 90%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:8em;
+}
+
+#contContenido {
+	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 80%;
+}
+
 
 }
 
@@ -307,10 +645,13 @@ border: 0px solid;
 /*####################################################################################################################################*/
 @media (max-width: 890px){
 
-
+.logos {
+	height: 70%;
+	width: auto;
+	
+}
 
 /*BODY*/
-
 
 
 
@@ -324,7 +665,7 @@ border: 0px solid;
 #tituloSecu {
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
+	width: 98%;
 	font-size: 0.8em;	
 }
 
@@ -340,32 +681,76 @@ font-size: 0.8em;
 
 
 /*PAG INICIO*/
-.logos {
-	display:none;	
+
+
+.registrate{
+	width: 95%;
 }
 
-#sliderTa{
-	width: 100%;
+
+.registrate h5 {
+	font-size:1.2em;
+	padding-left: 0.5em;
 }
 
-#slider {
+.registrate h5 a{	
+	padding-left: 1em;
+	font-size:1.2em;
+}
+
+
+
+.fondoInicio {
+		margin: 0 0 5% 0;	
+}
+
+
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 50%;
+}
+
+
+
+.carrusel{
 	width: 90%;
 }
 
-#tarjetas {
-	width: 90%
+.menuMedio2  {
+	width: 95%;
 }
 
+.menuMedio2  nav a {
+	font-size: 1em;
+	
+}
+
+
+/*PAG ESTANTERIA*/
+
+
+.botonCuento{
+width:53%;
+
+}
+.botonCuento p{	
+	font-size: 1em;
+}
 
 /*PAG CUENTA*/
-#cuenta img {
-	background-color: inherit;
-	background-image: url("./img/str.png");
-	background-size: cover;
-	padding-top: 12em;
-	padding-bottom: 12em;
 
-}
 
 #cuenta {	
 	width: 100%;
@@ -392,8 +777,35 @@ font-size: 0.8em;
 	font-size: 1em;
 }
 
+/*PAG CONTACTO*/
+
+#fondoCt img{
+width: 95%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:7.8em;
+}
+
+#contContenido {
+	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
 
 /*FOOTER*/
+
+
+.rayuela{
+	width: 80%;
+}
+
+.foot--modif {
+	border-top: 0;
+}
+
 .conta {
 	color: #fcf8e8;
 	text-decoration: none;
@@ -413,21 +825,137 @@ font-size: 0.8em;
 /*####################################################################################################################################*/
 @media (max-width: 843px){
 #tituloSecu {
-	margin-left: auto;
-	margin-right: auto;
-	width: 98%;
-	font-size: 0.75em;	
+	display: none;	
+}
+
+#tituloPri{
+	padding-top: 1em;
+	font-size: 1em;
 }
 
 #slider {
 	width: 90%;
 }
+.registrate h5 {
+	font-size:1em;
+	padding-left: 0.5em;
+}
+
+.registrate h5 a{	
+	padding-left: 1em;
+	font-size:1.1em;
+}
+
+.logos {
+	display: none;
+	
+}
+
+/*PAG ESTANTERIA*/
+
+
+
+.botonCuento{
+width:55%;
+
+}
+.botonCuento p{	
+	font-size: 1em;
+}
+
+/*PAG CLUB*/
+#tablaGanadores{
+width: 60%;
+}
+
+/*PAG CONTACTO*/
+
+#fondoCt img{
+width: 97%;
+}
+
+#formu {
+position:absolute; z-index:2;  top:7em;
+}
+
+#contContenido {
+	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 85%;
+}
 
 
 }
 
+/*####################################################################################################################################*/
+@media (max-width: 810px){
 
 
+/*PAG ESTANTERIA*/
+
+
+.botonCuento{
+width: 57%;
+
+}
+.botonCuento p{	
+	font-size: 1em;
+}
+/*PAG CLUB*/
+#tablaGanadores{
+width: 70%;
+}
+
+#tabla tr td{
+	padding-left: 1.4em;
+
+}
+
+#tabla li{
+	font-size:1em;
+}
+
+.subtituloTabla{
+	font-size: 1.2em;
+}
+
+/*PAG CONTACTO*/
+
+#fondoCt img{
+	display: none;
+}
+
+#formu {
+position: inherit;
+padding: 2em 0 2em 0;
+background-color: #fcf8e8;
+border-radius: 10px;
+border: 2px solid #3394F3;
+width: 90%;
+margin: 5% 0 0 0;
+}
+
+#contContenido {
+	width: 90%;
+	padding-left: 0;
+	padding-right: 0;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+}
 /*####################################################################################################################################*/
 @media (max-width: 766px){
 #segundo {
@@ -444,12 +972,67 @@ font-size: 0.8em;
 	font-size: 1.3em;
 }
 
+
+/*PAG PORQUE*/
+
+
+.prueba3I, .prueba4I, .prueba5I, .prueba6I {
+	padding: 1.618em 0.1em;
+    background-image: none;
+}
+
+.menuMedio{
+height:6em;
+margin: 2em 0 2em 0;
+
+}
+
+.menuMedio  nav{
+	display: flex;
+	flex-direction: column;
+height:6em;
+padding: 0;
+}
+.menuMedio  nav a {
+	font-size: 1.1em;
+	font-weight: bolder;
+	height: 2em;
+		margin-bottom: auto;
+	margin-top: auto;
+}
+
+/*PAG ESTANTERIA*/
+
+
+.botonCuento{
+width: 61%;
+
+}
+
+
+
+
+/*PAG CUENTA*/
 #cuenta img {
 display: none;
 }
 
 #contCuento {
 	padding: 1.5em 0em;
+}
+
+/*PAG CLUB*/
+#tablaGanadores{
+width: 80%;
+}
+
+
+
+/*FOOTER*/
+
+
+.rayuela{
+	width:90%;
 }
 
 }
@@ -490,6 +1073,11 @@ font-size: 0.8em;
 	display:none;	
 }
 
+.registrate{
+	width: 95%;
+}
+
+
 .registrate h5 {
 	font-size:1.1em;
 	padding-left: 0.5em;
@@ -500,14 +1088,56 @@ font-size: 0.8em;
 	font-size:1.2em;
 }
 
-#sliderTa{
-	width: 100%;
+
+
+.fondoInicio {
+		margin: 0 0 5% 0;	
 }
 
-#slider {
+
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 60%;
+}
+
+
+
+.carrusel{
 	width: 90%;
 }
 
+.menuMedio2{ 
+	width: 95%;
+}
+
+.menuMedio2 nav a, .menuMedio4 nav a {
+	font-size: 1em;
+	
+}
+
+/*PAG ESTANTERIA*/
+
+.botonCuento{
+width: 70%;
+
+}
+
+.menuMedio4{
+	
+margin: 2% auto 10% auto;
+}
 
 
 /*PAG CUENTA*/
@@ -534,9 +1164,21 @@ font-size: 0.8em;
 .conta__contaLink__contaTexto {
 	font-size: 1em;
 }
-
+/*PAG CLUB*/
+#tablaGanadores{
+width:85%;
+}
 
 /*FOOTER*/
+
+.rayuela{
+	width: 90%;
+}
+
+.foot--modif {
+	border-top: 0;
+}
+
 .conta {
 
 	text-decoration: none;
@@ -549,78 +1191,149 @@ font-size: 0.8em;
 }
 
 #contCuento {
-
 	padding: 40px 0;
-
 }
 
 }
+
 
 /*####################################################################################################################################*/
 @media (max-width: 671px){
 
+
+
+/*HEADER*/
+
 #contenedorT{	
-grid-template-rows: 180px 1fr auto;
+grid-template-rows: 340px 1fr auto;
 }
 
-#tituloPri{
-	padding-top: 1em;
-		font-size: 1.2em;
-}
 
 
 /*BODY*/
 
+
 #cabeceraT {
-	grid-template-rows:100px 80px;
-	
+grid-template-rows:100px 240px;
+		grid-template-areas: 
+		"fondo"			
+	"segundo";
 }
+
+
 
 #segundo{
-	grid-template-columns: 50% 0% 50%;
-	grid-template-rows: 40px 40px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px;
 	grid-template-areas: 
-	"nave nave nave"
-	"ganadoresMes . sitios";
-
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"ganadoresMes sitios";
+	line-height: 0.7em;
 }
 
 
+#menuPrincipal { 	
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 40px);
+	margin-bottom: 0px;
+}
 
-
-
+#tituloSec {
+	display: none;
+}
 
 #nave nav a {
-text-align: center;
-border-radius: 0;
-font-size: 0.85em;
-line-height: 1.4em;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 1.2em;
 }
 
 #nave nav a:hover {
-	text-align: center;
-	font-size: 0.9em;
+	font-size:  1.2em;
 }
 
-.botonSitios, .botonGanadores {  
- font-size: 1.2em;
+.botonSitios, .botonGanadores {
+font-size: 1em;
+border-left: 0;
 }
 
-#ganadoresMes > .btn{
- 	border-radius: 0;
+#sitios > .btn, #ganadoresMes > .btn {
+border-radius: 0px 0px 10px 10px;
+}
+
+#fondo {
+background-size: 70%;
+}
+
+#tituloPri {	
+	padding-top: 2em;	
+}
+
+.tituloPri {
+font-size: 2.5em;  
 }
 
 
-#sitios > .btn{
- 	border-radius: 0;
- 	border-left: 0;
+
+/*PAG INICIO*/
+
+.fondoInicio {
+		margin: 0 0 20% 0;	
 }
 
-
-.menuUl{
-	border-radius: 0;
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
 }
 
+.menuMedio2 nav, .menuMedio3 nav,  .menuMedio4 nav {
+	display: block;
+	margin: 0.5em 0 2em 0;
+}
+.menuMedio2 nav a, .menuMedio3 nav a, .menuMedio4 nav a {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 80%;
+}
+
+.registrate {
+	width: 95%;
+}
+
+.registrate h5 {
+font-size: 1.4em;
+}
+
+.carrusel{
+	width: 90%;
+}
+
+/*PAG ESTANTERIA*/
+
+#leerIndice .botonCuento:hover, #cuentosGanadores .botonCuento:hover {
+	box-shadow: 0px 0px 0px 0px #fcf8e8;
+}
+.modal-header{
+	background-image: none;
+}
+
+.menuMedio3 {
+	width: 85%;
+	margin-bottom: 10%;
+}
 
 /*PAG CUENTA*/
 #cuenta {	
@@ -649,24 +1362,35 @@ line-height: 1.4em;
 }
 
 
+/*PAG CLUB*/
+#tablaGanadores, #datosRegistros2, #inscribete{
+width: 90%;
+}
 
 /*FOOTER*/
 
+
+.rayuela{
+	width: 98%;
+}
 
 
 .foot {
   width: 100%;
   height: 100%;
   grid-template-columns:100%;
-  grid-template-rows: 30px 30px 40px;
+  grid-template-rows: 20px 20px 40px;
   grid-template-areas: 
   "copy" 
   "conta" 
-  "rrss"; 
-   padding-bottom: 5px;
-  padding-top: 5px; 
+  "rrss";  
   }
-
+.foot--modif {
+		border-top:0;
+		height: 100px;
+			padding-bottom: 10px;
+	padding-top: 5px; 
+}
 
 .rrss__rrssLink {
   margin: auto; 
@@ -704,14 +1428,10 @@ line-height: 1.4em;
 }
 
 .copy p{
-	font-size: 12px;
+	font-size: 0.9em;
 }
 
-#contCuento {
 
-	padding: 40px 30;
-
-}
 
 }
 /*####################################################################################################################################*/
@@ -719,15 +1439,120 @@ line-height: 1.4em;
 
 /*HEADER*/
 
-
-#tituloPri{
-	padding-top: 1.2em;
-	font-size: 1.1em;
+#contenedorT{	
+grid-template-rows: 340px 1fr auto;
 }
 
 
-.botonSitios, .botonGanadores {  
- font-size: 1.1em;
+
+/*BODY*/
+
+
+#cabeceraT {
+grid-template-rows:100px 240px;
+		grid-template-areas: 
+		"fondo"			
+	"segundo";
+}
+
+
+
+#segundo{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px;
+	grid-template-areas: 
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"ganadoresMes sitios";
+	line-height: 0.7em;
+}
+
+
+#menuPrincipal { 	
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 40px);
+	margin-bottom: 0px;
+}
+
+#tituloSec {
+	display: none;
+}
+
+#nave nav a {
+	border-left: none;
+	border-right: none;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 1.2em;
+}
+
+.botonSitios, .botonGanadores {
+font-size: 1em;
+}
+
+#sitios > .btn, #ganadoresMes > .btn {
+border-radius: 0px 0px 10px 10px;
+}
+
+#fondo {
+background-size: 70%;
+}
+
+#tituloPri {	
+	padding-top: 2em;	
+}
+
+.tituloPri {
+font-size: 2.5em;
+}
+
+
+
+
+
+
+
+/*PAG INICIO*/
+
+.fondoInicio {
+		margin: 0 0 20% 0;	
+}
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+.menuMedio2  nav{
+	display: block;
+	margin: 0.5em 0 2em 0;
+}
+.menuMedio2  nav a {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 80%;
+}
+
+.registrate {
+	width: 95%;
+}
+
+.registrate h5 {
+font-size: 1.2em;
+}
+
+.carrusel{
+	width: 90%;
 }
 
 
@@ -759,19 +1584,666 @@ line-height: 1.4em;
 /*FOOTER*/
 
 
+.rayuela{
+	width: 98%;
+}
+
+
 .foot {
   width: 100%;
   height: 100%;
   grid-template-columns:100%;
-  grid-template-rows: 30px 30px 40px;
+  grid-template-rows: 20px 20px 40px;
   grid-template-areas: 
   "copy" 
   "conta" 
-  "rrss"; 
-   padding-bottom: 5px;
-  padding-top: 5px; 
+  "rrss";  
+  }
+.foot--modif {
+		border-top:0;
+		height: 100px;
+			padding-bottom: 10px;
+	padding-top: 5px; 
+}
+
+.rrss__rrssLink {
+  margin: auto; 
+
   }
 
+.rrss__rrssLink__solo__imgFooter {
+  height: 1.5em;
+  margin-left: 0.6em;
+  margin-right: 0.6em; 
+  }
+
+ .copy {
+	display: flex;
+	justify-content: center;
+}
+
+.copy--modif{
+	width: 100%;
+	
+
+}
+.copy__copyTexto {
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+
+.rrss--modif {
+  width: 100%;
+ }
+
+.conta {
+	text-align: center;
+}
+
+.copy p{
+	font-size: 0.9em;
+}
+
+
+
+
+
+}
+
+/*####################################################################################################################################*/
+@media (max-width: 450px){
+
+/*HEADER*/
+
+#contenedorT{	
+grid-template-rows: 340px 1fr auto;
+}
+
+
+
+/*BODY*/
+
+
+#cabeceraT {
+grid-template-rows:100px 240px;
+		grid-template-areas: 
+		"fondo"			
+	"segundo";
+}
+
+
+
+#segundo{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px;
+	grid-template-areas: 
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"ganadoresMes sitios";
+	line-height: 0.7em;
+}
+
+
+#menuPrincipal { 	
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 40px);
+	margin-bottom: 0px;
+}
+
+#tituloSec {
+	display: none;
+}
+
+#nave nav a {
+	border-left: none;
+	border-right: none;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 1.2em;
+}
+
+.botonSitios, .botonGanadores {
+font-size: 1em;
+}
+
+#sitios > .btn, #ganadoresMes > .btn {
+border-radius: 0px 0px 10px 10px;
+}
+
+#fondo {
+background-size: 70%;
+}
+
+#tituloPri {	
+	padding-top: 2em;	
+}
+
+.tituloPri {
+font-size: 2.5em;
+}
+
+
+
+/*PAG INICIO*/
+
+.fondoInicio {
+		margin: 0 0 20% 0;	
+}
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+.menuMedio2  nav{
+	display: block;
+	margin: 0.5em 0 2em 0;
+}
+.menuMedio2  nav a {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 80%;
+}
+
+.registrate {
+	width: 95%;
+}
+
+.registrate h5 {
+font-size: 1.3em;
+}
+
+.carrusel{
+	width: 90%;
+}
+
+
+/*PAG CUENTA*/
+
+#formuEspacio > div >label {
+	font-size: 0.9em;
+}
+ 
+.pp ul {
+	font-size: 0.9em;
+}
+
+.cuentaCuento div p {
+	padding-top: 10px;	
+	font-size: 0.9em;
+
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 98%;
+}
+
+
+.foot {
+  width: 100%;
+  height: 100%;
+  grid-template-columns:100%;
+  grid-template-rows: 20px 20px 40px;
+  grid-template-areas: 
+  "copy" 
+  "conta" 
+  "rrss";  
+  }
+.foot--modif {
+		border-top:0;
+		height: 100px;
+			padding-bottom: 10px;
+	padding-top: 5px; 
+}
+
+.rrss__rrssLink {
+  margin: auto; 
+
+  }
+
+.rrss__rrssLink__solo__imgFooter {
+  height: 1.5em;
+  margin-left: 0.6em;
+  margin-right: 0.6em; 
+  }
+
+ .copy {
+	display: flex;
+	justify-content: center;
+}
+
+.copy--modif{
+	width: 100%;
+	
+
+}
+.copy__copyTexto {
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+
+.rrss--modif {
+  width: 100%;
+ }
+
+.conta {
+	text-align: center;
+}
+
+.copy p{
+	font-size: 0.9em;
+}
+
+
+
+
+
+ 	
+}
+/*####################################################################################################################################*/
+@media (max-width: 430px){
+
+/*HEADER*/
+
+#contenedorT{	
+grid-template-rows: 340px 1fr auto;
+}
+
+
+
+/*BODY*/
+
+
+#cabeceraT {
+grid-template-rows:100px 240px;
+		grid-template-areas: 
+		"fondo"			
+	"segundo";
+}
+
+
+
+#segundo{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px;
+	grid-template-areas: 
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"ganadoresMes sitios";
+	line-height: 0.7em;
+}
+
+
+#menuPrincipal { 	
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 40px);
+	margin-bottom: 0px;
+}
+
+#tituloSec {
+	display: none;
+}
+
+#nave nav a {
+	border-left: none;
+	border-right: none;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 1.2em;
+}
+
+.botonSitios, .botonGanadores {
+font-size: 1em;
+}
+
+#sitios > .btn, #ganadoresMes > .btn {
+border-radius: 0px 0px 10px 10px;
+}
+
+#fondo {
+background-size: 70%;
+}
+
+#tituloPri {	
+	padding-top: 2em;	
+}
+
+.tituloPri {
+font-size: 2.5em;
+}
+
+
+
+/*PAG INICIO*/
+
+.fondoInicio {
+		margin: 0 0 20% 0;	
+}
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+.menuMedio2  nav{
+	display: block;
+	margin: 0.5em 0 2em 0;
+}
+.menuMedio2  nav a {
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 80%;
+}
+
+.registrate {
+	width: 95%;
+}
+
+.registrate h5 {
+font-size: 1.3em;
+}
+
+.carrusel{
+	width: 90%;
+}
+
+
+
+/*PAG CUENTA*/
+#cuenta {	
+	width: 100%;
+}
+
+
+
+
+#formuEspacio > div >label {
+	font-size: 0.9em;
+}
+ 
+.pp ul {
+	font-size: 0.9em;
+}
+
+.cuentaCuento div p {
+	padding-top: 10px;	
+	font-size: 0.9em;
+
+}
+
+
+
+
+/*FOOTER*/
+
+
+.rayuela{
+	width: 98%;
+}
+
+
+.foot {
+  width: 100%;
+  height: 100%;
+  grid-template-columns:100%;
+  grid-template-rows: 20px 20px 40px;
+  grid-template-areas: 
+  "copy" 
+  "conta" 
+  "rrss";  
+  }
+.foot--modif {
+		border-top:0;
+		height: 100px;
+			padding-bottom: 10px;
+	padding-top: 5px; 
+}
+
+.rrss__rrssLink {
+  margin: auto; 
+
+  }
+
+.rrss__rrssLink__solo__imgFooter {
+  height: 1.5em;
+  margin-left: 0.6em;
+  margin-right: 0.6em; 
+  }
+
+ .copy {
+	display: flex;
+	justify-content: center;
+}
+
+.copy--modif{
+	width: 100%;
+	
+
+}
+.copy__copyTexto {
+  margin: 0px;
+  font-size: 0.9em;
+}
+
+
+.rrss--modif {
+  width: 100%;
+ }
+
+.conta {
+	text-align: center;
+}
+
+.copy p{
+	font-size: 0.9em;
+}
+
+
+
+
+
+
+}
+
+/*####################################################################################################################################*/
+@media (max-width: 410px){
+
+/*HEADER*/
+
+#contenedorT{	
+grid-template-rows: 340px 1fr auto;
+}
+
+
+
+/*BODY*/
+
+
+#cabeceraT {
+grid-template-rows:100px 240px;
+		grid-template-areas: 
+		"fondo"			
+	"segundo";
+}
+
+
+
+#segundo{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px;
+	grid-template-areas: 
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"ganadoresMes sitios";
+	line-height: 0.7em;
+}
+
+
+#menuPrincipal { 	
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 40px);
+	margin-bottom: 0px;
+}
+
+#tituloSec {
+	display: none;
+}
+
+#nave nav a {
+	border-left: none;
+	border-right: none;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 1em;
+}
+
+.botonSitios, .botonGanadores {
+font-size: 0.8em;
+}
+
+#sitios > .btn, #ganadoresMes > .btn {
+border-radius: 0px 0px 10px 10px;
+}
+
+#fondo {
+background-size: 70%;
+}
+
+#tituloPri {	
+	padding-top: 2em;	
+}
+
+.tituloPri {
+font-size: 2.3em;
+}
+
+
+
+/*PAG INICIO*/
+
+.fondoInicio {
+		margin: 0 0 20% 0;	
+}
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+.menuMedio2  nav{
+	display: block;
+	margin: 0.5em 0 2em 0;
+}
+.menuMedio2  nav a {
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 80%;
+}
+
+.registrate {
+	width: 95%;
+}
+
+.carrusel{
+	width: 90%;
+}
+
+.registrate h5 {
+	font-size:1em;
+
+}
+
+
+
+/*PAG CUENTA*/
+
+
+#formuEspacio > div >label {
+	font-size: 0.9em;
+}
+ 
+.pp ul {
+	font-size: 0.9em;
+}
+
+.cuentaCuento div p {
+	padding-top: 10px;	
+	font-size: 0.9em;
+
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+
+
+.rayuela{
+	width: 98%;
+}
+
+
+.foot {
+  width: 100%;
+  height: 100%;
+  grid-template-columns:100%;
+  grid-template-rows: 20px 20px 40px;
+  grid-template-areas: 
+  "copy" 
+  "conta" 
+  "rrss";  
+  }
+.foot--modif {
+		border-top:0;
+		height: 100px;
+			padding-bottom: 10px;
+	padding-top: 5px; 
+}
 
 .rrss__rrssLink {
   margin: auto; 
@@ -809,192 +2281,10 @@ line-height: 1.4em;
 }
 
 .copy p{
-	font-size: 12px;
-}
-
-
-
-
-
-}
-
-/*####################################################################################################################################*/
-@media (max-width: 450px){
-
-/*HEADER*/
-
-#tituloPri{
-	padding-top: 1.35em;
-	font-size: 1.05em;
-}
-
-.tituloPri {
-	
-	text-shadow:
-	0 0 5px rgba(27, 139, 197, 1),
-	0 0 10px rgba(23, 170, 247,1),
-}
-
-#nave nav a {
-text-align: center;
-border-radius: 0;
-font-size: 0.8em;
-line-height: 1.5em;
-}
-
-#nave nav a:hover {
-	text-align: center;
 	font-size: 0.8em;
 }
 
-.botonSitios, .botonGanadores {  
- font-size: 0.9em;
-}
 
-/*PAG CUENTA*/
-
-#formuEspacio > div >label {
-	font-size: 0.9em;
-}
- 
-.pp ul {
-	font-size: 0.9em;
-}
-
-.cuentaCuento div p {
-	padding-top: 10px;	
-	font-size: 0.9em;
-
-}
-
-
-
-
-/*FOOTER*/
-
-
-
-
-
-
- 	
-}
-/*####################################################################################################################################*/
-@media (max-width: 430px){
-
-/*HEADER*/
-
-#tituloPri{
-	
-	font-size: 1em;
-}
-
-.botonSitios, .botonGanadores {  
- font-size: 0.9em;
-}
-
-/*PAG INICIO*/
-
-
-/*PAG CUENTA*/
-#cuenta {	
-	width: 100%;
-}
-
-
-
-/*FOOTER*/
-
-
-/*PAG CUENTA*/
-
-#formuEspacio > div >label {
-	font-size: 0.9em;
-}
- 
-.pp ul {
-	font-size: 0.9em;
-}
-
-.cuentaCuento div p {
-	padding-top: 10px;	
-	font-size: 0.9em;
-
-}
-
-
-
-
-/*FOOTER*/
-
-
-
-
-}
-
-/*####################################################################################################################################*/
-@media (max-width: 410px){
-
-/*HEADER*/
-
-
-
-
-#tituloPri {
-	padding-top: 1.75em;
-	font-size: 0.9em;
-}
-
-#tituloSec {
-	display: none;
-
-}
-
-
-
-#nave nav a {
-text-align: center;
-border-radius: 0;
-font-size: 0.7em;
-line-height: 1.71em;
-}
-
-#nave nav a:hover {
-	text-align: center;
-	font-size: 0.7em;
-}
-
-
-
-
-
-/*PAG INICIO*/
-
-
-
-/*PAG CUENTA*/
-
-
-#formuEspacio > div >label {
-	font-size: 0.9em;
-}
- 
-.pp ul {
-	font-size: 0.9em;
-}
-
-.cuentaCuento div p {
-	padding-top: 10px;	
-	font-size: 0.9em;
-
-}
-
-
-
-
-
-
-/*FOOTER*/
 
 
 
@@ -1007,24 +2297,121 @@ line-height: 1.71em;
 
 /*HEADER*/
 
-#tituloPri {
+#contenedorT{	
+grid-template-rows: 340px 1fr auto;
+}
 
+
+
+/*BODY*/
+
+
+#cabeceraT {
+grid-template-rows:100px 240px;
+		grid-template-areas: 
+		"fondo"			
+	"segundo";
+}
+
+
+
+#segundo{
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 40px 40px 40px 40px 40px 40px;
+	grid-template-areas: 
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"nave nave"
+	"ganadoresMes sitios";
+	line-height: 0.7em;
+}
+
+
+#menuPrincipal { 	
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 40px);
+	margin-bottom: 0px;
 }
 
 #tituloSec {
 	display: none;
-
 }
 
+#nave nav a {
+	border-left: none;
+	border-right: none;
+	border-radius: 0px 0px 10px 10px;
+	font-size: 1em;
+}
+
+.botonSitios, .botonGanadores {
+font-size: 0.8em;
+}
+
+#sitios > .btn, #ganadoresMes > .btn {
+border-radius: 0px 0px 10px 10px;
+}
+
+#fondo {
+background-size: 70%;
+}
+
+#tituloPri {	
+	padding-top: 2em;	
+}
+
+.tituloPri {
+font-size: 2.1em;
+}
 
 
 
 /*PAG INICIO*/
 
+.fondoInicio {
+		margin: 0 0 20% 0;	
+}
+
+#slider, #tarjetas {
+padding: 20px 10px;
+width: 95%;
+}
+
+.menuMedio2  nav{
+	display: block;
+	margin: 0.5em 0 2em 0;
+}
+.menuMedio2  nav a {
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+#sliderTa {
+	padding: 20px 10px;
+width: 95%;
+
+}
+#carouselExampleFade {
+	width: 80%;
+}
+
+.registrate {
+	width: 95%;
+}
+
+.carrusel{
+	width: 90%;
+}
+
+
+
+
+
 
 
 /*PAG CUENTA*/
-
 
 #formuEspacio > div >label {
 	font-size: 0.9em;
@@ -1042,18 +2429,70 @@ line-height: 1.71em;
 
 
 
-
-
 /*FOOTER*/
 
 
+.rayuela{
+	width: 98%;
+}
 
 
+.foot {
+  width: 100%;
+  height: 100%;
+  grid-template-columns:100%;
+  grid-template-rows: 20px 20px 40px;
+  grid-template-areas: 
+  "copy" 
+  "conta" 
+  "rrss";  
+  }
+.foot--modif {
+		border-top:0;
+		height: 100px;
+			padding-bottom: 10px;
+	padding-top: 5px; 
+}
 
+.rrss__rrssLink {
+  margin: auto; 
 
+  }
 
+.rrss__rrssLink__solo__imgFooter {
+  height: 1.5em;
+  margin-left: 0.6em;
+  margin-right: 0.6em; 
+  }
 
+ .copy {
+	display: flex;
+	justify-content: center;
+}
 
+.copy--modif{
+	width: 100%;
+	
 
 }
+.copy__copyTexto {
+  margin: 0px;
+  font-size: 0.8em;
+}
+
+
+.rrss--modif {
+  width: 100%;
+ }
+
+.conta {
+	text-align: center;
+}
+
+.copy p{
+	font-size: 0.8em;
+}
+
+}
+
 /* #####  RESPONSIVE - fin  ############################################################################################################ */
