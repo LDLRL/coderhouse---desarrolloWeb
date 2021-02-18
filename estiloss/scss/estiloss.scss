@@ -482,7 +482,9 @@ $fuenteSub:'Chilanka', cursive;
 		padding: 50px;
 		display: flex;
 	}
-
+/* ******** INDEX - final ********************************************************************************************************** */
+/* */
+/* */
 /* ******** PORQUE - inicio ******************************************************************************************************** */
 
 .fondoPorque {	
@@ -661,9 +663,332 @@ $fuenteSub:'Chilanka', cursive;
 
 
 /* ***** PORQUE - final ********************************************************************************************************** */
+/* */
+/* */
+/* ***** ESTANTERIA - Inicio  **************************************************************************************************** */
+.fondoEstanteria {	
+	display: grid;
+	grid-template-columns: 35% 30% 35%;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+	"cuentosLeer cuentosVideo cuentosGanadores"
+	"menuMedio3 menuMedio3 menuMedio3";
+		margin: 5% 0 5% 0;	
+}
 
-/* ******** INDEX - final ********************************************************************************************************** */
+	#cuentosLeer {
+		grid-area: cuentosLeer;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 100%; 
+		grid-template-rows: 50px 1fr;
+		grid-template-areas:
+		"tituloLeerIndice"
+		"leerIndice";
+		padding-left: 30px;
+		padding-right: 30px;
 
+
+			#tituloLeerIndice {
+			grid-area: tituloLeerIndice;
+			text-align: center;	
+			background-color:  $colApoyo1;
+			height: 100%;		
+			display: flex;
+			align-items: center;
+			border-radius:15px 15px 0px 0px;
+		}
+			#leerIndice { 
+			grid-area: leerIndice;
+			width: 100%;
+			border-radius:0px 0px 15px 15px;
+			background-color: $colGeneral;
+			border: 2px solid $colApoyo1;		
+			display: grid;
+			grid-template-columns: 70% 30%; 
+			grid-template-rows: auto auto auto auto auto auto;
+			grid-template-areas:	
+			"article article" 
+			"article article"
+			"article article"
+			"article article" 
+			"article article"
+			"article article";
+			grid-gap: 5px;
+			padding: 15px 10px;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+		}
+
+		#leerIndice article {	
+			width: 80%;
+			height: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			align-items: center;
+			justify-items: center;
+		}
+
+		#leerIndice .tarjetaCuento{
+			border: 1px solid  $colApoyo2;	
+		}
+
+		#leerIndice .botonCuento:hover {
+			border-radius:50%;
+			box-shadow: 0px 0px 15px 7px $colApoyo1;
+			transform:scale(1.25);
+		}				
+	}
+
+	#cuentosVideo {
+		grid-area: cuentosVideo;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 100%; 
+		grid-template-rows: 50px 1fr;
+		grid-template-areas:
+		"tituloVideoFabulas"
+		"videos";
+		padding-left: 15px;
+		padding-right: 15px;
+
+		#tituloVideoFabulas {
+			grid-area: tituloVideoFabulas;
+			text-align: center;	
+			background-color:  $colApoyo2;		
+			height: 100%;
+			display: flex;
+			align-items: center;
+			border-radius:15px 15px 0px 0px;	
+		}
+
+		#videos { 
+			grid-area: videos;
+			width: 100%;
+			background-color: $colGeneral;
+			border:2px solid $colApoyo2;
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-rows: auto auto auto auto auto auto;
+			grid-template-areas:
+			"article"
+			"article"
+			"article"
+			"article"
+			"article" 
+			"article";
+			align-content: space-between;
+			justify-content:  center;	
+			grid-gap: 15px;
+			padding: 25px 20px;
+			border-radius:0px 0px 15px 15px;	
+		}
+
+			#videos article {	
+				width: 100%;
+				border: 1px solid $colApoyo2;
+				text-transform: uppercase;
+				text-align: center;
+				border-radius: 4px;	
+				background-color: $colGeneral;
+				display: grid;
+				grid-template-rows: 80% 20%;
+			}
+
+			.videoCont {
+				width: 100%;	
+			}
+
+			.video{
+				width: 100%;
+				border-top-right-radius: 4px;
+				border-top-left-radius: 4px;
+		}
+	}
+
+
+	#cuentosGanadores { 
+		grid-area: cuentosGanadores;
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: 100%; 
+		grid-template-rows: 50px 1fr;
+		grid-template-areas:
+		"tituloIndice"
+		"ganadoresIndice";
+		padding-left: 30px;
+		padding-right: 30px;
+
+		#tituloIndice {
+			grid-area: tituloIndice;
+			text-align: center;	
+			background-color:  $colApoyo3;		
+			height: 100%;
+			display: flex;
+			align-items: center;
+			border-radius:15px 15px 0px 0px;		
+		}
+
+		#ganadoresIndice { 
+			grid-area: ganadoresIndice;
+			width: 100%;
+			background-color: $colGeneral;
+			border: 2px solid  $colApoyo3;	
+			display: grid;
+			grid-template-columns: 70% 30%; 
+			grid-template-rows: auto auto auto auto auto auto;
+			grid-template-areas:	
+			"article article" 
+			"article article"
+			"article article"
+			"article article" 
+			"article article"
+			"article article";
+			grid-gap: 5px;
+			padding: 15px 10px;
+			align-items: center;
+			justify-items: center;
+			justify-content: center;
+			border-radius:0px 0px 15px 15px;
+		}
+
+		#ganadoresIndice article {
+			width: 80%;
+			height: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			align-items: center;
+			justify-items: center;
+		}
+
+		#ganadoresIndice .tarjetaCuento{
+			border: 1px solid  $colApoyo3;	
+		}
+	}
+		#cuentosGanadores .botonCuento:hover {
+			border-radius:50%;
+			box-shadow: 0px 0px 15px 7px $colApoyo3;
+			transform:scale(1.25);
+		}
+
+				.centroV {
+			margin:auto;
+			color: $colGeneral;
+			font-size: 1.8em;
+		}
+
+		.botonCuento p{
+			color: $colPrincipal;
+		}
+
+		.imagen {
+			width: 100%;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+		}
+
+		.tarjetaCuento {	
+			background-color: $colGeneral;
+			border-radius: 4px;
+		}
+
+		.t > p{
+			text-align: justify;
+			font-size: 0.6em;
+			padding-right:6px;
+			padding-left: 6px;
+			margin-block-end: 0.2em;
+			margin-block-start: 0.2em;
+		}
+
+		.t > h6 {
+			margin-top: 5px;
+			text-align: center;
+			font-size: 0.8em;
+			justify-content: center;
+		}
+
+		.botonCuento{
+			width:75%;	
+			background-color: $colGeneral;
+			border:0px;
+			border-radius:50%;
+			align-items: center;
+			justify-items: center;
+			padding:0px;
+			justify-content: center;
+		}
+
+		.bo{
+			padding: 0px;
+		}
+
+		.botonCuento p{	
+			font-size: 0.9em;
+			justify-content: center;
+			text-align: center;
+			align-self: center;
+			font-family: $fuenteSub;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.btn-check:focus+.btn, .btn:focus {
+			box-shadow: 0 0 0 0.0rem $colGeneral;
+		}
+
+.menuMedio3{
+	grid-area: menuMedio3;
+	width: 85%;
+	margin: 2% auto 2% auto;
+}
+
+/*modal*/		
+
+.modal-content {
+	font-family: $fuenteTexto;
+	text-align: justify;
+	background-color:$colNeutro;
+
+	.modal-header{
+		background-image: url("./img/44.png");
+		background-size: 27%;
+		background-color: $colGeneral;
+		color: $colPrincipal;
+		font-family: $fuenteSub;
+
+		.modal-title {
+			font-size: 1.5em;
+			-webkit-text-stroke: 0.5px $colPrincipal;
+			font-weight: 600;
+			width: 100%;				
+		}
+	}	
+}
+
+.modal-footer{
+		background-color:  $colPrincipal;		
+		}
+
+	.modal-footer div{
+			text-align: left;
+			font-weight: 600;
+			color: $colGeneral;
+			font-family: $fuenteTexto;
+			padding-right: 1em;
+		}
+
+		.modal-footer button{
+			background-color:$colGeneral;
+		}
+			
+			.modal-footer > .btn{
+					color:  $colPrincipal;
+			}
+			
 
 /* ***** ESTANTERIA -  final ***************************************************************************************************** 
 /* */
@@ -1040,6 +1365,44 @@ $fuenteSub:'Chilanka', cursive;
 /* */
 /* */
 /* ######  MAIN - fin ############################################################################################################## */
+/* */
+/* */
+/* */
+/* #####  PAGINA NO ENCONTRADA ############################################################################################################ */
+
+#oops {
+	display: grid;
+	align-items: center;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"imgOops"
+	"oops2";
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+
+	.imgOops {
+		grid-area: imgOops;
+		margin-left: auto;
+		margin-right: auto;
+		padding:2em 2em;
+	}
+}
+
+#oops2{
+	grid-gap: oops2;
+	text-align: center;
+	margin-top: 3%;	
+}
+
+	#oops2 a {
+		text-decoration: none;
+		color:$colApoyo3;
+		font-size: 2em;
+		font-family: $fuenteTexto; 
+	}
+
+/* #####  PAGINA NO ENCONTRADA- fin  ############################################################################################################ */
 /* */
 /* */
 /* */

@@ -349,6 +349,9 @@
   padding: 50px;
   display: flex; }
 
+/* ******** INDEX - final ********************************************************************************************************** */
+/* */
+/* */
 /* ******** PORQUE - inicio ******************************************************************************************************** */
 .fondoPorque {
   display: grid;
@@ -496,7 +499,252 @@
   width: 100%; }
 
 /* ***** PORQUE - final ********************************************************************************************************** */
-/* ******** INDEX - final ********************************************************************************************************** */
+/* */
+/* */
+/* ***** ESTANTERIA - Inicio  **************************************************************************************************** */
+.fondoEstanteria {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "cuentosLeer cuentosVideo cuentosGanadores" "menuMedio3 menuMedio3 menuMedio3";
+  margin: 5% 0 5% 0; }
+
+#cuentosLeer {
+  grid-area: cuentosLeer;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "tituloLeerIndice" "leerIndice";
+  padding-left: 30px;
+  padding-right: 30px; }
+  #cuentosLeer #tituloLeerIndice {
+    grid-area: tituloLeerIndice;
+    text-align: center;
+    background-color: #F39233;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; }
+  #cuentosLeer #leerIndice {
+    grid-area: leerIndice;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #fcf8e8;
+    border: 2px solid #F39233;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "article article"  "article article" "article article" "article article"  "article article" "article article";
+    grid-gap: 5px;
+    padding: 15px 10px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+  #cuentosLeer #leerIndice article {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-items: center; }
+  #cuentosLeer #leerIndice .tarjetaCuento {
+    border: 1px solid #01c5c4; }
+  #cuentosLeer #leerIndice .botonCuento:hover {
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 7px #F39233;
+    transform: scale(1.25); }
+
+#cuentosVideo {
+  grid-area: cuentosVideo;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "tituloVideoFabulas" "videos";
+  padding-left: 15px;
+  padding-right: 15px; }
+  #cuentosVideo #tituloVideoFabulas {
+    grid-area: tituloVideoFabulas;
+    text-align: center;
+    background-color: #01c5c4;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; }
+  #cuentosVideo #videos {
+    grid-area: videos;
+    width: 100%;
+    background-color: #fcf8e8;
+    border: 2px solid #01c5c4;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "article" "article" "article" "article" "article"  "article";
+    align-content: space-between;
+    justify-content: center;
+    grid-gap: 15px;
+    padding: 25px 20px;
+    border-radius: 0px 0px 15px 15px; }
+  #cuentosVideo #videos article {
+    width: 100%;
+    border: 1px solid #01c5c4;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fcf8e8;
+    display: grid;
+    grid-template-rows: 80% 20%; }
+  #cuentosVideo .videoCont {
+    width: 100%; }
+  #cuentosVideo .video {
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px; }
+
+#cuentosGanadores {
+  grid-area: cuentosGanadores;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "tituloIndice" "ganadoresIndice";
+  padding-left: 30px;
+  padding-right: 30px; }
+  #cuentosGanadores #tituloIndice {
+    grid-area: tituloIndice;
+    text-align: center;
+    background-color: #F33394;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px; }
+  #cuentosGanadores #ganadoresIndice {
+    grid-area: ganadoresIndice;
+    width: 100%;
+    background-color: #fcf8e8;
+    border: 2px solid #F33394;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "article article"  "article article" "article article" "article article"  "article article" "article article";
+    grid-gap: 5px;
+    padding: 15px 10px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px; }
+  #cuentosGanadores #ganadoresIndice article {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-items: center; }
+  #cuentosGanadores #ganadoresIndice .tarjetaCuento {
+    border: 1px solid #F33394; }
+
+#cuentosGanadores .botonCuento:hover {
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 7px #F33394;
+  transform: scale(1.25); }
+
+.centroV {
+  margin: auto;
+  color: #fcf8e8;
+  font-size: 1.8em; }
+
+.botonCuento p {
+  color: #3394F3; }
+
+.imagen {
+  width: 100%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px; }
+
+.tarjetaCuento {
+  background-color: #fcf8e8;
+  border-radius: 4px; }
+
+.t > p {
+  text-align: justify;
+  font-size: 0.6em;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-block-end: 0.2em;
+  margin-block-start: 0.2em; }
+
+.t > h6 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.8em;
+  justify-content: center; }
+
+.botonCuento {
+  width: 75%;
+  background-color: #fcf8e8;
+  border: 0px;
+  border-radius: 50%;
+  align-items: center;
+  justify-items: center;
+  padding: 0px;
+  justify-content: center; }
+
+.bo {
+  padding: 0px; }
+
+.botonCuento p {
+  font-size: 0.9em;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  font-family: "Chilanka", cursive;
+  font-weight: 600;
+  text-decoration: none; }
+
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: 0 0 0 0rem #fcf8e8; }
+
+.menuMedio3 {
+  grid-area: menuMedio3;
+  width: 85%;
+  margin: 2% auto 2% auto; }
+
+/*modal*/
+.modal-content {
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  background-color: #FFFFFF; }
+  .modal-content .modal-header {
+    background-image: url("./img/44.png");
+    background-size: 27%;
+    background-color: #fcf8e8;
+    color: #3394F3;
+    font-family: "Chilanka", cursive; }
+    .modal-content .modal-header .modal-title {
+      font-size: 1.5em;
+      -webkit-text-stroke: 0.5px #3394F3;
+      font-weight: 600;
+      width: 100%; }
+
+.modal-footer {
+  background-color: #3394F3; }
+
+.modal-footer div {
+  text-align: left;
+  font-weight: 600;
+  color: #fcf8e8;
+  font-family: "Quicksand", sans-serif;
+  padding-right: 1em; }
+
+.modal-footer button {
+  background-color: #fcf8e8; }
+
+.modal-footer > .btn {
+  color: #3394F3; }
+
 /* ***** ESTANTERIA -  final ***************************************************************************************************** 
 /* */
 /* */
@@ -777,6 +1025,35 @@
 /* */
 /* */
 /* ######  MAIN - fin ############################################################################################################## */
+/* */
+/* */
+/* */
+/* #####  PAGINA NO ENCONTRADA ############################################################################################################ */
+#oops {
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imgOops" "oops2";
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  #oops .imgOops {
+    grid-area: imgOops;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 2em; }
+
+#oops2 {
+  grid-gap: oops2;
+  text-align: center;
+  margin-top: 3%; }
+
+#oops2 a {
+  text-decoration: none;
+  color: #F33394;
+  font-size: 2em;
+  font-family: "Quicksand", sans-serif; }
+
+/* #####  PAGINA NO ENCONTRADA- fin  ############################################################################################################ */
 /* */
 /* */
 /* */
