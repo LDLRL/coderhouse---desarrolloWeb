@@ -10,10 +10,165 @@ $colComodin:#f3f3f3;		/*gris comodin*/
 $colNeutro:#FFFFFF;			/*blanco */
 
 $fuenteTexto:'Quicksand', sans-serif;
-$fuenteTitulo:'Quicksand', sans-serif;
-$fuenteSub:'Quicksand', sans-serif;
+$fuenteTitulo:'Kalam';
+$fuenteSub:'Chilanka', cursive;
 
-/* */
+
+/* *****  CLUB - Inicio     ******************************************************************************************************** */
+.fondoClub {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"club tablaGanadores";	
+	margin: 5% 0 5% 0;	
+}
+
+	#club {
+		grid-area: club;	
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+		"inscribete"
+		"datosRegistros";
+		justify-items: center;	
+	}
+
+		#inscribete {
+			grid-area: inscribete;
+			width: 85%;
+			text-align: justify;
+			background-color: $colGeneral;
+			border: 2px solid $colPrincipal;
+			border-radius: 15px;
+			font-size: 1.12em;
+
+			#alinCentro4 {
+				background-color: $colPrincipal;
+				border-radius: 10px;
+				margin:2em;
+				display: flex;
+			}
+
+			#instrucciones1 {
+				font-size: 1.12em;
+				color: $colPrincipal;
+				margin:2em 2em 0 2em;
+			}
+		}
+
+		#inscribete h4{
+			padding: 0.5em 0 0.5em 0;
+			margin: auto;
+			color: $colGeneral;
+		}
+
+		#imgClub{
+			width: 100%;
+		}
+
+	#datosRegistros2 {
+		grid-area: datosRegistros;
+		width: 85%;
+		background-color: $colGeneral;
+		border: 2px solid $colPrincipal;
+		border-radius: 15px;
+		margin-top: 5%;	
+
+		#alinCentro5 {
+			background-color: $colGeneral;
+			border-bottom: 2px solid $colPrincipal;
+			margin:2em;
+			display: flex;
+
+			
+		}
+
+			#alinCentro5 h4{
+				padding: 0.5em 0 0.5em 0;
+				margin: auto;
+				color: $colPrincipal;
+			}
+
+		#formuClub{
+			margin: 0 2em 2em 2em;
+			color: $colPrincipal;
+			font-size: 1.12em;
+
+			#botonClub {
+				display: flex;
+				width: 100%;
+				margin: 2em 0 0 0;
+				
+				.botonTexto1 {
+					background-color: $colPrincipal;
+					color: $colNeutro;
+					font-family: $fuenteTexto;
+					margin: auto;
+					width: 30%;
+				}
+			}
+		}
+	}	
+
+	#tablaGanadores {
+	grid-area: tablaGanadores;
+	background-color: $colGeneral;
+	border: 2px solid $colApoyo1;
+	padding: 1.5em;
+	border-radius: 10px;
+	width: 90%;
+
+	#tablas {
+		width: 100%;
+
+		.tituloTabla {
+			font-family: $fuenteSub;
+			font-size: 1.2em;
+			color: $colApoyo1;
+		}
+
+		.animacionLetra {
+			animation-duration: 5s;
+			animation-name: animacionLetra;
+			animation-iteration-count: infinite;
+			}
+			@keyframes animacionLetra{
+				from {
+				transform: rotateY(0deg);
+				}
+				50%{	
+					transform: rotateY(180deg);
+				} 
+				to {		
+					transform: rotateY(360deg);
+				}
+		}
+	}
+
+		#tabla {
+			color: $colComodin;
+
+			#tabla tr td{
+				padding-left: 2em;
+			}
+
+			.color1{
+				background-color: $colApoyo2;	
+			}
+
+			.color2{
+				background-color: $colApoyo3;
+			}
+
+			.color3{
+				background-color: $colPrincipal;
+			}
+		}
+}
+
+
+/* *****  CLUB - Fin        ******************************************************************************************************** */
 /* */
 /* */
 /* *****  CONTACTO - Inicio  ***************************************************************************************************** */
@@ -77,7 +232,6 @@ $fuenteSub:'Quicksand', sans-serif;
 
 
 /* *****    CONTACTO - final ******************************************************************************************************* */
-/* */
 /* */
 /* */
 /* ######  MAIN - fin ############################################################################################################## */
@@ -196,7 +350,7 @@ $fuenteSub:'Quicksand', sans-serif;
 }
 
 
-/* */
+
 /* #####  FOOTER - fin  ############################################################################################################ */
 
 
