@@ -13,7 +13,157 @@ $fuenteTexto:'Quicksand', sans-serif;
 $fuenteTitulo:'Kalam';
 $fuenteSub:'Chilanka', cursive;
 
+/* *****  CUENTA - Inicio   ****************************************************************************************************** */
 
+.fondoCuenta {	
+	display: grid;
+	grid-template-rows: 1fr auto auto;
+	grid-template-areas:
+	"cuentaCuento"	
+	"datosRegistro"
+	"menuMedio1";
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	margin: 5% 0 5% 0;	
+}
+
+	#cuentaCuento {
+		grid-area: cuentaCuento;
+		width: 85%;
+	}
+
+		#cuenta{
+			background-color: $colPrincipal;
+			border-radius: 15px;
+			display: flex;
+			margin: auto;
+			font-size: 1.2em;
+			
+			.imgCuentame {
+				background-color: $colNeutro;
+				background-size: cover;
+				border-top-left-radius: 15px;
+				border-bottom-left-radius:15px;
+				overflow: hidden;
+				display: inline-block;	
+			}
+		}
+
+		#cuenta img {
+			width: 100%;
+		}
+
+	.cuentaContenido {
+			text-align: justify;
+			color: $colGeneral;
+			font-family: $fuenteTexto;
+
+			.alinCentro {
+				background-color: $colGeneral;
+				display: flex;
+				border-radius: 10px;
+				padding: 0.5em 0 0.5em 0;
+				margin-left: 2em;
+				margin-right: 2em;
+				margin-top: 2em;
+			}			
+	}
+			.cuentaContenido h4{
+				margin: auto;
+				font-weight: bold;
+				color: $colPrincipal;
+				font-size: 1.3em;
+				text-align: center;
+			}
+
+			.instrucciones {
+				padding: 2em;
+				font-size: 1.12em;
+
+				.pp ul li{	
+					text-align: justify;
+					color: $colGeneral;
+					font-family: $fuenteTexto;
+					font-size: 1.2rem;
+				}
+
+				.pp a {
+					font-weight: 600;
+					text-decoration: none;
+					color: $colNeutro;
+				}
+
+			}
+
+	#datosRegistro {
+		grid-area: datosRegistro;
+		width: 85%;
+		background-color: $colComodin;
+		background-image: url("./img/5.png");
+		background-size: 40%;
+		background-repeat: no-repeat;
+		background-position: 50% 12%;
+		border: 2px solid $colPrincipal;
+		border-radius: 15px;
+		margin-top: 5%;
+
+		#contCuento {
+			padding: 2em 2em;
+			color: $colPrincipal;
+			font-family: $fuenteTexto;
+			font-size: 1.1rem;
+
+			.alinCentro1 {
+				background-color: $colPrincipal;
+				display: flex;
+				border-radius: 10px;
+				padding: 0.5em 0 0.5em 0;
+			}			
+		}
+
+		#contCuento h4{
+				margin: auto;
+				color: $colGeneral;
+			}
+
+		#formuEspacio {
+			margin-top: 25%;
+			width: 100%;
+			color: $colPrincipal;
+			font-size: 1.1rem;
+			font-family: $fuenteTexto;
+
+			.cajaForm{
+				background-color: $colGeneral;
+				opacity: 0.5;
+			}
+			
+			#botonCuenta {
+				display: flex;
+				margin-top: 2em;
+
+				.botonTexto {
+					background-color: $colPrincipal;
+					color: $colNeutro;
+					font-family: $fuenteTexto;
+					margin: auto;
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	.menuMedio4{
+		width: 85%;
+		margin: 2% auto 2% auto;
+	}
+
+
+
+/* *****  CUENTA -  final   ****************************************************************************************************** */
+/* */
+/* */
 /* *****  CLUB - Inicio     ******************************************************************************************************** */
 .fondoClub {
 	display: grid;

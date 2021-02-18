@@ -1133,6 +1133,7 @@ background-color: #3394F3;
 
 
 /* *****  CUENTA - Inicio   ****************************************************************************************************** */
+/*
 .fondoCuenta {	
 	display: grid;
 	grid-template-rows: 1fr auto auto;
@@ -1147,17 +1148,9 @@ background-color: #3394F3;
 }
 
 
-
-
 #cuentaCuento {
 	grid-area: cuentaCuento;
 	width: 85%;
-
-}
-
-#cuenta img {
-	width: 100%;
-
 
 }
 #cuenta{
@@ -1165,10 +1158,13 @@ background-color: #3394F3;
 	border-radius: 15px;
 	display: flex;
 	margin: auto;
-	font-size: 1.2em;
-	
-	
+	font-size: 1.2em;	
 }
+
+#cuenta img {
+	width: 100%;
+}
+
 
 .imgCuentame {
 background-color: #ffffff;
@@ -1181,9 +1177,6 @@ background-color: #ffffff;
 	
 }
 
-
-
-
 .cuentaContenido {
 	text-align: justify;
 
@@ -1191,7 +1184,6 @@ background-color: #ffffff;
 
 	font-family: 'Quicksand';	
 }
-
 
 .alinCentro {
 	background-color: #fcf8e8;
@@ -1201,8 +1193,6 @@ background-color: #ffffff;
 	margin-left: 2em;
 	margin-right: 2em;
 	margin-top: 2em;
-
-
 }
 
 .cuentaContenido h4{
@@ -1218,7 +1208,6 @@ background-color: #ffffff;
 	font-size: 1.12em;
 }
 
-
 .pp ul li{	
 	text-align: justify;
 	color: #fcf8e8;
@@ -1230,10 +1219,6 @@ background-color: #ffffff;
 	font-weight: 600;
 	text-decoration: none;
 }
-
-
-
-
 
 #datosRegistro {
 	grid-area: datosRegistro;
@@ -1248,9 +1233,25 @@ background-color: #ffffff;
 	margin-top: 5%;
 }
 
-.cajaForm{
-	background-color: #fcf8e8;
-	opacity: 0.5;
+
+#contCuento {
+	padding: 2em 2em;
+	color: #3394F3;
+	font-family: 'Quicksand';
+	font-size: 1.1rem;
+	background-image: url("./img/ch.png");
+}
+
+#contCuento h4{
+	margin: auto;
+	color: #fcf8e8;
+}
+
+.alinCentro1 {
+	background-color: #3394F3;
+	display: flex;
+	border-radius: 10px;
+	padding: 0.5em 0 0.5em 0;
 }
 
 #formuEspacio {
@@ -1261,28 +1262,10 @@ background-color: #ffffff;
 	font-family: 'Quicksand';
 }
 
-#contCuento {
-	padding: 2em 2em;
-	color: #3394F3;
-	font-family: 'Quicksand';
-	font-size: 1.1rem;
-	background-image: url("./img/ch.png");
+.cajaForm{
+	background-color: #fcf8e8;
+	opacity: 0.5;
 }
-
-
-#contCuento h4{
-	margin: auto;
-	color: #fcf8e8;
-}
-
-
-.alinCentro1 {
-	background-color: #3394F3;
-	display: flex;
-	border-radius: 10px;
-	padding: 0.5em 0 0.5em 0;
-}
-
 
 #botonCuenta {
 	display: flex;
@@ -1297,10 +1280,14 @@ background-color: #ffffff;
 	width: 30%;
 
 }
+
 .menuMedio4{
 	width: 85%;
 margin: 2% auto 2% auto;
 }
+
+*/
+
 
 /* *****  CUENTA -  final   ****************************************************************************************************** */
 
