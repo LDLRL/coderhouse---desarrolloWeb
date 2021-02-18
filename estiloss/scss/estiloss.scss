@@ -483,6 +483,184 @@ $fuenteSub:'Chilanka', cursive;
 		display: flex;
 	}
 
+/* ******** PORQUE - inicio ******************************************************************************************************** */
+
+.fondoPorque {	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+	"acerca acerca acerca"
+	"acerca acerca acerca"
+	"mapa1 mapa1 mapa1";
+	margin: 5% 0 5% 0;
+}
+
+	#acerca {
+		grid-area: acerca;
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		grid-template-columns: 1fr; 
+		grid-template-rows: 6fr;
+		grid-template-areas:
+		"por"
+		"por"
+		"por"
+		"por"
+		"por"	
+		"por";		
+	}
+
+		.por {
+			grid-area: por;
+		}
+
+		.por h4 {
+			border-radius:10px 10px 10px 10px;
+			text-align: center;
+			padding: 0.3em 0;
+		}
+
+		.quienes {
+		background-color: $colPrincipal;
+			margin: 0.5em 1.618em;
+			font-size: 1.2em;
+			color: $colGeneral;
+		}
+
+		.por p {
+			padding: 7px;
+			text-align: justify;
+			margin: 0em 2em;			
+		}
+
+	.mapa1{
+		grid-area: mapa1;
+		width: 100%;
+		margin-top: 3em;
+	}
+
+/* PORQUE - estructura textos*/
+	.prueba1C {
+		font-size: 1.2rem;
+		font-weight: 550;
+		font-family: $fuenteTexto;
+		text-align: justify;
+		background-size: 49% auto;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+	}
+
+	.prueba2R {
+		padding: 1.618em 1.618em 1.618em 50%;
+		background-position: 0 50%;
+	}
+
+	.prueba3I {
+		background-color: $colGeneral;
+		color: $colPrincipal;
+		border: 2px solid $colPrincipal;
+		background-image: url("./img/7.png");
+		background-position:15% 80%  ;
+		background-size: 38%;
+		border-radius:15px;	
+	}
+
+	.prueba2L {
+		padding: 1.618em 50% 1.618em 1.618em;
+		background-position: 100% 50%;
+	}
+
+	.prueba4I {
+		background-color: $colGeneral;
+		color: $colPrincipal;
+		border: 2px solid $colPrincipal;
+		background-image: url("./img/p.png");		
+		background-size: 40%;
+		background-position: 80% 30%;
+		border-radius:15px;
+	}
+
+	.prueba5I {
+		background-color: $colGeneral;
+		color: $colPrincipal;
+		border: 2px solid $colPrincipal;
+		background-image: url("./img/3.png");
+		border-radius:15px;
+		background-size: 40%;
+		background-position: 20% ;
+	}
+
+	.prueba6I {
+		background-color: $colGeneral;
+		color: $colPrincipal;
+		border: 2px solid $colPrincipal;
+		background-image: url("./img/t.png");
+		background-repeat: no-repeat;
+		background-size: 42%;
+		background-position: 80% 20%;
+		border-radius:15px;	
+	}
+
+	.separator {
+		text-align: center;
+		cursor: pointer;
+		justify-content: center;
+		align-items: center;
+	}
+		.separator nav {
+			display: grid;
+			grid-template-columns: calc(95%/3) calc(95%/3) calc(95%/3);
+			height:4em;
+			width: 100%;
+			padding-bottom: 0.5em;
+			padding-top: 0.5em;
+			padding-left: 0;
+			padding-right: 0;
+			list-style: none;
+			text-decoration: none;
+			justify-content: space-between;
+		}	
+	
+			.separator nav a {
+				display: flex;
+				flex-direction: row;
+				border-radius: 7px;
+				width: 100%;
+				font-family: $fuenteTexto;
+				font-size: 1.2rem;	
+				height:2em;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+				transition: all 100ms;
+				color:  $colNeutro;
+				margin: auto;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+				.separator nav a:nth-child(1) {
+					background-color: $colApoyo1;
+					border: 1px solid $colApoyo1;
+				}
+
+				.separator nav a:nth-child(2) {
+					background-color: $colApoyo2;
+					border: 1px solid $colApoyo2;					
+				}
+
+				.separator nav a:nth-child(3) {
+					background-color: $colApoyo3;
+					border: 1px solid $colApoyo3;							
+				}
+
+	.menuMedio nav{
+		width: 100%;
+	}
+
+
+/* ***** PORQUE - final ********************************************************************************************************** */
 
 /* ******** INDEX - final ********************************************************************************************************** */
 

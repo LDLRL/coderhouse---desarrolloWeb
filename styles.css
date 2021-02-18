@@ -520,20 +520,9 @@ padding: 50px 0 50px 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ******** INDEX - final ********************************************************************************************************** */
+
+/*
 .prueba1C {
 	font-size: 1.2rem;
 	font-weight: 550;
@@ -596,20 +585,14 @@ padding: 50px 0 50px 0;
 	border-radius:15px;	
 }
 
-
-
-
 .separator {
 
 	text-align: center;
 		cursor: pointer;
 	justify-content: center;
 	align-items: center;	
+}
 
-}
-.menuMedio nav{
-	width: 100%;
-}
 
 .separator nav {
 	display: grid;
@@ -625,7 +608,7 @@ padding: 50px 0 50px 0;
 	justify-content: space-between;
 	}
 
-.separator nav a {
+	.separator nav a {
 
 display: flex;
 	flex-direction: row;
@@ -668,8 +651,27 @@ justify-content: center;
 	
 }
 
+.menuMedio nav{
+	width: 100%;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ******** PORQUE - inicio ******************************************************************************************************** */
+/*
 .fondoPorque {
 	
 	display: grid;
@@ -681,7 +683,6 @@ justify-content: center;
 	margin: 5% 0 5% 0;	
 
 }
-
 
 
 #acerca {
@@ -697,14 +698,7 @@ justify-content: center;
 	"por"
 	"por"
 	"por"	
-	"por";
-	
-}
-
-.mapa1{
-	grid-area: mapa1;
-	width: 100%;
-	margin-top: 3em;
+	"por";	
 }
 
 .por {
@@ -736,6 +730,14 @@ background-color: #3394F3;
 	margin: 0em 2em;
 	
 }
+
+
+*/
+
+
+
+
+
 /* ***** PORQUE - final ********************************************************************************************************** */
 
 
