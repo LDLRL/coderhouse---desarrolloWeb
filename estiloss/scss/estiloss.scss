@@ -328,6 +328,164 @@ $fuenteSub:'Chilanka', cursive;
 
 /* ***** INDEX - inicio ************************************************************************************************************ */
 
+.fondoInicio {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows:  53px auto auto auto auto auto; 
+	grid-template-areas:
+	"contendedorLogos"
+	"slider" 
+	"registrate1"
+	"sliderTa"
+	"registrate2"
+	"tarjetas";   
+	margin: 5% 0 5% 0;	
+}
+
+	#contendedorLogos {
+		grid-area: contendedorLogos;
+		height:100%;
+		display: flex;
+	}
+
+		.logos {
+			height: 90%;
+			width: auto;
+			margin-top: auto;	
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#slider {
+			grid-area: slider;
+			width: 85%;
+			margin-left: auto;
+			margin-right: auto;	
+			background-color:  $colPrincipal;
+			border-radius: 15px 15px 0 0;
+			padding: 50px;
+			display: flex;
+
+				.sliderImg {
+					display: flex;
+					align-items: stretch;
+				}
+
+				.sliderImg div img {
+					width:20%;
+					height: auto;
+				}
+
+				.slidertImg {
+					display: flex;
+					align-items: stretch;
+				}
+
+				.slidertImg div img {
+					width:auto;
+					height: 20%;
+				}
+		}
+		
+			.carrusel{
+				border: 2px solid $colNeutro;	
+				width: 85%;
+				margin: auto;
+			}
+
+		#registrate1{
+			grid-area: registrate1;	
+		}
+
+			#registrate1 h5{
+				color: $colApoyo1;		
+			}
+
+		#registrate2{
+			grid-area: registrate2;
+		}
+
+			#registrate2 h5{
+					color: $colApoyo3;		
+			}
+
+		.registrate {
+			width: 85%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;	
+			background-color:  $colGeneral;
+			align-items: center;
+			align-content: center;
+
+			
+
+		}
+			.registrate h5 {
+				font-size: 1.3em;
+				padding-left: 10px;
+				font-weight: bolder;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.registrate h5 a{
+				color:   $colPrincipal;
+				padding-left: 15px;
+				text-decoration: none;
+				font-size:1.2em;
+				padding-right: 10px;
+			}
+
+			.registrate:hover {
+				background-color: $colApoyo2;	
+			}
+
+			.registrate a:hover {
+				color: $colGeneral;	
+			}
+
+	.menuMedio2{
+		width: 85%;	
+		margin: 2% auto 2% auto;		
+	}
+
+	#sliderTa {
+		grid-area: sliderTa;
+		padding: 50px 0 50px 0;
+		margin: auto;	
+		border-radius: 15px 15px 0 0;
+		width: 85%;
+
+		#carouselExampleFade {
+			border: solid $colNeutro;
+			width: 35%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+		.sliderTa {
+			background-image: url("./img/fondorayas.png");
+			background-position: -30%;
+			background-size: 40%;
+			background-repeat: repeat;
+		}
+
+	#tarjetas {
+		grid-area: tarjetas;
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;	
+		background-color: $colPrincipal;
+		border-radius: 0 0 15px 15px;
+		padding: 50px;
+		display: flex;
+	}
+
+
+/* ******** INDEX - final ********************************************************************************************************** */
+
 
 /* ***** ESTANTERIA -  final ***************************************************************************************************** 
 /* */
