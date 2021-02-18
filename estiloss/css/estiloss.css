@@ -36,12 +36,12 @@
 
 #fondo {
   grid-template-rows: 50px 50px;
+  background-color: #fcf8e8;
   background-image: url("./img/44.png");
   background-size: 27%;
   grid-area: fondo;
   display: grid;
-  grid-template-areas: "tituloPri" "tituloSecu";
-  background-color: #fcf8e8; }
+  grid-template-areas: "tituloPri" "tituloSecu"; }
   #fondo #tituloPri {
     grid-area: tituloPri;
     padding-top: 0.5em; }
@@ -135,6 +135,10 @@
     font-family: "Quicksand", sans-serif; }
   #segundo .menuUl li a {
     color: #FFFFFF;
+    font-size: 0.9em;
+    text-align: center; }
+  #segundo .menuUl li a:hover {
+    color: #F39233;
     font-size: 0.9em;
     text-align: center; }
 
@@ -302,14 +306,16 @@
   padding-left: 10px;
   font-weight: bolder;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  text-shadow: 0 0 4px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8; }
 
 .registrate h5 a {
   color: #3394F3;
   padding-left: 15px;
   text-decoration: none;
   font-size: 1.2em;
-  padding-right: 10px; }
+  padding-right: 10px;
+  text-shadow: none; }
 
 .registrate:hover {
   background-color: #01c5c4; }
@@ -725,8 +731,8 @@
     font-family: "Chilanka", cursive; }
     .modal-content .modal-header .modal-title {
       font-size: 1.5em;
-      -webkit-text-stroke: 0.5px #3394F3;
-      font-weight: 600;
+      text-shadow: 0 0 4px #fcf8e8, 0 0 4px #fcf8e8, 0 0 8px #fcf8e8, 0 0 8px #fcf8e8, 0 0 8px #fcf8e8;
+      font-weight: bold;
       width: 100%; }
 
 .modal-footer {
@@ -734,7 +740,6 @@
 
 .modal-footer div {
   text-align: left;
-  font-weight: 600;
   color: #fcf8e8;
   font-family: "Quicksand", sans-serif;
   padding-right: 1em; }

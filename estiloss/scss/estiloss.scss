@@ -54,6 +54,7 @@ $fuenteSub:'Chilanka', cursive;
 
 		#fondo {
 			grid-template-rows:  50px 50px ;
+			background-color: $colGeneral;
 			background-image: url("./img/44.png");
 			background-size: 27%;	
 			grid-area: fondo;
@@ -61,7 +62,7 @@ $fuenteSub:'Chilanka', cursive;
 			grid-template-areas: 
 			"tituloPri"
 			"tituloSecu";
-			background-color: $colGeneral;
+			
 
 			#tituloPri {	
 				grid-area: tituloPri;
@@ -204,6 +205,12 @@ $fuenteSub:'Chilanka', cursive;
 		font-size: 0.9em;
 		text-align: center;
 	}
+
+	.menuUl li a:hover {
+		color: $colApoyo1;
+		font-size: 0.9em;
+		text-align: center;
+	}
 }
 	
 #menuPrincipal { 	
@@ -220,7 +227,7 @@ $fuenteSub:'Chilanka', cursive;
 		border-bottom: 2px solid $colPrincipal;
 		border-right: 2px solid $colPrincipal;
 		color: $colPrincipal;
-		font-weight: bold;
+		font-weight: bold;		
 	}
 
 	.pq {
@@ -398,8 +405,9 @@ $fuenteSub:'Chilanka', cursive;
 		}
 
 			#registrate1 h5{
-				color: $colApoyo1;		
+				color: $colApoyo1;
 			}
+
 
 		#registrate2{
 			grid-area: registrate2;
@@ -417,16 +425,20 @@ $fuenteSub:'Chilanka', cursive;
 			background-color:  $colGeneral;
 			align-items: center;
 			align-content: center;
-
-			
-
 		}
+
+
+
 			.registrate h5 {
 				font-size: 1.3em;
 				padding-left: 10px;
 				font-weight: bolder;
 				padding-top: 10px;
 				padding-bottom: 10px;
+				text-shadow:
+				0 0 4px rgba(252, 248, 232, 1),
+				0 0 10px rgba(252, 248, 232, 1),
+				0 0 12px rgba(252, 248, 232, 1);			
 			}
 
 			.registrate h5 a{
@@ -435,6 +447,7 @@ $fuenteSub:'Chilanka', cursive;
 				text-decoration: none;
 				font-size:1.2em;
 				padding-right: 10px;
+				text-shadow:  none;
 			}
 
 			.registrate:hover {
@@ -482,6 +495,7 @@ $fuenteSub:'Chilanka', cursive;
 		padding: 50px;
 		display: flex;
 	}
+
 /* ******** INDEX - final ********************************************************************************************************** */
 /* */
 /* */
@@ -962,8 +976,13 @@ $fuenteSub:'Chilanka', cursive;
 
 		.modal-title {
 			font-size: 1.5em;
-			-webkit-text-stroke: 0.5px $colPrincipal;
-			font-weight: 600;
+			text-shadow:
+			0 0 4px rgba(252, 248, 232, 1),
+			0 0 4px rgba(252, 248, 232, 1),
+			0 0 8px rgba(252, 248, 232, 1),
+			0 0 8px rgba(252, 248, 232, 1),
+			0 0 8px rgba(252, 248, 232, 1);
+			font-weight: bold;
 			width: 100%;				
 		}
 	}	
@@ -975,7 +994,7 @@ $fuenteSub:'Chilanka', cursive;
 
 	.modal-footer div{
 			text-align: left;
-			font-weight: 600;
+			
 			color: $colGeneral;
 			font-family: $fuenteTexto;
 			padding-right: 1em;
