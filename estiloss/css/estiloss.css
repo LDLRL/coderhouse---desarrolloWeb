@@ -1,10 +1,238 @@
-/*azulCeleste com*/
-/*blancoN com*/
-/*naranja com*/
-/*verde com*/
-/*rosa com*/
+/*azulCeleste*/
+/*blancoN*/
+/*naranja*/
+/*verde*/
+/*rosa*/
 /*gris comodin*/
 /*blanco */
+/* ################################################################################################################################ */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+/* ################################################################################################################################ */
+/* #####           HEADER - inicio               ################################################################################## */
+/* ################################################################################################################################ */
+#contenedorT {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 140px 1fr auto;
+  grid-template-areas: "cabeceraT cabeceraT cabeceraT cabeceraT" "contenidoT contenidoT contenidoT contenidoT" "pieT pieT pieT pieT";
+  width: 100%;
+  background-color: #f3f3f3;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto; }
+
+#cabeceraT {
+  grid-area: cabeceraT;
+  display: grid;
+  background-color: #f3f3f3;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 45px;
+  grid-template-areas: "fondo"			 "segundo"; }
+
+#fondo {
+  grid-template-rows: 50px 50px;
+  background-image: url("./img/44.png");
+  background-size: 27%;
+  grid-area: fondo;
+  display: grid;
+  grid-template-areas: "tituloPri" "tituloSecu";
+  background-color: #fcf8e8; }
+  #fondo #tituloPri {
+    grid-area: tituloPri;
+    padding-top: 0.5em; }
+    #fondo #tituloPri .tituloPri {
+      color: #fcf8e8;
+      text-shadow: 0 0 5px #3394f3, 0 0 5px #3394f3, 0 0 10px #3394f3, 0 0 20px #17aaf7, 0 0 40px #17aaf7;
+      font-size: 3em;
+      text-align: center;
+      font-weight: 600;
+      font-family: "Kalam"; }
+  #fondo #tituloPri a {
+    text-decoration: none; }
+  #fondo #tituloSecu {
+    grid-area: tituloSecu;
+    margin-top: 12px; }
+    #fondo #tituloSecu .tituloSec {
+      color: #3394F3;
+      text-shadow: 0 0 4px #fcf8e8, 0 0 10px #fcf8e8;
+      font-size: 1.5em;
+      text-align: center;
+      font-family: "Chilanka", cursive;
+      height: 30px;
+      font-weight: bolder; }
+
+/* ***** MENUS - INICIO  *********************************************************************************************************** */
+#segundo {
+  height: 100%;
+  width: 100%;
+  grid-area: segundo;
+  display: grid;
+  grid-template-columns: 14% 72% 14%;
+  grid-template-rows: 45px;
+  grid-template-areas: "ganadoresMes nave sitios"; }
+  #segundo .segundo {
+    margin-left: auto;
+    margin-right: auto; }
+  #segundo #ganadoresMes {
+    grid-area: ganadoresMes;
+    height: 100%;
+    width: 100%; }
+  #segundo #ganadoresMes > .btn {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px; }
+  #segundo .botonGanadores {
+    background-color: #fcf8e8;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: #F39233;
+    font-weight: bold;
+    border-bottom: 2px solid #F39233;
+    border-right: 2px solid #F39233; }
+  #segundo .botonGanadores:hover {
+    background-color: #F39233;
+    color: #FFFFFF; }
+  #segundo #sitios {
+    grid-area: sitios;
+    padding: 0px;
+    height: 100%;
+    width: 100%; }
+  #segundo #sitios > .btn {
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 0px;
+    border-radius: 0px 0px 10px 10px; }
+  #segundo .botonSitios {
+    background-color: #fcf8e8;
+    width: 100%;
+    height: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.7em;
+    color: #F39233;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F39233;
+    border-left: 2px solid #F39233; }
+  #segundo .botonSitios:hover {
+    background-color: #F39233;
+    color: #FFFFFF; }
+  #segundo .menuUl {
+    background-color: #F39233;
+    border-radius: 10px 10px 10px 10px;
+    width: 98%; }
+  #segundo .menuUl h6 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Quicksand", sans-serif; }
+  #segundo .menuUl li a {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    text-align: center; }
+
+#menuPrincipal {
+  font-family: "Quicksand", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-decoration: none;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto; }
+  #menuPrincipal .ini {
+    border-bottom: 2px solid #3394F3;
+    border-right: 2px solid #3394F3;
+    color: #3394F3;
+    font-weight: bold; }
+  #menuPrincipal .pq {
+    border-bottom: 2px solid #F33394;
+    border-right: 2px solid #F33394;
+    color: #F33394;
+    font-weight: bold; }
+  #menuPrincipal .est {
+    border-bottom: 2px solid #01c5c4;
+    color: #01c5c4;
+    font-weight: bolder; }
+  #menuPrincipal .cue {
+    border-bottom: 2px solid #F33394;
+    border-left: 2px solid #F33394;
+    color: #F33394;
+    font-weight: bold; }
+  #menuPrincipal .clu {
+    border-bottom: 2px solid #3394F3;
+    border-left: 2px solid #3394F3;
+    color: #3394F3;
+    font-weight: bold; }
+  #menuPrincipal #nave {
+    grid-area: nave;
+    width: 100%;
+    height: 100%; }
+
+#nave nav a {
+  background-color: #fcf8e8;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transition: all 100ms;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  text-align: center; }
+
+#nave nav .ini:hover {
+  background-color: #3394F3;
+  color: #FFFFFF;
+  text-align: center; }
+
+#nave nav .pq:hover {
+  background-color: #F33394;
+  color: #FFFFFF;
+  text-align: center; }
+
+#nave nav .est:hover {
+  background-color: #01c5c4;
+  color: #FFFFFF;
+  text-align: center; }
+
+#nave nav .cue:hover {
+  background-color: #F33394;
+  color: #FFFFFF;
+  text-align: center; }
+
+#nave nav .clu:hover {
+  background-color: #3394F3;
+  color: #FFFFFF;
+  text-align: center; }
+
+/* *****   MENUS - fin   *********************************************************************************************************** */
+/* */
+/* */
+/* #####   HEADER - fin       ###################################################################################################### */
+/* */
+/* */
+/* */
+/* ################################################################################################################################ */
+/* #####            MAIN - inicio            ###################################################################################### */
+/* ################################################################################################################################ */
+#contenidoT {
+  grid-area: contenidoT;
+  font-family: "Quicksand", sans-serif; }
+
+/* ***** INDEX - inicio ************************************************************************************************************ */
+/* ***** ESTANTERIA -  final ***************************************************************************************************** 
+/* */
+/* */
 /* *****  CUENTA - Inicio   ****************************************************************************************************** */
 .fondoCuenta {
   display: grid;

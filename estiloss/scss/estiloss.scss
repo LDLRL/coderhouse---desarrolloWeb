@@ -1,11 +1,11 @@
 
 
 
-$colPrincipal:#3394F3; 		/*azulCeleste com*/
-$colGeneral:#fcf8e8; 		/*blancoN com*/
-$colApoyo1:#F39233;			/*naranja com*/
-$colApoyo2:#01c5c4;			/*verde com*/
-$colApoyo3:#F33394;			/*rosa com*/
+$colPrincipal:#3394F3; 		/*azulCeleste*/
+$colGeneral:#fcf8e8; 		/*blancoN*/
+$colApoyo1:#F39233;			/*naranja*/
+$colApoyo2:#01c5c4;			/*verde*/
+$colApoyo3:#F33394;			/*rosa*/
 $colComodin:#f3f3f3;		/*gris comodin*/
 $colNeutro:#FFFFFF;			/*blanco */
 
@@ -13,6 +13,325 @@ $fuenteTexto:'Quicksand', sans-serif;
 $fuenteTitulo:'Kalam';
 $fuenteSub:'Chilanka', cursive;
 
+
+/* ################################################################################################################################ */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none; 
+}
+
+/* ################################################################################################################################ */
+/* #####           HEADER - inicio               ################################################################################## */
+/* ################################################################################################################################ */
+#contenedorT {	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 140px 1fr auto;
+	grid-template-areas: 
+	"cabeceraT cabeceraT cabeceraT cabeceraT"
+	"contenidoT contenidoT contenidoT contenidoT"
+	"pieT pieT pieT pieT";
+	width:100%;
+	background-color:$colComodin;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+	#cabeceraT {
+	grid-area: cabeceraT;
+	display: grid;
+	background-color: $colComodin;	
+	grid-template-columns: 100%;
+	grid-template-rows:  100px 45px;
+	grid-template-areas: 
+	"fondo"			
+	"segundo";
+	}
+
+		#fondo {
+			grid-template-rows:  50px 50px ;
+			background-image: url("./img/44.png");
+			background-size: 27%;	
+			grid-area: fondo;
+			display: grid;
+			grid-template-areas: 
+			"tituloPri"
+			"tituloSecu";
+			background-color: $colGeneral;
+
+			#tituloPri {	
+				grid-area: tituloPri;
+				padding-top: 0.5em;	
+
+				
+
+				.tituloPri {
+					color:  $colGeneral;
+					text-shadow:
+					0 0 5px rgba(51, 148, 243, 1),
+					0 0 5px rgba(51, 148, 243, 1),
+					0 0 10px rgba(51, 148, 243,1),
+					0 0 20px rgba(23, 170, 247,1),
+					0 0 40px rgba(23, 170, 247,1);
+					font-size: 3em;
+					text-align: center;
+					font-weight: 600;
+					font-family: $fuenteTitulo;	
+				}
+			}
+
+				#tituloPri a {
+					text-decoration: none;
+				}
+
+			#tituloSecu {
+				grid-area: tituloSecu;
+				margin-top: 12px;
+
+					.tituloSec {	
+						color:$colPrincipal ;
+						text-shadow:
+						0 0 4px rgba(252, 248, 232, 1),
+						0 0 10px rgba(252, 248, 232, 1);
+						font-size: 1.5em;
+						text-align: center;
+						font-family: $fuenteSub;
+						height: 30px;	
+						font-weight: bolder;
+					}
+
+			}
+		}		
+
+/* ***** MENUS - INICIO  *********************************************************************************************************** */
+
+#segundo {
+	height: 100%;
+	width: 100%;
+	grid-area: segundo;
+	display: grid;
+	grid-template-columns: 14% 72% 14%;
+	grid-template-rows: 45px;
+	grid-template-areas: 
+	"ganadoresMes nave sitios";
+
+	.segundo {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#ganadoresMes { 
+		grid-area: ganadoresMes;
+		height: 100%;
+		width: 100%;
+	}
+
+	#ganadoresMes > .btn {
+			margin-bottom: auto;
+			margin-top: auto;
+			padding: 0px;
+			border-radius:0px 0px 10px 10px;			
+	}
+
+		.botonGanadores {
+				background-color: $colGeneral;
+				width: 100%;
+				height: 100%;
+				font-family: $fuenteTexto;
+				text-transform: uppercase;
+				font-size: 0.7em;
+				color: $colApoyo1;
+				font-weight:  bold;				
+				border-bottom: 2px solid $colApoyo1;
+				border-right: 2px solid $colApoyo1;
+			}
+
+		.botonGanadores:hover{
+			background-color: $colApoyo1;
+			color: $colNeutro;
+		}
+
+	#sitios { 
+		grid-area: sitios;
+		padding:  0px;
+		height: 100%;
+		width: 100%;
+	}
+
+	#sitios > .btn {
+		margin-bottom: auto;
+		margin-top: auto;
+		padding: 0px;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+		.botonSitios {
+			background-color: $colGeneral;
+			width: 100%;
+			height: 100%;
+			font-family: $fuenteTexto;
+			font-size: 0.7em;
+			color: $colApoyo1;
+			font-weight: bold;
+			text-transform: uppercase;
+			border-bottom: 2px solid $colApoyo1;
+			border-left: 2px solid $colApoyo1;
+		}
+
+		.botonSitios:hover{
+			background-color: $colApoyo1;
+			color: $colNeutro;
+		}
+
+	.menuUl{
+		background-color: $colApoyo1;
+		border-radius:10px 10px 10px 10px;
+		width: 98%;		
+	}
+
+	.menuUl h6 {
+			color: $colNeutro;
+			text-align: center;
+			font-family: $fuenteTexto;
+		}	
+	
+	.menuUl li a {
+		color: $colNeutro;
+		font-size: 0.9em;
+		text-align: center;
+	}
+}
+	
+#menuPrincipal { 	
+	font-family: $fuenteTexto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	text-decoration: none;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+
+	.ini {
+		border-bottom: 2px solid $colPrincipal;
+		border-right: 2px solid $colPrincipal;
+		color: $colPrincipal;
+		font-weight: bold;
+	}
+
+	.pq {
+		border-bottom: 2px solid $colApoyo3;
+		border-right: 2px solid $colApoyo3;
+		color: $colApoyo3;
+		font-weight: bold;
+	}
+
+	.est {
+		border-bottom: 2px solid $colApoyo2;
+		color:$colApoyo2;
+		font-weight: bolder;
+	}
+
+	.cue {
+		border-bottom: 2px solid $colApoyo3;
+		border-left: 2px solid $colApoyo3;
+		color:$colApoyo3;
+		font-weight: bold;
+	}
+
+	.clu{
+		border-bottom: 2px solid $colPrincipal;
+		border-left: 2px solid $colPrincipal;
+		color: $colPrincipal;
+		font-weight: bold;		
+	}	
+
+
+
+	#nave { 
+		grid-area: nave;
+		width: 100%;
+		height: 100%;	
+	}
+
+
+}
+	
+	#nave nav a {
+		background-color: $colGeneral;
+		border-radius: 0px 0px 10px 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		transition: all 100ms;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	#nave nav .ini:hover {
+		background-color:  $colPrincipal;
+		color: $colNeutro;
+		text-align: center;
+	}
+
+	#nave nav .pq:hover {
+		background-color: $colApoyo3;
+		color: $colNeutro;
+		text-align: center;
+	}
+
+	#nave nav .est:hover {
+		background-color: $colApoyo2;
+		color: $colNeutro;
+		text-align: center;
+	}
+
+	#nave nav .cue:hover {
+		background-color: $colApoyo3;
+		color: $colNeutro;
+		text-align: center;
+	}
+
+	#nave nav .clu:hover {
+		background-color:  $colPrincipal;
+		color: $colNeutro;
+		text-align: center;
+	}
+	
+
+
+/* *****   MENUS - fin   *********************************************************************************************************** */
+/* */
+/* */
+/* #####   HEADER - fin       ###################################################################################################### */
+/* */
+/* */
+/* */
+
+/* ################################################################################################################################ */
+/* #####            MAIN - inicio            ###################################################################################### */
+/* ################################################################################################################################ */
+
+
+#contenidoT{
+	grid-area: contenidoT;
+	font-family: $fuenteTexto;	
+}
+
+/* ***** INDEX - inicio ************************************************************************************************************ */
+
+
+/* ***** ESTANTERIA -  final ***************************************************************************************************** 
+/* */
+/* */
 /* *****  CUENTA - Inicio   ****************************************************************************************************** */
 
 .fondoCuenta {	
