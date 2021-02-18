@@ -102,8 +102,7 @@ width:89%;
 	background-size: 110%;
 }
 
-/*PAG CONTACTO*/
-#fondoCt img{
+#imgCtc {
 width: 85%;
 }
 
@@ -190,7 +189,7 @@ width:93%;
 }
 
 /*PAG CONTACTO*/
-#fondoCt img{
+#imgCtc {
 width: 87%;
 }
 
@@ -271,7 +270,7 @@ width:95%;
 }
 
 /*PAG CONTACTO*/
-#fondoCt img{
+#imgCtc{
 width: 90%;
 }
 
@@ -375,7 +374,7 @@ width:47%;
 
 /*PAG CONTACTO*/
 
-#fondoCt img{
+#imgCtc{
 width: 90%;
 }
 
@@ -523,21 +522,10 @@ width: 90%;
 	font-size: 1.5em;
 }
 
-/*PAG CONTACTO*/
-#fondoCt img{
-width: 95%;
-}
 
-#formu {
-position:absolute; z-index:2;  top:10.5em;
-}
-
-#contContenido {
-	width: 100%;
-}
 
 /*PAG CONTACTO*/
-#fondoCt img{
+#imgCtc{
 width: 90%;
 }
 
@@ -779,7 +767,7 @@ width:53%;
 
 /*PAG CONTACTO*/
 
-#fondoCt img{
+#imgCtc {
 width: 95%;
 }
 
@@ -870,7 +858,7 @@ width: 60%;
 
 /*PAG CONTACTO*/
 
-#fondoCt img{
+#imgCtc{
 width: 97%;
 }
 
@@ -929,7 +917,7 @@ width: 70%;
 
 /*PAG CONTACTO*/
 
-#fondoCt img{
+#imgCtc{
 	display: none;
 }
 

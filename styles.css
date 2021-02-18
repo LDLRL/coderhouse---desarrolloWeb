@@ -1483,7 +1483,7 @@ background-color: #F33394;
 
 /* *****  CONTACTO - Inicio  ***************************************************************************************************** */
 
-.fondoContacto {
+/*.fondoContacto {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: auto;
@@ -1503,7 +1503,7 @@ background-color: #F33394;
 	position:absolute; z-index:2;  top:11em;
 }
 
-#fondoCt img{
+#imgCtc {
 width: 70%;
 }
 
@@ -1523,7 +1523,7 @@ width: 70%;
 	font-family: 'Quicksand';
 }
 
-#contContenido h5 {
+#textoContenido {
 	text-align: center;
 
 }
@@ -1543,7 +1543,9 @@ width: 70%;
 	margin: auto;
 
 	width: 30%;
-}
+}*/
+
+
 
 /* *****    CONTACTO - final ******************************************************************************************************* */
 

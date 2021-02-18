@@ -5,6 +5,57 @@
 /*rosa com*/
 /*gris comodin*/
 /*blanco */
+/* */
+/* */
+/* */
+/* *****  CONTACTO - Inicio  ***************************************************************************************************** */
+.fondoContacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "formu";
+  align-items: center;
+  justify-items: center;
+  margin: 5% 0 10% 0; }
+
+#fondoCt {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  z-index: 1; }
+  #fondoCt #imgCtc {
+    width: 70%; }
+
+#formu {
+  grid-area: formu;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  z-index: 2;
+  top: 11em; }
+
+#contContenido {
+  padding-top: 280px;
+  padding-bottom: 100px;
+  width: 70%;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #3394F3;
+  font-family: "Quicksand", sans-serif; }
+  #contContenido #textoContenido {
+    text-align: center; }
+
+#botonContacto {
+  display: flex;
+  width: 100%;
+  margin: 2em 0 0 0; }
+  #botonContacto .botonAzul {
+    background-color: #3394F3;
+    color: #FFFFFF;
+    font-family: "Quicksand", sans-serif;
+    margin: auto;
+    width: 30%; }
+
 /* *****    CONTACTO - final ******************************************************************************************************* */
 /* */
 /* */
