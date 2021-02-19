@@ -42,29 +42,34 @@
   grid-area: fondo;
   display: grid;
   grid-template-areas: "tituloPri" "tituloSecu"; }
-  #fondo #tituloPri {
-    grid-area: tituloPri;
-    padding-top: 0.5em; }
-    #fondo #tituloPri .tituloPri {
-      color: #fcf8e8;
-      text-shadow: 0 0 5px #3394f3, 0 0 5px #3394f3, 0 0 10px #3394f3, 0 0 20px #17aaf7, 0 0 40px #17aaf7;
-      font-size: 3em;
-      text-align: center;
-      font-weight: 600;
-      font-family: "Kalam"; }
-  #fondo #tituloPri a {
-    text-decoration: none; }
-  #fondo #tituloSecu {
-    grid-area: tituloSecu;
-    margin-top: 12px; }
-    #fondo #tituloSecu .tituloSec {
-      color: #3394F3;
-      text-shadow: 0 0 4px #fcf8e8, 0 0 10px #fcf8e8;
-      font-size: 1.5em;
-      text-align: center;
-      font-family: "Chilanka", cursive;
-      height: 30px;
-      font-weight: bolder; }
+
+#tituloPri {
+  grid-area: tituloPri;
+  padding-top: 0.5em; }
+
+.tituloPri {
+  color: #fcf8e8;
+  text-shadow: 0 0 5px #3394f3, 0 0 5px #3394f3, 0 0 10px #3394f3, 0 0 20px #17aaf7, 0 0 40px #17aaf7;
+  font-size: 3em;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Kalam"; }
+
+#tituloPri a {
+  text-decoration: none; }
+
+#tituloSecu {
+  grid-area: tituloSecu;
+  margin-top: 12px; }
+
+.tituloSec {
+  color: #3394F3;
+  text-shadow: 0 0 4px #fcf8e8, 0 0 10px #fcf8e8;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Chilanka", cursive;
+  height: 30px;
+  font-weight: bolder; }
 
 /* ***** MENUS - INICIO  *********************************************************************************************************** */
 #segundo {
@@ -75,72 +80,85 @@
   grid-template-columns: 14% 72% 14%;
   grid-template-rows: 45px;
   grid-template-areas: "ganadoresMes nave sitios"; }
-  #segundo .segundo {
-    margin-left: auto;
-    margin-right: auto; }
-  #segundo #ganadoresMes {
-    grid-area: ganadoresMes;
-    height: 100%;
-    width: 100%; }
-  #segundo #ganadoresMes > .btn {
-    margin-bottom: auto;
-    margin-top: auto;
-    padding: 0px;
-    border-radius: 0px 0px 10px 10px; }
-  #segundo .botonGanadores {
-    background-color: #fcf8e8;
-    width: 100%;
-    height: 100%;
-    font-family: "Quicksand", sans-serif;
-    text-transform: uppercase;
-    font-size: 0.7em;
-    color: #F39233;
-    font-weight: bold;
-    border-bottom: 2px solid #F39233;
-    border-right: 2px solid #F39233; }
-  #segundo .botonGanadores:hover {
-    background-color: #F39233;
-    color: #FFFFFF; }
-  #segundo #sitios {
-    grid-area: sitios;
-    padding: 0px;
-    height: 100%;
-    width: 100%; }
-  #segundo #sitios > .btn {
-    margin-bottom: auto;
-    margin-top: auto;
-    padding: 0px;
-    border-radius: 0px 0px 10px 10px; }
-  #segundo .botonSitios {
-    background-color: #fcf8e8;
-    width: 100%;
-    height: 100%;
-    font-family: "Quicksand", sans-serif;
-    font-size: 0.7em;
-    color: #F39233;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-bottom: 2px solid #F39233;
-    border-left: 2px solid #F39233; }
-  #segundo .botonSitios:hover {
-    background-color: #F39233;
-    color: #FFFFFF; }
-  #segundo .menuUl {
-    background-color: #F39233;
-    border-radius: 10px 10px 10px 10px;
-    width: 98%; }
-  #segundo .menuUl h6 {
-    color: #FFFFFF;
-    text-align: center;
-    font-family: "Quicksand", sans-serif; }
-  #segundo .menuUl li a {
-    color: #FFFFFF;
-    font-size: 0.9em;
-    text-align: center; }
-  #segundo .menuUl li a:hover {
-    color: #F39233;
-    font-size: 0.9em;
-    text-align: center; }
+
+.segundo {
+  margin-left: auto;
+  margin-right: auto; }
+
+#ganadoresMes {
+  grid-area: ganadoresMes;
+  height: 100%;
+  width: 100%; }
+
+#ganadoresMes > .btn {
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 0px;
+  border-radius: 0px 0px 10px 10px; }
+
+.botonGanadores {
+  background-color: #fcf8e8;
+  width: 100%;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  color: #F39233;
+  font-weight: bold;
+  border-bottom: 2px solid #F39233;
+  border-right: 2px solid #F39233; }
+
+.botonGanadores:hover {
+  background-color: #F39233;
+  color: #FFFFFF; }
+
+#sitios {
+  grid-area: sitios;
+  padding: 0px;
+  height: 100%;
+  width: 100%; }
+
+#sitios > .btn {
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 0px;
+  border-radius: 0px 0px 10px 10px; }
+
+.botonSitios {
+  background-color: #fcf8e8;
+  width: 100%;
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.7em;
+  color: #F39233;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #F39233;
+  border-left: 2px solid #F39233; }
+
+.botonSitios:hover {
+  background-color: #F39233;
+  color: #FFFFFF; }
+
+.menuUl {
+  background-color: #F39233;
+  border-radius: 10px 10px 10px 10px;
+  width: 98%; }
+
+.menuUl h6 {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Quicksand", sans-serif; }
+
+.menuUl li a {
+  color: #FFFFFF;
+  font-size: 0.9em;
+  text-align: center; }
+
+.menuUl li a:hover {
+  color: #F39233;
+  font-size: 0.9em;
+  text-align: center; }
 
 #menuPrincipal {
   font-family: "Quicksand", sans-serif;
@@ -175,10 +193,11 @@
     border-left: 2px solid #3394F3;
     color: #3394F3;
     font-weight: bold; }
-  #menuPrincipal #nave {
-    grid-area: nave;
-    width: 100%;
-    height: 100%; }
+
+#nave {
+  grid-area: nave;
+  width: 100%;
+  height: 100%; }
 
 #nave nav a {
   background-color: #fcf8e8;
@@ -571,43 +590,48 @@
   grid-template-areas: "tituloVideoFabulas" "videos";
   padding-left: 15px;
   padding-right: 15px; }
-  #cuentosVideo #tituloVideoFabulas {
-    grid-area: tituloVideoFabulas;
-    text-align: center;
-    background-color: #01c5c4;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 15px 15px 0px 0px; }
-  #cuentosVideo #videos {
-    grid-area: videos;
-    width: 100%;
-    background-color: #fcf8e8;
-    border: 2px solid #01c5c4;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: "article" "article" "article" "article" "article"  "article";
-    align-content: space-between;
-    justify-content: center;
-    grid-gap: 15px;
-    padding: 25px 20px;
-    border-radius: 0px 0px 15px 15px; }
-  #cuentosVideo #videos article {
-    width: 100%;
-    border: 1px solid #01c5c4;
-    text-transform: uppercase;
-    text-align: center;
-    border-radius: 4px;
-    background-color: #fcf8e8;
-    display: grid;
-    grid-template-rows: 80% 20%; }
-  #cuentosVideo .videoCont {
-    width: 100%; }
-  #cuentosVideo .video {
-    width: 100%;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px; }
+
+#tituloVideoFabulas {
+  grid-area: tituloVideoFabulas;
+  text-align: center;
+  background-color: #01c5c4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px 15px 0px 0px; }
+
+#videos {
+  grid-area: videos;
+  width: 100%;
+  background-color: #fcf8e8;
+  border: 2px solid #01c5c4;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "article" "article" "article" "article" "article"  "article";
+  align-content: space-between;
+  justify-content: center;
+  grid-gap: 15px;
+  padding: 25px 20px;
+  border-radius: 0px 0px 15px 15px; }
+
+#videos article {
+  width: 100%;
+  border: 1px solid #01c5c4;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fcf8e8;
+  display: grid;
+  grid-template-rows: 80% 20%; }
+
+.videoCont {
+  width: 100%; }
+
+.video {
+  width: 100%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px; }
 
 #cuentosGanadores {
   grid-area: cuentosGanadores;
@@ -993,8 +1017,9 @@
   margin: auto;
   position: relative;
   z-index: 1; }
-  #fondoCt #imgCtc {
-    width: 70%; }
+
+#imgCtc {
+  width: 70%; }
 
 #formu {
   grid-area: formu;
@@ -1012,19 +1037,21 @@
   padding-right: 50px;
   color: #3394F3;
   font-family: "Quicksand", sans-serif; }
-  #contContenido #textoContenido {
-    text-align: center; }
+
+#textoContenido {
+  text-align: center; }
 
 #botonContacto {
   display: flex;
   width: 100%;
   margin: 2em 0 0 0; }
-  #botonContacto .botonAzul {
-    background-color: #3394F3;
-    color: #FFFFFF;
-    font-family: "Quicksand", sans-serif;
-    margin: auto;
-    width: 30%; }
+
+.botonAzul {
+  background-color: #3394F3;
+  color: #FFFFFF;
+  font-family: "Quicksand", sans-serif;
+  margin: auto;
+  width: 30%; }
 
 /* *****    CONTACTO - final ******************************************************************************************************* */
 /* */
@@ -1085,22 +1112,25 @@
   justify-self: center;
   display: flex;
   padding: 0; }
-  .mapa .rayuela {
-    width: 50%;
-    margin: auto; }
+
+.rayuela {
+  width: 50%;
+  margin: auto; }
 
 .foot {
   display: grid;
   grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
   grid-template-areas: "copy conta rrss"; }
-  .foot .copy {
-    grid-area: copy;
-    margin: auto; }
-  .foot .copy__copyTexto {
-    margin-right: auto;
-    margin-bottom: 0;
-    font-size: 1.1em;
-    color: #FFFFFF; }
+
+.copy {
+  grid-area: copy;
+  margin: auto; }
+
+.copy__copyTexto {
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  color: #FFFFFF; }
 
 .conta {
   width: 100%;
