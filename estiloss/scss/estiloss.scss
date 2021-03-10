@@ -1,6 +1,6 @@
 
 
-
+/*npm run watch-css*/
 $colPrincipal:#3394F3; 		/*azulCeleste*/
 $colGeneral:#fcf8e8; 		/*blancoN*/
 $colApoyo1:#F39233;			/*naranja*/
@@ -13,6 +13,36 @@ $fuenteTexto:'Quicksand', sans-serif;
 $fuenteTitulo:'Kalam';
 $fuenteSub:'Chilanka', cursive;
 
+$fuenteTamH1: 3rem;
+$fuenteTamH2: 1.5rem;
+$fuenteTamH4: 1.4rem;
+$fuenteTamH5: 1.3rem;
+$fuenteExtrag: 1.6rem;
+$fuenteGrande: 1.2rem;
+$fuenteMediana: .85rem;
+$fuenteMinima: .6rem;
+
+@mixin botonDesplegable {
+  	margin: auto 0 auto 0;
+	padding: 0px;
+	border-radius:0px 0px 10px 10px;
+}
+
+@mixin anchoAlto {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height:auto;
+}
+
+p{
+	padding:0;
+	margin: 0;
+}
 
 /* ################################################################################################################################ */
 
@@ -20,7 +50,8 @@ $fuenteSub:'Chilanka', cursive;
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	text-decoration: none; 
+	text-decoration: none;  
+	font-size: 1rem;
 }
 
 /* ################################################################################################################################ */
@@ -36,9 +67,7 @@ $fuenteSub:'Chilanka', cursive;
 	"pieT pieT pieT pieT";
 	width:100%;
 	background-color:$colComodin;
-	background-size: cover;
-	margin-left: auto;
-	margin-right: auto;	
+	margin: 0 auto 0 auto;
 }
 
 	#cabeceraT {
@@ -56,7 +85,8 @@ $fuenteSub:'Chilanka', cursive;
 			grid-template-rows:  50px 50px ;
 			background-color: $colGeneral;
 			background-image: url("./img/44.png");
-			background-size: 27%;	
+			background-position: 30%;
+			background-size: 22%;	
 			grid-area: fondo;
 			display: grid;
 			grid-template-areas: 
@@ -66,7 +96,7 @@ $fuenteSub:'Chilanka', cursive;
 
 			#tituloPri {	
 				grid-area: tituloPri;
-				padding-top: 0.5em;	
+				padding-top: 0.8em;					
 			}	
 
 				.tituloPri {
@@ -77,31 +107,35 @@ $fuenteSub:'Chilanka', cursive;
 					0 0 10px rgba(51, 148, 243,1),
 					0 0 20px rgba(23, 170, 247,1),
 					0 0 40px rgba(23, 170, 247,1);
-					font-size: 3em;
+					font-size: $fuenteTamH1;
 					text-align: center;
 					font-weight: 600;
 					font-family: $fuenteTitulo;	
 				}
 			
-
 				#tituloPri a {
 					text-decoration: none;
 				}
 
 			#tituloSecu {
 				grid-area: tituloSecu;
-				margin-top: 12px;
+				margin-top: 0.9em;
 			}
 					.tituloSec {	
 						color:$colPrincipal ;
 						text-shadow:
 						0 0 4px rgba(252, 248, 232, 1),
-						0 0 10px rgba(252, 248, 232, 1);
-						font-size: 1.5em;
+						0 0 4px rgba(252, 248, 232, 1),
+						0 0 6px rgba(252, 248, 232, 1),
+						0 0 6px rgba(252, 248, 232, 1),					
+						0 0 10px rgba(252, 248, 232, 1),
+						0 0 12px rgba(252, 248, 232, 1),
+						0 0 12px rgba(252, 248, 232, 1);
+						font-size: $fuenteTamH2;
 						text-align: center;
 						font-family: $fuenteSub;
 						height: 30px;	
-						font-weight: bolder;
+						font-weight: bolder;						
 					}
 
 			
@@ -120,95 +154,67 @@ $fuenteSub:'Chilanka', cursive;
 	"ganadoresMes nave sitios";
 }
 	.segundo {
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto 0 auto;
 	}
 
 	#ganadoresMes { 
 		grid-area: ganadoresMes;
-		height: 100%;
-		width: 100%;
+		@include anchoAlto;
 	}
-
-	#ganadoresMes > .btn {
-			margin-bottom: auto;
-			margin-top: auto;
-			padding: 0px;
-			border-radius:0px 0px 10px 10px;			
-	}
-
-		.botonGanadores {
-				background-color: $colGeneral;
-				width: 100%;
-				height: 100%;
-				font-family: $fuenteTexto;
-				text-transform: uppercase;
-				font-size: 0.7em;
-				color: $colApoyo1;
-				font-weight:  bold;				
-				border-bottom: 2px solid $colApoyo1;
-				border-right: 2px solid $colApoyo1;
-			}
-
-		.botonGanadores:hover{
-			background-color: $colApoyo1;
-			color: $colNeutro;
-		}
 
 	#sitios { 
 		grid-area: sitios;
 		padding:  0px;
-		height: 100%;
-		width: 100%;
+		@include anchoAlto;
 	}
 
-	#sitios > .btn {
-		margin-bottom: auto;
-		margin-top: auto;
-		padding: 0px;
-		border-radius: 0px 0px 10px 10px;
+	#ganadoresMes > .btn, #sitios > .btn {
+			@include botonDesplegable;			
 	}
 
-		.botonSitios {
-			background-color: $colGeneral;
-			width: 100%;
-			height: 100%;
-			font-family: $fuenteTexto;
-			font-size: 0.7em;
-			color: $colApoyo1;
-			font-weight: bold;
-			text-transform: uppercase;
-			border-bottom: 2px solid $colApoyo1;
-			border-left: 2px solid $colApoyo1;
-		}
+		.botonGanadores, .botonSitios {
+				background-color: $colGeneral;
+				@include anchoAlto;
+				font-family: $fuenteTexto;
+				text-transform: uppercase;
+				font-size: 0.75em;
+				color: $colApoyo1;
+				font-weight:  bold;				
+				border-bottom: 2px solid $colApoyo1;				
+			}
 
-		.botonSitios:hover{
+			.botonGanadores{
+				border-right: 2px solid $colApoyo1;
+			}
+
+			.botonSitios {
+				border-left: 2px solid $colApoyo1;
+			}
+
+		.botonGanadores:hover, .botonSitios:hover{
 			background-color: $colApoyo1;
 			color: $colNeutro;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.2);
 		}
-
+	
 	.menuUl{
 		background-color: $colApoyo1;
 		border-radius:10px 10px 10px 10px;
 		width: 98%;		
 	}
 
-	.menuUl h6 {
+	.menuUl h6, .menuUl li a{
 			color: $colNeutro;
 			text-align: center;
-			font-family: $fuenteTexto;
+			font-family: $fuenteTexto;	
+			font-size: $fuenteMediana;
 		}	
 	
-	.menuUl li a {
-		color: $colNeutro;
-		font-size: 0.9em;
-		text-align: center;
-	}
-
 	.menuUl li a:hover {
 		color: $colApoyo1;
-		font-size: 0.9em;
+		font-size: $fuenteMediana;
 		text-align: center;
+		background-color: $colNeutro;
 	}
 
 	
@@ -218,15 +224,13 @@ $fuenteSub:'Chilanka', cursive;
 	grid-template-columns: repeat(5, 1fr);
 	text-decoration: none;
 	height: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
+	margin: auto auto 0 auto;
 
 	.ini {
 		border-bottom: 2px solid $colPrincipal;
 		border-right: 2px solid $colPrincipal;
 		color: $colPrincipal;
-		font-weight: bold;		
+		font-weight: bold;
 	}
 
 	.pq {
@@ -258,11 +262,9 @@ $fuenteSub:'Chilanka', cursive;
 
 }
 	
-
 	#nave { 
 		grid-area: nave;
-		width: 100%;
-		height: 100%;	
+		@include anchoAlto;	
 	} 
 
 	#nave nav a {
@@ -276,39 +278,33 @@ $fuenteSub:'Chilanka', cursive;
 		transition: all 100ms;
 		text-transform: uppercase;
 		text-decoration: none;
-		font-size: 0.8em;
+		font-size: $fuenteMediana;
 		text-align: center;
+		box-shadow: 0 .125em .25em rgba(0,0,0,.075);
 	}
 
-	#nave nav .ini:hover {
+	#nave nav .ini:hover, #nave nav .clu:hover  {
 		background-color:  $colPrincipal;
 		color: $colNeutro;
 		text-align: center;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 	}
 
-	#nave nav .pq:hover {
+	#nave nav .pq:hover, #nave nav .cue:hover {
 		background-color: $colApoyo3;
 		color: $colNeutro;
 		text-align: center;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 	}
 
 	#nave nav .est:hover {
 		background-color: $colApoyo2;
 		color: $colNeutro;
 		text-align: center;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 	}
 
-	#nave nav .cue:hover {
-		background-color: $colApoyo3;
-		color: $colNeutro;
-		text-align: center;
-	}
-
-	#nave nav .clu:hover {
-		background-color:  $colPrincipal;
-		color: $colNeutro;
-		text-align: center;
-	}
+	
 	
 
 
@@ -355,42 +351,28 @@ $fuenteSub:'Chilanka', cursive;
 		.logos {
 			height: 90%;
 			width: auto;
-			margin-top: auto;	
-			margin-left: auto;
-			margin-right: auto;
+			margin: auto auto 0 auto;
 		}
 
 		#slider {
 			grid-area: slider;
 			width: 85%;
-			margin-left: auto;
-			margin-right: auto;	
+			margin: 0 auto 0 auto;	
 			background-color:  $colPrincipal;
 			border-radius: 15px 15px 0 0;
-			padding: 50px;
+			padding: 3em;
 			display: flex;
 
-				.sliderImg {
+				.sliderImg, .slidertImg {
 					display: flex;
 					align-items: stretch;
 				}
 
-				.sliderImg div img {
+				.sliderImg div img, .slidertImg div img  {
 					width:20%;
 					height: auto;
-				}
-
-				.slidertImg {
-					display: flex;
-					align-items: stretch;
-				}
-
-				.slidertImg div img {
-					width:auto;
-					height: 20%;
-				}
+				}				
 		}
-		
 			.carrusel{
 				border: 2px solid $colNeutro;	
 				width: 85%;
@@ -398,61 +380,75 @@ $fuenteSub:'Chilanka', cursive;
 			}
 
 		#registrate1{
-			grid-area: registrate1;	
+			grid-area: registrate1;					
 		}
 
-			#registrate1 h5{
+			#registrate1 a, #registrate2 a {
+				text-decoration: none;														
+			}
+				
+			#registrate1 h4 {
 				color: $colApoyo1;
+				font-size: $fuenteTamH4;							
 			}
 
+			#registrate2 h4 {
+				color: $colApoyo3;
+				font-size: $fuenteTamH4;							
+			}
+					
+			#registrate1 p, #registrate2 p {					
+				font-size: $fuenteGrande;	
+				color: $colPrincipal;
+				text-shadow:
+				0 0 4px rgba(252, 248, 232, 1),
+				0 0 8px rgba(252, 248, 232, 1),
+				0 0 10px rgba(252, 248, 232, 1),
+				0 0 12px rgba(252, 248, 232, 1);					
+			}
 
 		#registrate2{
 			grid-area: registrate2;
 		}
 
-			#registrate2 h5{
-					color: $colApoyo3;		
-			}
-
 		.registrate {
 			width: 85%;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 0 auto 0 auto;
 			text-align: center;	
-			background-color:  $colGeneral;
-			align-items: center;
-			align-content: center;
+			background-color:  $colGeneral;			
 		}
 
-
-
-			.registrate h5 {
-				font-size: 1.3em;
-				padding-left: 10px;
+			.registrate h4 {
+				font-size: $fuenteTamH4;
 				font-weight: bolder;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				text-decoration: none;
+				padding: .8em 0 .8em .8em;
+				margin:0;			
+			}	
+
+			#registrate1 :hover, #registrate2 :hover {
+				background-color: $colApoyo2;
+				color: $colGeneral;	
+				transition: all 100ms;	
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			}
+
+			#registrate1 p:hover {	
+				color: $colApoyo1;				
 				text-shadow:
 				0 0 4px rgba(252, 248, 232, 1),
+				0 0 8px rgba(252, 248, 232, 1),
+				0 0 10px rgba(252, 248, 232, 1),
+				0 0 12px rgba(252, 248, 232, 1);
+			}
+
+			#registrate2 p:hover {	
+				color: $colApoyo3;	
+				text-shadow:
+				0 0 4px rgba(252, 248, 232, 1),
+				0 0 8px rgba(252, 248, 232, 1),
 				0 0 10px rgba(252, 248, 232, 1),
 				0 0 12px rgba(252, 248, 232, 1);			
-			}
-
-			.registrate h5 a{
-				color:   $colPrincipal;
-				padding-left: 15px;
-				text-decoration: none;
-				font-size:1.2em;
-				padding-right: 10px;
-				text-shadow:  none;
-			}
-
-			.registrate:hover {
-				background-color: $colApoyo2;	
-			}
-
-			.registrate a:hover {
-				color: $colGeneral;	
 			}
 
 	.menuMedio2{
@@ -462,7 +458,7 @@ $fuenteSub:'Chilanka', cursive;
 
 	#sliderTa {
 		grid-area: sliderTa;
-		padding: 50px 0 50px 0;
+		padding: 3em 0 3em 0;
 		margin: auto;	
 		border-radius: 15px 15px 0 0;
 		width: 85%;
@@ -470,8 +466,7 @@ $fuenteSub:'Chilanka', cursive;
 		#carouselExampleFade {
 			border: solid $colNeutro;
 			width: 35%;
-			margin-left: auto;
-			margin-right: auto;
+			margin: 0 auto 0 auto;
 		}
 	}
 
@@ -485,12 +480,10 @@ $fuenteSub:'Chilanka', cursive;
 	#tarjetas {
 		grid-area: tarjetas;
 		width: 85%;
-		margin-left: auto;
-		margin-right: auto;	
+		margin: 0 auto 0 auto;	
 		background-color: $colPrincipal;
 		border-radius: 0 0 15px 15px;
-		padding: 50px;
-		display: flex;
+		padding: 3em;		
 	}
 
 /* ******** INDEX - final ********************************************************************************************************** */
@@ -500,119 +493,125 @@ $fuenteSub:'Chilanka', cursive;
 
 .fondoPorque {	
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns:  1fr;
 	grid-template-areas:
-	"acerca acerca acerca"
-	"acerca acerca acerca"
-	"mapa1 mapa1 mapa1";
+	"acerca";
 	margin: 5% 0 5% 0;
 }
 
 	#acerca {
 		grid-area: acerca;
 		width: 85%;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto 0 auto;
 		grid-template-columns: 1fr; 
-		grid-template-rows: 6fr;
+		grid-template-rows: 8fr;
 		grid-template-areas:
 		"por"
+		"menuMedio"
 		"por"
+		"menuMedio"
 		"por"
+		"menuMedio"
 		"por"
-		"por"	
-		"por";		
+		"menuMedio";		
 	}
 
 		.por {
 			grid-area: por;
+			font-family: $fuenteTexto;
 		}
 
 		.por h4 {
 			border-radius:10px 10px 10px 10px;
 			text-align: center;
-			padding: 0.3em 0;
+			padding: .3em 0;
+			font-size: $fuenteTamH4;
 		}
 
 		.quienes {
-		background-color: $colPrincipal;
-			margin: 0.5em 1.618em;
-			font-size: 1.2em;
-			color: $colGeneral;
+			background-color: $colPrincipal;
+			margin: .5em 1.6em;
+			color: $colGeneral;			
 		}
 
 		.por p {
-			padding: 7px;
+			padding: .5em;
 			text-align: justify;
-			margin: 0em 2em;			
+			margin: 0em 2em;	
+			font-size: $fuenteGrande;	
+			font-weight: 550;	
 		}
 
-	.mapa1{
-		grid-area: mapa1;
-		width: 100%;
-		margin-top: 3em;
-	}
+	
 
 /* PORQUE - estructura textos*/
-	.prueba1C {
-		font-size: 1.2rem;
-		font-weight: 550;
-		font-family: $fuenteTexto;
+	.estructura1C {		
 		text-align: justify;
-		background-size: 49% auto;
+		background-size: 50% auto;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 	}
 
-	.prueba2R {
-		padding: 1.618em 1.618em 1.618em 50%;
+	.estructura2R {
+		padding: 1.6em 1.6em 1.6em 50%;
 		background-position: 0 50%;
 	}
 
-	.prueba3I {
+	.estructura3I {
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
 		background-image: url("./img/7.png");
-		background-position:15% 80%  ;
-		background-size: 38%;
+		background-position: 20% 60%;
+		background-size: 35%;
 		border-radius:15px;	
 	}
 
-	.prueba2L {
-		padding: 1.618em 50% 1.618em 1.618em;
+	.estructura2L {
+		padding: 1.6em 50% 1.6em 1.6em;
 		background-position: 100% 50%;
 	}
 
-	.prueba4I {
+	.estructura4I {
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
 		background-image: url("./img/p.png");		
-		background-size: 40%;
-		background-position: 80% 30%;
+		background-size: 35%;
+		background-position: 80% center;
 		border-radius:15px;
 	}
 
-	.prueba5I {
+	.estructura5I {
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
 		background-image: url("./img/3.png");
 		border-radius:15px;
-		background-size: 40%;
-		background-position: 20% ;
+		background-size: 35%;
+		background-position: 20% center;
 	}
 
-	.prueba6I {
+	.estructura6I {
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
 		background-image: url("./img/t.png");
 		background-repeat: no-repeat;
-		background-size: 42%;
-		background-position: 80% 20%;
+		background-size: 35%;
+		background-position: 80% 30%;
 		border-radius:15px;	
+	}
+
+
+	/*menu auxilar*/
+
+	.menuMedio {
+		grid-area: menuMedio;
+	}
+
+	.menuMedio nav{
+		width: 100%;
 	}
 
 	.separator {
@@ -626,12 +625,7 @@ $fuenteSub:'Chilanka', cursive;
 			grid-template-columns: calc(95%/3) calc(95%/3) calc(95%/3);
 			height:4em;
 			width: 100%;
-			padding-bottom: 0.5em;
-			padding-top: 0.5em;
-			padding-left: 0;
-			padding-right: 0;
-			list-style: none;
-			text-decoration: none;
+			padding: .5em 0 .5em 0;			
 			justify-content: space-between;
 		}	
 	
@@ -641,7 +635,7 @@ $fuenteSub:'Chilanka', cursive;
 				border-radius: 7px;
 				width: 100%;
 				font-family: $fuenteTexto;
-				font-size: 1.2rem;	
+				font-size: $fuenteGrande;	
 				height:2em;
 				justify-content: center;
 				align-items: center;
@@ -655,22 +649,54 @@ $fuenteSub:'Chilanka', cursive;
 
 				.separator nav a:nth-child(1) {
 					background-color: $colApoyo1;
-					border: 1px solid $colApoyo1;
+					border: 1px solid $colApoyo1;				
 				}
 
 				.separator nav a:nth-child(2) {
 					background-color: $colApoyo2;
-					border: 1px solid $colApoyo2;					
+					border: 1px solid $colApoyo2;			
 				}
 
 				.separator nav a:nth-child(3) {
 					background-color: $colApoyo3;
-					border: 1px solid $colApoyo3;							
+					border: 1px solid $colApoyo3;								
 				}
 
-	.menuMedio nav{
-		width: 100%;
-	}
+				.separator nav a:nth-child(1):hover, 
+				.separator nav a:nth-child(2):hover, 
+				.separator nav a:nth-child(3):hover {	            	
+					text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+					transition: all 0.2s ease;	
+				   	animation-name: horizontal;
+				  	animation-duration: 1s;
+				  	animation-timing-function: ease-in-out;
+				  	animation-iteration-count: 1;
+				}
+
+
+@keyframes horizontal {
+  16.65% {   
+    transform: translateX(8px);
+  }
+  33.3% {   
+    transform: translateX(-6px);
+  }
+  49.95% {   
+    transform: translateX(4px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% { 
+    transform: translateX(1px);
+  }
+  100% { 
+    transform: translateX(0);
+  }
+}
+
+
+
 
 
 /* ***** PORQUE - final ********************************************************************************************************** */
@@ -684,38 +710,64 @@ $fuenteSub:'Chilanka', cursive;
 	grid-template-areas:
 	"cuentosLeer cuentosVideo cuentosGanadores"
 	"menuMedio3 menuMedio3 menuMedio3";
-		margin: 5% 0 5% 0;	
+	margin: 5% 0 5% 0;	
 }
 
 	#cuentosLeer {
 		grid-area: cuentosLeer;
-		width: 100%;
-		height: 100%;
 		display: grid;
-		grid-template-columns: 100%; 
-		grid-template-rows: 50px 1fr;
 		grid-template-areas:
 		"tituloLeerIndice"
 		"leerIndice";
-		padding-left: 30px;
-		padding-right: 30px;
-
-
+		
 			#tituloLeerIndice {
 			grid-area: tituloLeerIndice;
-			text-align: center;	
-			background-color:  $colApoyo1;
+			background-color:  $colApoyo1;			
+		}
+
+			#leerIndice { 
+			grid-area: leerIndice;
+			background-color: $colGeneral;
+			border: 2px solid $colApoyo1;				
+		}
+	}
+
+	#cuentosGanadores { 
+		grid-area: cuentosGanadores;
+		display: grid;
+		grid-template-areas:
+		"tituloIndice"
+		"ganadoresIndice";		
+
+		#tituloIndice {
+			grid-area: tituloIndice;
+			background-color:  $colApoyo3;					
+		}
+
+		#ganadoresIndice { 
+			grid-area: ganadoresIndice;
+			background-color: $colGeneral;
+			border: 2px solid  $colApoyo3;			
+		}
+	}
+
+	#cuentosLeer, #cuentosGanadores {	
+		grid-template-columns: 100%; 
+		grid-template-rows: 50px 1fr;		
+		@include anchoAlto;
+		padding: 0 2em 0 2em;
+	}
+
+		#tituloIndice, #tituloLeerIndice {
 			height: 100%;		
 			display: flex;
+			text-align: center;	
 			align-items: center;
 			border-radius:15px 15px 0px 0px;
 		}
-			#leerIndice { 
-			grid-area: leerIndice;
-			width: 100%;
-			border-radius:0px 0px 15px 15px;
-			background-color: $colGeneral;
-			border: 2px solid $colApoyo1;		
+
+		 #leerIndice, #ganadoresIndice { 
+			border-radius:0px 0px 15px 15px;				
 			display: grid;
 			grid-template-columns: 70% 30%; 
 			grid-template-rows: auto auto auto auto auto auto;
@@ -726,33 +778,117 @@ $fuenteSub:'Chilanka', cursive;
 			"article article" 
 			"article article"
 			"article article";
-			grid-gap: 5px;
-			padding: 15px 10px;
-			align-items: center;
-			justify-items: center;
+			grid-gap: .4em;
+			width: 100%;
+			padding: 1em .8em;		
+			align-items: space-between;
 			justify-content: center;
 		}
 
-		#leerIndice article {	
-			width: 80%;
-			height: auto;
-			margin-top: 10px;
-			margin-bottom: 10px;
-			align-items: center;
-			justify-items: center;
+			#leerIndice article,  #ganadoresIndice article {	
+				width: 90%;
+				height: auto;
+				margin: .8em auto .8em auto;			
+				display: flex;				
+			}
+
+				#leerIndice .efecTarjeta {
+					border: 1px solid $colApoyo1;	
+
+				}
+
+				#leerIndice .botonCuento p:hover {
+					transform:scale(1.5);
+					color: $colApoyo1;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+					transition: all 100ms;
+				}				
+			
+				#ganadoresIndice .efecTarjeta {
+						border: 1px solid  $colApoyo3;	
+					}
+	
+				#cuentosGanadores .botonCuento p:hover {
+					transform:scale(1.5);
+					color: $colApoyo3;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.2);	
+					transition: all 100ms;			 
+				}
+
+				.efecTarjeta {	
+					border: 1px solid  $colApoyo1;
+					background-color: $colGeneral;
+					border-radius: 4px;			
+				}	
+
+					.efecTarjeta:hover {	
+						transition: all 100ms;	
+						transform:scale(1.07);
+						font-size: $fuenteMediana;
+						font-weight:550;
+						box-shadow: 0 1px 1px rgba(0,0,0,0.1);	
+					}	
+
+				.imagen {
+					width: 100%;
+					border-top-right-radius: 4px;
+					border-top-left-radius: 4px;
+				}
+
+				.t {	
+					margin: auto;
+					display:flex;
+					flex-direction: column;
+					padding: 0 .35em 0 .35em;	
+				}
+
+					.t > h6 {
+						margin: auto;
+						font-size: $fuenteMediana;
+						padding-bottom: .3em;
+						text-align: center;						
+					}
+
+					.t > p {
+						text-align: justify;
+						font-size: $fuenteMinima;									
+					}	
+		
+		.centroV {
+				margin:auto;
+				color: $colGeneral;
+				font-size: $fuenteExtrag;
 		}
 
-		#leerIndice .tarjetaCuento{
-			border: 1px solid  $colApoyo2;	
+		.botonCuento {
+			width:75%;	
+			background-color: $colGeneral;
+			border:0px;
+			margin: auto;		
+			padding:0px;			
 		}
 
-		#leerIndice .botonCuento:hover {
-			border-radius:50%;
-			box-shadow: 0px 0px 15px 7px $colApoyo1;
-			transform:scale(1.25);
-		}				
-	}
+			.bo {
+				padding: 0px;
+			}
 
+				.bo p {	
+					font-size: $fuenteMediana;		
+					text-align: center;		
+					font-family: $fuenteSub;
+					font-weight: 600;
+					text-decoration: none;
+					color: $colPrincipal;
+				}
+
+				.efecTarjeta > .t  {
+							margin: .5em 0 .5em 0;
+					}	
+		
+		.btn-check:focus+.btn, .btn:focus { /*correccion elemento bootstrap */
+			box-shadow: 0 0 0 0.0rem $colGeneral;
+		}
+ 	
 	#cuentosVideo {
 		grid-area: cuentosVideo;
 		width: 100%;
@@ -762,9 +898,9 @@ $fuenteSub:'Chilanka', cursive;
 		grid-template-areas:
 		"tituloVideoFabulas"
 		"videos";
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 0 15px 0 15px;
 	}
+
 		#tituloVideoFabulas {
 			grid-area: tituloVideoFabulas;
 			text-align: center;	
@@ -782,7 +918,7 @@ $fuenteSub:'Chilanka', cursive;
 			border:2px solid $colApoyo2;
 			display: grid;
 			grid-template-columns: auto;
-			grid-template-rows: auto auto auto auto auto auto;
+			grid-template-rows: repeat (6, auto);
 			grid-template-areas:
 			"article"
 			"article"
@@ -790,166 +926,52 @@ $fuenteSub:'Chilanka', cursive;
 			"article"
 			"article" 
 			"article";
-			align-content: space-between;
-			justify-content:  center;	
-			grid-gap: 15px;
-			padding: 25px 20px;
+			padding: 1em .8em;
+			grid-gap: 3em;
+			align-items: space-between;
+			justify-items: center;
+			justify-content: center;
 			border-radius:0px 0px 15px 15px;	
 		}
 
 			#videos article {	
 				width: 100%;
-				border: 1px solid $colApoyo2;
-				text-transform: uppercase;
-				text-align: center;
-				border-radius: 4px;	
 				background-color: $colGeneral;
+				border: 1px solid $colApoyo2;
+				border-radius: 4px;	
+				height: auto;
+				margin: .8em auto .8em auto;
 				display: grid;
-				grid-template-rows: 80% 20%;
+				grid-template-rows: 150px auto;
+				grid-template-areas:
+				"videoCont"			
+				"videTitulo";
+				text-transform: uppercase;
 			}
 
-			.videoCont {
-				width: 100%;	
+				.videoCont {
+					grid-area: videoCont;
+					padding:0;
 			}
 
-			.video{
-				width: 100%;
-				border-top-right-radius: 4px;
-				border-top-left-radius: 4px;
-		}
+					.video{
+						width: 100%;
+						height: auto;
+						border-top-right-radius: 4px;
+						border-top-left-radius: 4px;
+					}
 	
+			.videTitulo {
+				grid-area: videTitulo;
+				color: $colPrincipal;
+				font-weight: bold;
+				margin: auto;
+			}	
 
-
-	#cuentosGanadores { 
-		grid-area: cuentosGanadores;
-		width: 100%;
-		height: 100%;
-		display: grid;
-		grid-template-columns: 100%; 
-		grid-template-rows: 50px 1fr;
-		grid-template-areas:
-		"tituloIndice"
-		"ganadoresIndice";
-		padding-left: 30px;
-		padding-right: 30px;
-
-		#tituloIndice {
-			grid-area: tituloIndice;
-			text-align: center;	
-			background-color:  $colApoyo3;		
-			height: 100%;
-			display: flex;
-			align-items: center;
-			border-radius:15px 15px 0px 0px;		
-		}
-
-		#ganadoresIndice { 
-			grid-area: ganadoresIndice;
-			width: 100%;
-			background-color: $colGeneral;
-			border: 2px solid  $colApoyo3;	
-			display: grid;
-			grid-template-columns: 70% 30%; 
-			grid-template-rows: auto auto auto auto auto auto;
-			grid-template-areas:	
-			"article article" 
-			"article article"
-			"article article"
-			"article article" 
-			"article article"
-			"article article";
-			grid-gap: 5px;
-			padding: 15px 10px;
-			align-items: center;
-			justify-items: center;
-			justify-content: center;
-			border-radius:0px 0px 15px 15px;
-		}
-
-		#ganadoresIndice article {
-			width: 80%;
-			height: auto;
-			margin-top: 10px;
-			margin-bottom: 10px;
-			align-items: center;
-			justify-items: center;
-		}
-
-		#ganadoresIndice .tarjetaCuento{
-			border: 1px solid  $colApoyo3;	
-		}
-	}
-		#cuentosGanadores .botonCuento:hover {
-			border-radius:50%;
-			box-shadow: 0px 0px 15px 7px $colApoyo3;
-			transform:scale(1.25);
-		}
-
-				.centroV {
-			margin:auto;
-			color: $colGeneral;
-			font-size: 1.8em;
-		}
-
-		.botonCuento p{
-			color: $colPrincipal;
-		}
-
-		.imagen {
-			width: 100%;
-			border-top-right-radius: 4px;
-			border-top-left-radius: 4px;
-		}
-
-		.tarjetaCuento {	
-			background-color: $colGeneral;
-			border-radius: 4px;
-		}
-
-		.t > p{
-			text-align: justify;
-			font-size: 0.6em;
-			padding-right:6px;
-			padding-left: 6px;
-			margin-block-end: 0.2em;
-			margin-block-start: 0.2em;
-		}
-
-		.t > h6 {
-			margin-top: 5px;
-			text-align: center;
-			font-size: 0.8em;
-			justify-content: center;
-		}
-
-		.botonCuento{
-			width:75%;	
-			background-color: $colGeneral;
-			border:0px;
-			border-radius:50%;
-			align-items: center;
-			justify-items: center;
-			padding:0px;
-			justify-content: center;
-		}
-
-		.bo{
-			padding: 0px;
-		}
-
-		.botonCuento p{	
-			font-size: 0.9em;
-			justify-content: center;
-			text-align: center;
-			align-self: center;
-			font-family: $fuenteSub;
-			font-weight: 600;
-			text-decoration: none;
-		}
-
-		.btn-check:focus+.btn, .btn:focus {
-			box-shadow: 0 0 0 0.0rem $colGeneral;
-		}
+			.videTitulo p {
+				font-size: $fuenteMediana;
+				padding: 1em 0 1em 0;
+			}			
 
 .menuMedio3{
 	grid-area: menuMedio3;
@@ -964,25 +986,32 @@ $fuenteSub:'Chilanka', cursive;
 	text-align: justify;
 	background-color:$colNeutro;
 
+
 	.modal-header{
 		background-image: url("./img/44.png");
-		background-size: 27%;
+		background-size: 15%;
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		font-family: $fuenteSub;
 
 		.modal-title {
-			font-size: 1.5em;
-			text-shadow:
-			0 0 4px rgba(252, 248, 232, 1),
-			0 0 4px rgba(252, 248, 232, 1),
-			0 0 8px rgba(252, 248, 232, 1),
-			0 0 8px rgba(252, 248, 232, 1),
-			0 0 8px rgba(252, 248, 232, 1);
-			font-weight: bold;
-			width: 100%;				
+			font-size: $fuenteTamH5;
+			font-weight: bolder;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+			color:  $colPrincipal;		
+			width: 100%;	
+			
+		}
+		.modal-title p {
+			font-size: $fuenteTamH5;
+			background-color: $colGeneral;
+			font-weight: bolder;
 		}
 	}	
+}
+
+.modal-body p {
+	font-size: $fuenteGrande;
 }
 
 .modal-footer{
@@ -991,7 +1020,7 @@ $fuenteSub:'Chilanka', cursive;
 
 	.modal-footer div{
 			text-align: left;
-			
+			text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 			color: $colGeneral;
 			font-family: $fuenteTexto;
 			padding-right: 1em;
@@ -1003,8 +1032,7 @@ $fuenteSub:'Chilanka', cursive;
 			
 			.modal-footer > .btn{
 					color:  $colPrincipal;
-			}
-			
+			} 					
 
 /* ***** ESTANTERIA -  final ***************************************************************************************************** 
 /* */
@@ -1029,16 +1057,15 @@ $fuenteSub:'Chilanka', cursive;
 		width: 85%;
 	}
 
-		#cuenta{
+		#cuenta {
 			background-color: $colPrincipal;
 			border-radius: 15px;
 			display: flex;
 			margin: auto;
-			font-size: 1.2em;
+			font-size: $fuenteGrande;
 			
 			.imgCuentame {
 				background-color: $colNeutro;
-				background-size: cover;
 				border-top-left-radius: 15px;
 				border-bottom-left-radius:15px;
 				overflow: hidden;
@@ -1059,38 +1086,67 @@ $fuenteSub:'Chilanka', cursive;
 				background-color: $colGeneral;
 				display: flex;
 				border-radius: 10px;
-				padding: 0.5em 0 0.5em 0;
-				margin-left: 2em;
-				margin-right: 2em;
-				margin-top: 2em;
+				padding: .5em 0 .5em 0;
+				margin: 2em 2em 0 2em;				
 			}			
 	}
+
 			.cuentaContenido h4{
 				margin: auto;
 				font-weight: bold;
 				color: $colPrincipal;
-				font-size: 1.3em;
+				font-size: $fuenteTamH4;
 				text-align: center;
 			}
 
 			.instrucciones {
 				padding: 2em;
-				font-size: 1.12em;
+				font-size: $fuenteGrande;
+
+				p{
+					font-size: $fuenteGrande;
+				}
+
+				.pp {
+					background-color: $colGeneral;
+					color: $colPrincipal;
+					font-weight: 570;
+					padding: 1em;
+					border-radius: 7px;
+				}
+
+				.pp p {
+					padding-bottom: .4em;
+					font-weight: 600;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+
+				}				
 
 				.pp ul li{	
 					text-align: justify;
-					color: $colGeneral;
 					font-family: $fuenteTexto;
-					font-size: 1.2rem;
+					font-size: $fuenteGrande;					
 				}
 
 				.pp a {
 					font-weight: 600;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+					font-size:$fuenteGrande;					
 					text-decoration: none;
-					color: $colNeutro;
+					color: $colApoyo1;
+				}				
+			}
+
+				.instrucciones:nth-child(2) h5 {
+					font-size: $fuenteTamH5;
+					padding: .4em 0;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.3);
 				}
 
-			}
+				.instrucciones p:nth-child(6) {
+						padding-top: .5em;
+						text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+					}
 
 	#datosRegistro {
 		grid-area: datosRegistro;
@@ -1105,34 +1161,41 @@ $fuenteSub:'Chilanka', cursive;
 		margin-top: 5%;
 
 		#contCuento {
-			padding: 2em 2em;
+			padding: 2em;
 			color: $colPrincipal;
 			font-family: $fuenteTexto;
-			font-size: 1.1rem;
+			font-size: $fuenteGrande;
 
 			.alinCentro1 {
 				background-color: $colPrincipal;
 				display: flex;
 				border-radius: 10px;
-				padding: 0.5em 0 0.5em 0;
+				padding: .5em 0 .5em 0;
 			}			
 		}
 
 		#contCuento h4{
 				margin: auto;
 				color: $colGeneral;
+				font-size: $fuenteTamH4;
 			}
 
 		#formuEspacio {
 			margin-top: 25%;
 			width: 100%;
 			color: $colPrincipal;
-			font-size: 1.1rem;
+			font-size: $fuenteGrande;
 			font-family: $fuenteTexto;
+			font-weight: 580;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
 			.cajaForm{
 				background-color: $colGeneral;
 				opacity: 0.5;
+			}
+
+			.formCaja{
+				margin-top: .6em;
 			}
 			
 			#botonCuenta {
@@ -1143,8 +1206,19 @@ $fuenteSub:'Chilanka', cursive;
 					background-color: $colPrincipal;
 					color: $colNeutro;
 					font-family: $fuenteTexto;
+					border-radius: 5px;
+					border-bottom: 2px solid $colPrincipal;
 					margin: auto;
 					width: 30%;
+					box-shadow: 0 1px 1px rgba(0,0,0,0.1);	
+				}
+
+				.botonTexto:hover {
+					background-color: $colGeneral;
+					color: $colPrincipal;
+					font-weight: 600;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.1);	
+					border-bottom: 1px solid $colPrincipal;								
 				}
 			}
 		}
@@ -1182,80 +1256,102 @@ $fuenteSub:'Chilanka', cursive;
 
 		#inscribete {
 			grid-area: inscribete;
-			width: 85%;
-			text-align: justify;
-			background-color: $colGeneral;
-			border: 2px solid $colPrincipal;
-			border-radius: 15px;
-			font-size: 1.12em;
-
+			display: grid;
+			
 			#alinCentro4 {
 				background-color: $colPrincipal;
-				border-radius: 10px;
-				margin:2em;
-				display: flex;
+				border-radius: 10px;				
 			}
 
-			#instrucciones1 {
-				font-size: 1.12em;
+			#instrucciones1 {				
+				margin: auto 2em 2em 2em;
+			}
+
+			#instrucciones1 p {
+				font-size: $fuenteGrande;
 				color: $colPrincipal;
-				margin:2em 2em 0 2em;
+				font-weight: 570;
 			}
 		}
 
-		#inscribete h4{
-			padding: 0.5em 0 0.5em 0;
-			margin: auto;
-			color: $colGeneral;
-		}
+			#alinCentro4 h4 {
+				color: $colGeneral;
+			}
 
 		#imgClub{
 			width: 100%;
+			margin-top: auto;
 		}
 
+			#inscribete, #datosRegistros2 {		
+				width: 85%;
+				text-align: justify;
+				background-color: $colGeneral;
+				border: 2px solid $colPrincipal;
+				border-radius: 15px;
+				font-size: $fuenteGrande;
+			}
+
+		 	#inscribete h4, #alinCentro5 h4{
+				padding: .4em 0 .4em 0;
+				margin: auto;				
+			}
+
+			#alinCentro4, #alinCentro5 {
+				margin:2em;
+				display: flex;
+			}	
+
 	#datosRegistros2 {
-		grid-area: datosRegistros;
-		width: 85%;
-		background-color: $colGeneral;
-		border: 2px solid $colPrincipal;
-		border-radius: 15px;
+		grid-area: datosRegistros;		
 		margin-top: 5%;	
 
 		#alinCentro5 {
 			background-color: $colGeneral;
-			border-bottom: 2px solid $colPrincipal;
-			margin:2em;
-			display: flex;
-
-			
+			border-bottom: 1px solid $colPrincipal;						
 		}
 
 			#alinCentro5 h4{
-				padding: 0.5em 0 0.5em 0;
-				margin: auto;
+				font-size: $fuenteTamH4;
 				color: $colPrincipal;
+				font-weight: 600;
 			}
 
 		#formuClub{
-			margin: 0 2em 2em 2em;
+			margin: 2em 2em 0 2em;
 			color: $colPrincipal;
-			font-size: 1.12em;
+			font-size: $fuenteGrande;
+			font-weight: 580;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.1);
 
 			#botonClub {
 				display: flex;
 				width: 100%;
-				margin: 2em 0 0 0;
+				margin: 3em 0 0 0;				
+			}
+		}
+	}	
 				
 				.botonTexto1 {
 					background-color: $colPrincipal;
 					color: $colNeutro;
 					font-family: $fuenteTexto;
+					border-radius: 5px;
+					border-bottom: 2px solid $colPrincipal;
 					margin: auto;
 					width: 30%;
+					box-shadow: 0 1px 1px rgba(0,0,0,0.1);	
 				}
-			}
-		}
-	}	
+
+				.botonTexto1:hover {
+					background-color: $colNeutro;
+					color: $colPrincipal;
+					font-weight: 600;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.1);	
+					border-bottom: 1px solid $colPrincipal;								
+				}
+
+
 
 	#tablaGanadores {
 	grid-area: tablaGanadores;
@@ -1270,27 +1366,31 @@ $fuenteSub:'Chilanka', cursive;
 
 		.tituloTabla {
 			font-family: $fuenteSub;
-			font-size: 1.2em;
+			text-align: center;
+			font-weight: bold;
+			font-size: $fuenteExtrag;
 			color: $colApoyo1;
-		}
+			margin: 1em auto 1em auto;
+		} 
 
 		.animacionLetra {
-			animation-duration: 5s;
+			animation-duration: 4s;
 			animation-name: animacionLetra;
+			animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
 			animation-iteration-count: infinite;
 			}
-			@keyframes animacionLetra{
-				from {
+			@keyframes  animacionLetra{
+				0% {
 				transform: rotateY(0deg);
-				}
-				50%{	
-					transform: rotateY(180deg);
-				} 
-				to {		
-					transform: rotateY(360deg);
-				}
+				}	
+			   50%{
+			      transform: rotateY(350deg)
+			   }
+			   100%{
+			     transform: rotateY(360deg)
+			   }
+			}
 		}
-	}
 
 		#tabla {
 			color: $colComodin;
@@ -1311,7 +1411,7 @@ $fuenteSub:'Chilanka', cursive;
 				background-color: $colPrincipal;
 			}
 		}
-}
+	}
 
 
 /* *****  CLUB - Fin        ******************************************************************************************************** */
@@ -1326,7 +1426,7 @@ $fuenteSub:'Chilanka', cursive;
 	"formu";
 	align-items: center;
 	justify-items: center;
-		margin: 5% 0 10% 0;	
+	margin: 5% 0 10% 0;	
 }
 
 #fondoCt {
@@ -1343,17 +1443,27 @@ $fuenteSub:'Chilanka', cursive;
 		grid-area: formu;
 		width: 100%;	
 		margin:auto;
-		position:absolute; z-index:2;  top:11em;
+		position:absolute; z-index:2;  
+		top:11em;
 	}
 		#contContenido {
-			padding-top: 280px;	
-			padding-bottom: 100px;
-			width: 70%;
-			padding-left: 50px;
-			padding-right: 50px;
-			color: $colPrincipal;
-			font-family: $fuenteTexto;			
+			padding: 280px 50px 100px 50px;	
+			width: 70%;		
+			color: $colApoyo3;
+			font-family: $fuenteTexto;		
 		}
+
+			#contContenido h5 {
+				font-size: $fuenteTamH5;
+				font-weight: 600;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			}
+
+			.formContacto {
+				font-size: $fuenteGrande;
+			font-weight: 580;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+			}
 
 			#textoContenido {
 				text-align: center;
@@ -1365,14 +1475,24 @@ $fuenteSub:'Chilanka', cursive;
 			margin: 2em 0 0 0;			
 		}
 			
-			.botonAzul {
-				background-color: $colPrincipal;
+			.botonCtc {
+				background-color: $colApoyo3;
 				color: $colNeutro;
 				font-family: $fuenteTexto;
+				border-radius: 5px;
+				border-bottom: 2px solid $colApoyo3;
 				margin: auto;
 				width: 30%;
+				box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 			}
 
+			.botonCtc:hover {
+				background-color: $colNeutro;
+				color: $colApoyo3;
+				font-weight: 600;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.1);	
+				border-bottom: 1px solid $colApoyo3;								
+			}
 
 
 
@@ -1392,30 +1512,36 @@ $fuenteSub:'Chilanka', cursive;
 	grid-template-areas: 
 	"imgOops"
 	"oops2";
-	margin-top: 5%;
-	margin-bottom: 5%;
-
+	margin: 1% 0 1% 0;
 
 	.imgOops {
 		grid-area: imgOops;
-		margin-left: auto;
-		margin-right: auto;
-		padding:2em 2em;
-	}
+		margin: 0 auto 0 auto;
+		padding: 0 2em;
+	}	
 }
 
-#oops2{
+#oops2 {
 	grid-gap: oops2;
 	text-align: center;
-	margin-top: 3%;	
+	font-family: $fuenteTexto; 	
+	margin: 0 auto 0 auto;
+	padding: .5em 2em;
 }
+	#oops2 h4 {
+		color:$colApoyo2;
+		font-size: $fuenteTamH4;
+		font-weight: 600;
+	}
 
 	#oops2 a {
 		text-decoration: none;
 		color:$colApoyo3;
-		font-size: 2em;
-		font-family: $fuenteTexto; 
+		font-size: $fuenteExtrag;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		font-weight: 600;		 
 	}
+
 
 /* #####  PAGINA NO ENCONTRADA- fin  ############################################################################################################ */
 /* */
@@ -1442,15 +1568,28 @@ $fuenteSub:'Chilanka', cursive;
 	background-image: url("./img/44.png");
 	background-size: 21%;
 	border-radius:10px 10px 0 0;
-	border-top: 0.2em solid $colPrincipal;
-	width: 100%;
-	align-content: center;
-	justify-content: center;
-	justify-self:center;
+	border-top: .21em solid $colPrincipal;
+	width: 100%;	
 	display: flex;
+	flex-direction: column;	
 	padding: 0;
 
 }
+
+	#donde {		
+		padding:.2em 1em .2em 1em;
+		background-color: $colPrincipal;
+		margin: 0 auto 0 auto;
+		color: $colGeneral;	
+		box-shadow: 0 .125em .25em rgba(0,0,0,.2);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;	
+	}
+
+	#donde h5 {
+			font-size: $fuenteTamH5;
+	}
+
 	.rayuela{
 		width:50%;
 		margin: auto;
@@ -1490,9 +1629,36 @@ $fuenteSub:'Chilanka', cursive;
 				margin-bottom: 0;
 				font-size: 1.4em;
 				font-family: $fuenteTexto;
+				border-radius: 7px;
+				padding: .2em;
+				border: 1px solid #fff;
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+					  -webkit-animation-name: cambiarColor;
+  animation-name: cambiarColor;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;	
 			}
 		}
 	}
+@-webkit-keyframes cambiarColor {
+  0% {
+    border: 1px solid pink;
+  }
+  100% {
+    border: 1px solid #fff;
+  }
+}
+
+@keyframes cambiarColor {
+  0% {
+   border:1px solid pink;
+  }
+  100% {
+    border: 1px solid #fff;
+  }
+}
 
 
 
@@ -1504,8 +1670,9 @@ $fuenteSub:'Chilanka', cursive;
 			margin-left: auto;
 
 			.rrss__rrssLink__solo__imgFooter {
-				height: 1.7em;	
-				margin-left: 0.5em;
+				width: 1.6em;
+				height: auto;
+				margin-left: 0.4em;
 			}
 		}
 	
