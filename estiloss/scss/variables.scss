@@ -1,0 +1,34 @@
+
+
+/*npm run watch-css vvv*/
+$colPrincipal:#3394F3; 		/*azulCeleste*/
+$colGeneral:#fcf8e8; 		/*blancoN*/
+$colApoyo1:#F39233;			/*naranja*/
+$colApoyo2:#01c5c4;			/*verde*/
+$colApoyo3:#F33394;			/*rosa*/
+$colComodin:#f3f3f3;		/*gris comodin*/
+$colNeutro:#FFFFFF;			/*blanco */
+
+$fuenteTexto:'Quicksand', sans-serif;
+$fuenteTitulo:'Kalam';
+$fuenteSub:'Chilanka', cursive;
+
+$fuenteTamH1: 3rem;
+$fuenteTamH2: 1.5rem;
+$fuenteTamH4: 1.4rem;
+$fuenteTamH5: 1.3rem;
+$fuenteExtrag: 1.6rem;
+$fuenteGrande: 1.2rem;
+$fuenteMediana: .85rem;
+$fuenteMinima: .6rem;
+
+@mixin botonDesplegable {
+  	margin: auto 0 auto 0;
+	padding: 0px;
+	border-radius:0px 0px 10px 10px;
+}
+
+@mixin anchoAlto {
+	width: 100%;
+	height: 100%;
+}

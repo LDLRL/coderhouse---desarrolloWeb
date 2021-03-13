@@ -1,48 +1,8 @@
 
 
-/*npm run watch-css*/
-$colPrincipal:#3394F3; 		/*azulCeleste*/
-$colGeneral:#fcf8e8; 		/*blancoN*/
-$colApoyo1:#F39233;			/*naranja*/
-$colApoyo2:#01c5c4;			/*verde*/
-$colApoyo3:#F33394;			/*rosa*/
-$colComodin:#f3f3f3;		/*gris comodin*/
-$colNeutro:#FFFFFF;			/*blanco */
 
-$fuenteTexto:'Quicksand', sans-serif;
-$fuenteTitulo:'Kalam';
-$fuenteSub:'Chilanka', cursive;
 
-$fuenteTamH1: 3rem;
-$fuenteTamH2: 1.5rem;
-$fuenteTamH4: 1.4rem;
-$fuenteTamH5: 1.3rem;
-$fuenteExtrag: 1.6rem;
-$fuenteGrande: 1.2rem;
-$fuenteMediana: .85rem;
-$fuenteMinima: .6rem;
-
-@mixin botonDesplegable {
-  	margin: auto 0 auto 0;
-	padding: 0px;
-	border-radius:0px 0px 10px 10px;
-}
-
-@mixin anchoAlto {
-	width: 100%;
-	height: 100%;
-}
-
-img {
-	width: 100%;
-	max-width: 100%;
-	height:auto;
-}
-
-p{
-	padding:0;
-	margin: 0;
-}
+@import 'variables';
 
 /* ################################################################################################################################ */
 
@@ -52,6 +12,18 @@ p{
 	box-sizing: border-box;
 	text-decoration: none;  
 	font-size: 1rem;
+}
+
+/*Arreglos por desconfiguración al insertar librerías Bootstrap*/
+img {
+	width: 100%;
+	max-width: 100%;
+	height:auto;
+}
+
+p{
+	padding:0;
+	margin: 0;
 }
 
 /* ################################################################################################################################ */
@@ -177,7 +149,7 @@ p{
 				@include anchoAlto;
 				font-family: $fuenteTexto;
 				text-transform: uppercase;
-				font-size: 0.75em;
+				font-size: 0.75rem;
 				color: $colApoyo1;
 				font-weight:  bold;				
 				border-bottom: 2px solid $colApoyo1;				
@@ -451,11 +423,6 @@ p{
 				0 0 12px rgba(252, 248, 232, 1);			
 			}
 
-	.menuMedio2{
-		width: 85%;	
-		margin: 2% auto 2% auto;		
-	}
-
 	#sliderTa {
 		grid-area: sliderTa;
 		padding: 3em 0 3em 0;
@@ -484,6 +451,11 @@ p{
 		background-color: $colPrincipal;
 		border-radius: 0 0 15px 15px;
 		padding: 3em;		
+	}
+
+	.menuMedio2{
+		width: 85%;	
+		margin: 2% auto 2% auto;		
 	}
 
 /* ******** INDEX - final ********************************************************************************************************** */
@@ -562,7 +534,7 @@ p{
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
 		background-image: url("./img/7.png");
-		background-position: 20% 60%;
+		background-position: 20% 70%;
 		background-size: 35%;
 		border-radius:15px;	
 	}
@@ -865,7 +837,8 @@ p{
 			background-color: $colGeneral;
 			border:0px;
 			margin: auto;		
-			padding:0px;			
+			padding:0px;
+			justify-content: center;			
 		}
 
 			.bo {
@@ -966,12 +939,19 @@ p{
 				color: $colPrincipal;
 				font-weight: bold;
 				margin: auto;
+				text-align: center;
 			}	
 
-			.videTitulo p {
+			.videTitulo p:nth-child(1)  {
 				font-size: $fuenteMediana;
-				padding: 1em 0 1em 0;
-			}			
+				padding: 0 0 .1em 0;
+			}	
+
+			.videTitulo p {				
+				font-size: $fuenteMediana;
+				padding-bottom: 0 0 1em 0;
+			}
+			
 
 .menuMedio3{
 	grid-area: menuMedio3;
@@ -1174,7 +1154,7 @@ p{
 			}			
 		}
 
-		#contCuento h4{
+		#contCuento h4 {
 				margin: auto;
 				color: $colGeneral;
 				font-size: $fuenteTamH4;
@@ -1442,12 +1422,14 @@ p{
 	#formu {
 		grid-area: formu;
 		width: 100%;	
-		margin:auto;
-		position:absolute; z-index:2;  
-		top:11em;
+		margin: auto;
+		position: absolute; 
+		z-index: 80;  
+		top: 24em;
 	}
+
 		#contContenido {
-			padding: 280px 50px 100px 50px;	
+			padding: 6em 3em 6em 3em;	
 			width: 70%;		
 			color: $colApoyo3;
 			font-family: $fuenteTexto;		
@@ -1701,10 +1683,17 @@ p{
 
 
 /* #####  FOOTER - fin  ############################################################################################################ */
+/* */
+/* */
+/* */
+/* ################################################################################################################################ */
+/* ######          RESPONSIVE - inicio           ################################################################################## */
+/* ################################################################################################################################ */
+
+	@import 'responsive';	
 
 
-		
-
+/* #####  RESPONSIVE - fin  ##############################################################################################################*/
 
 
 
