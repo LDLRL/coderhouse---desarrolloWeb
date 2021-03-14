@@ -58,7 +58,7 @@ p{
 		#fondo {
 			grid-template-rows:  50px 50px ;
 			background-color: $colGeneral;
-			background-image: url("./img/44.png");
+			background-image: url("../../img/44.png");
 			background-position: 55% -850%;
 			background-size: 22%;	
 			animation-name: fondoAnimado;
@@ -453,7 +453,7 @@ p{
 	}
 
 		.sliderTa {
-			background-image: url("./img/fondorayas.png");
+			background-image: url("../../img/fondorayas.png");
 			background-position: -30%;
 			background-size: 40%;
 			background-repeat: repeat;
@@ -548,7 +548,7 @@ p{
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
-		background-image: url("./img/7.png");
+		background-image: url("../../img/7.png");
 		background-position: 20% 70%;
 		background-size: 35%;
 		border-radius:15px;	
@@ -563,7 +563,7 @@ p{
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
-		background-image: url("./img/p.png");		
+		background-image: url("../../img/p.png");		
 		background-size: 35%;
 		background-position: 80% center;
 		border-radius:15px;
@@ -573,7 +573,7 @@ p{
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
-		background-image: url("./img/3.png");
+		background-image: url("../../img/3.png");
 		border-radius:15px;
 		background-size: 35%;
 		background-position: 20% center;
@@ -583,7 +583,7 @@ p{
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		border: 2px solid $colPrincipal;
-		background-image: url("./img/t.png");
+		background-image: url("../../img/t.png");
 		background-repeat: no-repeat;
 		background-size: 35%;
 		background-position: 80% 30%;
@@ -983,7 +983,7 @@ p{
 
 
 	.modal-header{
-		background-image: url("./img/44.png");
+		background-image: url("../../img/44.png");
 		background-size: 15%;
 		background-color: $colGeneral;
 		color: $colPrincipal;
@@ -1147,7 +1147,7 @@ p{
 		grid-area: datosRegistro;
 		width: 85%;
 		background-color: $colComodin;
-		background-image: url("./img/5.png");
+		background-image: url("../../img/5.png");
 		background-size: 40%;
 		background-repeat: no-repeat;
 		background-position: 50% 12%;
@@ -1429,7 +1429,7 @@ p{
 	grid-template-columns: 100%;
 	grid-template-rows: auto;
 	grid-template-areas:
-	"formu";
+	"formuCtc";
 	align-items: center;
 	justify-items: center;
 	margin: 5% 0 10% 0;	
@@ -1445,8 +1445,8 @@ p{
 		width: 70%;
 	}
 	
-	#formu {
-		grid-area: formu;
+	#formuCtc {
+		grid-area: formuCtc;
 		width: 100%;	
 		margin: auto;
 		position: absolute; 
@@ -1573,7 +1573,7 @@ p{
 	grid-area: mapa;
 	width: 100%;
 	background-color:$colGeneral;
-	background-image: url("./img/44.png");
+	background-image: url("../../img/44.png");
 	background-size: 21%;
 	border-radius:10px 10px 0 0;
 	border-top: .21em solid $colPrincipal;
@@ -1630,13 +1630,13 @@ p{
 
 	.conta__contaLink {
 		text-decoration: none;
-		color: $colComodin;
-		text-align: center;			
+		color: $colComodin;		
 		}
 	}
 
 	.conta__contaLink__contaTexto{
 		margin-bottom: 0;
+		text-align: center;	
 		font-size: 1.4em;
 		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 		font-family: $fuenteTexto;						 
@@ -1736,7 +1736,8 @@ p{
 
 
 /* #####  FOOTER - fin  ############################################################################################################ */
-	
+
+@import 'responsive';	
 
 
 
