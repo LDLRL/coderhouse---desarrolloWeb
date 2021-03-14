@@ -90,7 +90,7 @@ p {
 
 .tituloSec {
   color: #3394F3;
-  text-shadow: 0 0 4px #fcf8e8, 0 0 4px #fcf8e8, 0 0 6px #fcf8e8, 0 0 6px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8, 0 0 12px #fcf8e8;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 4px #fcf8e8, 0 0 4px #fcf8e8, 0 0 6px #fcf8e8, 0 0 6px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8, 0 0 12px #fcf8e8;
   font-size: 1.5rem;
   text-align: center;
   font-family: "Chilanka", cursive;
@@ -1051,7 +1051,8 @@ p {
       font-weight: bold;
       font-size: 1.6rem;
       color: #F39233;
-      margin: 1em auto 1em auto; }
+      margin: 1em auto 1em auto;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
     #tablaGanadores #tablas .animacionLetra {
       animation-duration: 4s;
       animation-name: animacionLetra;
@@ -1069,6 +1070,10 @@ p {
     color: #f3f3f3; }
     #tablaGanadores #tabla #tabla tr td {
       padding-left: 2em; }
+    #tablaGanadores #tabla .subtituloTabla {
+      font-weight: bold; }
+    #tablaGanadores #tabla .subtituloTabla ol {
+      font-weight: normal; }
     #tablaGanadores #tabla .color1 {
       background-color: #01c5c4; }
     #tablaGanadores #tabla .color2 {
