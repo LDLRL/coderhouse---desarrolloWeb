@@ -1,0 +1,42 @@
+
+/* #####  PAGINA NO ENCONTRADA ############################################################################################################ */
+
+#oops {
+	display: grid;
+	align-items: center;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"imgOops"
+	"oops2";
+	margin: 1% 0 1% 0;
+
+	.imgOops {
+		grid-area: imgOops;
+		margin: 0 auto 0 auto;
+		padding: 0 2em;
+	}	
+}
+
+#oops2 {
+	grid-gap: oops2;
+	text-align: center;
+	font-family: $fuenteTexto; 	
+	margin: 0 auto 0 auto;
+	padding: .5em 2em;
+}
+	#oops2 h4 {
+		color:$colApoyo2;
+		font-size: $fuenteTamH4;
+		font-weight: 600;
+	}
+
+	#oops2 a {
+		text-decoration: none;
+		color:$colApoyo3;
+		font-size: $fuenteExtrag;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		font-weight: 600;		 
+	}
+
+
+/* #####  PAGINA NO ENCONTRADA- fin  ############################################################################################################ */

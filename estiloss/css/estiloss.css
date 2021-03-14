@@ -1,5 +1,8 @@
 @charset "UTF-8";
-/*VARIABLES Y MIXINs*/
+/*VARIABLES y MIXINs*/
+/* */
+/* */
+/*colores - tipoFuentes - tamañoFuentes*/
 /*azulCeleste*/
 /*blancoN*/
 /*naranja*/
@@ -7,15 +10,19 @@
 /*rosa*/
 /*gris comodin*/
 /*blanco */
+/*oscuro sombra*/
+/*MIXINs*/
+/* */
+/* */
 /* ################################################################################################################################ */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   font-size: 1rem; }
 
-/*Arreglos por desconfiguración al insertar librerías Bootstrap*/
+/*inicio - Arreglos por desconfiguración al insertar librerías Bootstrap*/
 img {
   width: 100%;
   max-width: 100%;
@@ -25,10 +32,12 @@ p {
   padding: 0;
   margin: 0; }
 
-/*Arreglos por desconfiguración al insertar librerías Bootstrap*/
+/*fin - Arreglos por desconfiguración al insertar librerías Bootstrap*/
+/* */
+/* ################################################################################################################################ */
 /* */
 /* */
-/* */
+/* muchos valores se dejan en px de manera intencional para mantener tamaños absolutos en diferentes queries*/
 /* ################################################################################################################################ */
 /* #####           HEADER - inicio               ################################################################################## */
 /* ################################################################################################################################ */
@@ -117,7 +126,7 @@ p {
 
 #sitios {
   grid-area: sitios;
-  padding: 0px;
+  padding: 0;
   width: 100%;
   height: 100%; }
 
@@ -204,7 +213,7 @@ p {
 
 #nave nav a {
   background-color: #fcf8e8;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -240,6 +249,8 @@ p {
 /* */
 /* #####   HEADER - fin       ###################################################################################################### */
 /* */
+/* */
+/* ################################################################################################################################ */
 /* */
 /* */
 /* ################################################################################################################################ */
@@ -388,7 +399,7 @@ p {
   font-family: "Quicksand", sans-serif; }
 
 .por h4 {
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   text-align: center;
   padding: .3em 0;
   font-size: 1.4rem; }
@@ -581,7 +592,7 @@ p {
   border-radius: 15px 15px 0px 0px; }
 
 #leerIndice, #ganadoresIndice {
-  border-radius: 0px 0px 15px 15px;
+  border-radius: 0 0 15px 15px;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-rows: auto auto auto auto auto auto;
@@ -657,13 +668,13 @@ p {
 .botonCuento {
   width: 75%;
   background-color: #fcf8e8;
-  border: 0px;
+  border: 0;
   margin: auto;
-  padding: 0px;
+  padding: 0;
   justify-content: center; }
 
 .bo {
-  padding: 0px; }
+  padding: 0; }
 
 .bo p {
   font-size: 0.85rem;
@@ -696,7 +707,7 @@ p {
   height: 100%;
   display: flex;
   align-items: center;
-  border-radius: 15px 15px 0px 0px; }
+  border-radius: 15px 15px 0 0; }
 
 #videos {
   grid-area: videos;
@@ -712,7 +723,7 @@ p {
   align-items: space-between;
   justify-items: center;
   justify-content: center;
-  border-radius: 0px 0px 15px 15px; }
+  border-radius: 0 0 15px 15px; }
 
 #videos article {
   width: 100%;
@@ -1158,42 +1169,10 @@ p {
 /* ######  MAIN - fin ############################################################################################################## */
 /* */
 /* */
-/* */
-/* #####  PAGINA NO ENCONTRADA ############################################################################################################ */
-#oops {
-  display: grid;
-  align-items: center;
-  grid-template-rows: auto auto;
-  grid-template-areas: "imgOops" "oops2";
-  margin: 1% 0 1% 0; }
-  #oops .imgOops {
-    grid-area: imgOops;
-    margin: 0 auto 0 auto;
-    padding: 0 2em; }
-
-#oops2 {
-  grid-gap: oops2;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  margin: 0 auto 0 auto;
-  padding: .5em 2em; }
-
-#oops2 h4 {
-  color: #01c5c4;
-  font-size: 1.4rem;
-  font-weight: 600; }
-
-#oops2 a {
-  text-decoration: none;
-  color: #F33394;
-  font-size: 1.6rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  font-weight: 600; }
-
-/* #####  PAGINA NO ENCONTRADA- fin  ############################################################################################################ */
+/* ################################################################################################################################ */
 /* */
 /* */
-/* */
+/* muchos valores se dejan en px de manera intencional para mantener tamaños absolutos en diferentes queries*/
 /* ################################################################################################################################ */
 /* ######           FOOTER - inicio           ##################################################################################### */
 /* ################################################################################################################################ */
@@ -1330,6 +1309,48 @@ p {
 /* #####  FOOTER - fin  ############################################################################################################ */
 /* */
 /* */
+/* ################################################################################################################################ */
+/* */
+/* */
+/* #####  PAGINA NO ENCONTRADA ############################################################################################################ */
+#oops {
+  display: grid;
+  align-items: center;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imgOops" "oops2";
+  margin: 1% 0 1% 0; }
+  #oops .imgOops {
+    grid-area: imgOops;
+    margin: 0 auto 0 auto;
+    padding: 0 2em; }
+
+#oops2 {
+  grid-gap: oops2;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  margin: 0 auto 0 auto;
+  padding: .5em 2em; }
+
+#oops2 h4 {
+  color: #01c5c4;
+  font-size: 1.4rem;
+  font-weight: 600; }
+
+#oops2 a {
+  text-decoration: none;
+  color: #F33394;
+  font-size: 1.6rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-weight: 600; }
+
+/* #####  PAGINA NO ENCONTRADA- fin  ############################################################################################################ */
+/* */
+/* */
+/* ################################################################################################################################ */
+/* */
+/* */
+/* */
+/* */
 /* */
 /* ################################################################################################################################ */
 /* ######          RESPONSIVE - inicio           ################################################################################## */
@@ -1348,7 +1369,7 @@ p {
     as: "fondo"			 "segundo"; }
   #segundo {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: repeat(6, 40px);
     grid-template-areas: "nave nave" "nave nave" "nave nave" "nave nave" "nave nave" "ganadoresMes sitios"; }
   #menuPrincipal {
     grid-template-columns: 1fr;
@@ -1359,7 +1380,7 @@ p {
   #nave nav a {
     border-left: none;
     border-right: none;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     font-size: 1rem; }
   #menuPrincipal .pq, #menuPrincipal .ini, #menuPrincipal .est, #menuPrincipal .cue, #menuPrincipal .clu {
     border-left: none;
@@ -1368,7 +1389,7 @@ p {
     font-size: .7rem;
     border-left: 0; }
   #sitios > .btn, #ganadoresMes > .btn {
-    border-radius: 0px 0px 10px 10px; }
+    border-radius: 0 0 10px 10px; }
   #fondo {
     background-size: 70%; }
   #tituloPri {
@@ -1561,9 +1582,6 @@ p {
     margin: 5% 0 0 0; }
   #contContenido {
     width: 90%;
-    padding-top: 200px;
-    padding-left: 0;
-    padding-right: 0;
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
@@ -1601,7 +1619,7 @@ p {
   .foot .copy__copyTexto {
     margin-right: 0; }
   .copy__copyTexto {
-    margin: 0px;
+    margin: 0;
     font-size: .75rem;
     text-align: center; }
   .rrss--modif {
@@ -1626,7 +1644,7 @@ p {
     grid-template-areas: "fondo"			 "segundo"; }
   #segundo {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: repeat(6, 40px);
     grid-template-areas: "nave nave" "nave nave" "nave nave" "nave nave" "nave nave" "ganadoresMes sitios"; }
   #menuPrincipal {
     grid-template-columns: 1fr;
@@ -1636,7 +1654,7 @@ p {
   #nave nav a {
     border-left: none;
     border-right: none;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     font-size: 1rem; }
   #menuPrincipal .pq, #menuPrincipal .ini, #menuPrincipal .est, #menuPrincipal .cue, #menuPrincipal .clu {
     border-left: none;
@@ -1645,7 +1663,7 @@ p {
     font-size: .75rem;
     border-left: 0; }
   #sitios > .btn, #ganadoresMes > .btn {
-    border-radius: 0px 0px 10px 10px; }
+    border-radius: 0 0 10px 10px; }
   #fondo {
     background-size: 70%; }
   #tituloPri {
@@ -1838,9 +1856,6 @@ p {
     margin: 5% 0 0 0; }
   #contContenido {
     width: 90%;
-    padding-top: 200px;
-    padding-left: 0;
-    padding-right: 0;
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
@@ -1878,7 +1893,7 @@ p {
   .foot .copy__copyTexto {
     margin-right: 0; }
   .copy__copyTexto {
-    margin: 0px;
+    margin: 0;
     font-size: .75rem;
     text-align: center; }
   .rrss--modif {
@@ -1904,7 +1919,7 @@ p {
     as: "fondo"			 "segundo"; }
   #segundo {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: repeat(6, 40px);
     grid-template-areas: "nave nave" "nave nave" "nave nave" "nave nave" "nave nave" "ganadoresMes sitios"; }
   #menuPrincipal {
     grid-template-columns: 1fr;
@@ -1915,7 +1930,7 @@ p {
   #nave nav a {
     border-left: none;
     border-right: none;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     font-size: 1rem; }
   #menuPrincipal .pq, #menuPrincipal .ini, #menuPrincipal .est, #menuPrincipal .cue, #menuPrincipal .clu {
     border-left: none;
@@ -1924,7 +1939,7 @@ p {
     font-size: .9rem;
     border-left: 0; }
   #sitios > .btn, #ganadoresMes > .btn {
-    border-radius: 0px 0px 10px 10px; }
+    border-radius: 0 0 10px 10px; }
   #fondo {
     background-size: 70%; }
   #tituloPri {
@@ -2117,9 +2132,6 @@ p {
     margin: 5% 0 0 0; }
   #contContenido {
     width: 90%;
-    padding-top: 200px;
-    padding-left: 0;
-    padding-right: 0;
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
@@ -2157,7 +2169,7 @@ p {
   .foot .copy__copyTexto {
     margin-right: 0; }
   .copy__copyTexto {
-    margin: 0px;
+    margin: 0;
     font-size: .75rem;
     text-align: center; }
   .rrss--modif {
@@ -2182,7 +2194,7 @@ p {
     grid-template-areas: "fondo"			 "segundo"; }
   #segundo {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: repeat 6, 40px;
     grid-template-areas: "nave nave" "nave nave" "nave nave" "nave nave" "nave nave" "ganadoresMes sitios"; }
   #menuPrincipal {
     grid-template-columns: 1fr;
@@ -2193,7 +2205,7 @@ p {
   #nave nav a {
     border-left: none;
     border-right: none;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     font-size: 1rem; }
   #menuPrincipal .pq, #menuPrincipal .ini, #menuPrincipal .est, #menuPrincipal .cue, #menuPrincipal .clu {
     border-left: none;
@@ -2202,7 +2214,7 @@ p {
     font-size: .9rem;
     border-left: 0; }
   #sitios > .btn, #ganadoresMes > .btn {
-    border-radius: 0px 0px 10px 10px; }
+    border-radius: 0 0 10px 10px; }
   #fondo {
     background-size: 60%; }
   #tituloPri {
@@ -2432,7 +2444,7 @@ p {
   .foot .copy__copyTexto {
     margin-right: 0; }
   .copy__copyTexto {
-    margin: 0px;
+    margin: 0;
     font-size: .75rem;
     text-align: center; }
   .rrss--modif {
@@ -2475,11 +2487,8 @@ p {
     font-size: 1.2rem; }
   .fondoInicio {
     margin: 1% 0 5% 0; }
-  #sliderTa {
-    padding: 20px 10px;
-    width: 95%; }
-  #slider, #tarjetas {
-    padding: 20px 10px;
+  #sliderTa, #slider, #tarjetas {
+    padding: 1.5em 1em;
     width: 95%; }
   #sliderTa #carouselExampleFade {
     width: 50%; }
@@ -2522,9 +2531,7 @@ p {
   .menuMedio3 nav a {
     font-size: .9rem; }
   #cuentosVideo {
-    margin: 5% 0 5% 0;
-    padding-left: 30px;
-    padding-right: 30px; }
+    margin: 5% 0 5% 0; }
   #videos {
     width: 100%;
     justify-content: inherit; }
@@ -2557,7 +2564,7 @@ p {
   #datosRegistro {
     background-size: 50%; }
   .cuentaCuento div p {
-    padding-top: 10px;
+    padding-top: .7em;
     font-size: 1.1rem; }
   /*PAG CLUB*/
   .fondoClub {
@@ -2666,7 +2673,7 @@ p {
   .menuMedio2 nav a {
     font-size: 1rem; }
   #slider, #tarjetas {
-    padding: 20px 10px;
+    padding: 1.3em 1em;
     width: 90%; }
   #sliderTa #carouselExampleFade {
     width: 50%; }
@@ -2704,7 +2711,7 @@ p {
   #cuentaCuento, #datosRegistro {
     width: 90%; }
   #datosRegistro #contCuento {
-    padding: 1.5em; }
+    padding: 1.5em 1em; }
   .cuentaContenido .alinCentro {
     margin: 2em 1em; }
   .alincentro h4, .instrucciones p {
@@ -2762,8 +2769,6 @@ p {
     font-size: 1rem; }
   .foot .copy__copyTexto {
     font-size: .85rem; }
-  #contCuento {
-    padding: 40px 0; }
   .conta .conta__contaLink .conta__contaLink__contaTexto {
     font-size: 1.1rem; }
   .conta__contaLink__contaTexto {
@@ -2830,7 +2835,7 @@ p {
   .menuMedio2 nav a {
     font-size: 1.2rem; }
   #slider, #tarjetas {
-    padding: 50px 10px;
+    padding: 3em 1em;
     width: 90%; }
   #sliderTa #carouselExampleFade {
     width: 40%; }
@@ -2928,3 +2933,6 @@ p {
 
 /*####################################################################################################################################*/
 /* #####  RESPONSIVE - fin  #############################################################################################################*/
+/* */
+/* */
+/* ################################################################################################################################ */

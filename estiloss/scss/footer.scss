@@ -1,0 +1,182 @@
+
+/* ################################################################################################################################ */
+/* ######           FOOTER - inicio           ##################################################################################### */
+/* ################################################################################################################################ */
+
+
+#pieT {
+	grid-area: pieT;
+	width: 100%; 
+	grid-template-rows: 1fr 90px;
+	grid-template-areas: 
+	"mapa"
+	"foot"; 
+}
+
+.mapa {
+	grid-area: mapa;
+	width: 100%;
+	background-color:$colGeneral;
+	background-image: url("../../img/44.png");
+	background-size: 21%;
+	border-radius: 10px 10px 0 0;
+	border-top: .21em solid $colPrincipal;
+	width: 100%;	
+	display: flex;
+	flex-direction: column;	
+	padding: 0;
+
+}
+
+	#donde {		
+		padding:.2em 1em .2em 1em;
+		background-color: $colPrincipal;
+		margin: 0 auto 0 auto;
+		color: $colGeneral;	
+		box-shadow: 0 .125em .25em rgba(0,0,0,.2);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;	
+	}
+
+	#donde h5 {
+			font-size: $fuenteTamH5;
+	}
+
+	.rayuela{
+		width:50%;
+		margin: auto;
+	}
+
+.foot {            
+	display: grid;
+	grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+	grid-template-areas: 
+	"copy conta rrss"; 
+}
+ 	.copy {
+		grid-area: copy;
+		margin: auto; 
+	}
+
+		.copy__copyTexto{
+			margin-right: auto;
+			margin-bottom: 0;
+			font-size: 1.1em;
+			color: $colNeutro;	  	
+		}	
+	
+
+
+	.conta {	
+		width: 100%;
+		grid-area: conta;
+		margin: auto;
+
+	.conta__contaLink {
+		text-decoration: none;
+		color: $colComodin;		
+		}
+	}
+
+	.conta__contaLink__contaTexto{
+		margin-bottom: 0;
+		text-align: center;	
+		font-size: 1.4em;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+		font-family: $fuenteTexto;						 
+	 	animation-name: cambiarColor;
+		animation-duration: 5s;				 
+		animation-iteration-count: infinite;
+	}
+
+		.conta__contaLink__contaTexto:hover {
+			transition: all 0.2s ease;	
+		   	animation-name: horizontall;
+		  	animation-duration: 1s;
+		  	animation-timing-function: ease-in-out;
+		  	animation-iteration-count: 1;
+		}	
+
+			@keyframes horizontall {
+			  16.65% {   
+			    transform: translateX(8px);
+			  }
+			  33.3% {   
+			    transform: translateX(-6px);
+			  }
+			  49.95% {   
+			    transform: translateX(4px);
+			  }
+			  66.6% {
+			    transform: translateX(-2px);
+			  }
+			  83.25% { 
+			    transform: translateX(1px);
+			  }
+			  100% { 
+			    transform: translateX(0);
+			  }
+			}
+
+
+			@keyframes cambiarColor {
+			  0% {
+			    color:  $colNeutro;  
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			  }
+			  25% {
+			  	 color:  $colSombraAnim;
+				 text-shadow: 0 1px 1px rgba(252, 248, 232, 0.5);
+			  }
+			   50% {
+			    color:  $colNeutro;  
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			  }
+			   75% {
+			  	color:  $colSombraAnim;
+			 	text-shadow: 0 1px 1px rgba(252, 248, 232, 0.5);
+			  }
+			  100% {
+			    color:  $colNeutro;  
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			  }
+			}
+
+	.rrss {
+		grid-area: rrss;
+		margin: auto;	
+
+		.rrss__rrssLink{
+			margin-left: auto;
+
+			.rrss__rrssLink__solo__imgFooter {
+				width: 1.6em;
+				height: auto;
+				margin-left: 0.4em;
+			}
+		}	
+}
+
+
+.foot--modif {
+		border-top: 10px solid $colGeneral;
+		height: 100px;
+		background-color: $colPrincipal;
+		font-family: $fuenteTexto;
+		padding-bottom: 10px;
+		padding-top: 10px; 	
+
+	.copy--modif{	
+		width: 80%;
+		display: flex;
+	}
+
+	.rrss--modif{
+		width: 80%;
+		display: flex;
+	}
+}
+
+
+
+/* #####  FOOTER - fin  ############################################################################################################ */

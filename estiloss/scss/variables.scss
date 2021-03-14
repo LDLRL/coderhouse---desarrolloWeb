@@ -1,6 +1,6 @@
 
+/*colores - tipoFuentes - tamañoFuentes*/
 
-/*VARIABLES Y MIXINs*/
 $colPrincipal:#3394F3; 		/*azulCeleste*/
 $colGeneral:#fcf8e8; 		/*blancoN*/
 $colApoyo1:#F39233;			/*naranja*/
@@ -8,6 +8,7 @@ $colApoyo2:#01c5c4;			/*verde*/
 $colApoyo3:#F33394;			/*rosa*/
 $colComodin:#f3f3f3;		/*gris comodin*/
 $colNeutro:#FFFFFF;			/*blanco */
+$colSombraAnim: #041085;	/*oscuro sombra*/
 
 $fuenteTexto:'Quicksand', sans-serif;
 $fuenteTitulo:'Kalam';
@@ -21,6 +22,8 @@ $fuenteExtrag: 1.6rem;
 $fuenteGrande: 1.2rem;
 $fuenteMediana: .85rem;
 $fuenteMinima: .6rem;
+
+/*MIXINs*/
 
 @mixin botonDesplegable {
   	margin: auto 0 auto 0;
