@@ -1,7 +1,6 @@
 
 
 
-
 @import 'variables';
 
 /* ################################################################################################################################ */
@@ -25,7 +24,10 @@ p{
 	padding:0;
 	margin: 0;
 }
-
+/*Arreglos por desconfiguración al insertar librerías Bootstrap*/
+/* */
+/* */
+/* */
 /* ################################################################################################################################ */
 /* #####           HEADER - inicio               ################################################################################## */
 /* ################################################################################################################################ */
@@ -57,14 +59,28 @@ p{
 			grid-template-rows:  50px 50px ;
 			background-color: $colGeneral;
 			background-image: url("./img/44.png");
-			background-position: 30%;
+			background-position: 55% -850%;
 			background-size: 22%;	
+			animation-name: fondoAnimado;
+			animation-duration: 30s;
+
+		  	animation-timing-function: ease;
+		  	animation-iteration-count: 1;
 			grid-area: fondo;
 			display: grid;
 			grid-template-areas: 
 			"tituloPri"
 			"tituloSecu";
 		}	
+
+			@keyframes fondoAnimado{
+				0%{
+					background-position: 0 0,
+				}
+				100%{
+					background-position: 55% -850%;
+				}
+			}
 
 			#tituloPri {	
 				grid-area: tituloPri;
@@ -287,7 +303,6 @@ p{
 /* */
 /* */
 /* */
-
 /* ################################################################################################################################ */
 /* #####            MAIN - inicio            ###################################################################################### */
 /* ################################################################################################################################ */
@@ -1598,51 +1613,79 @@ p{
 
 
 	.conta {	
-	width: 100%;
-	grid-area: conta;
-	margin: auto;
+		width: 100%;
+		grid-area: conta;
+		margin: auto;
 
-		.conta__contaLink {
+	.conta__contaLink {
 		text-decoration: none;
 		color: $colComodin;
-		text-align: center;
-
-			.conta__contaLink__contaTexto{
-				margin-bottom: 0;
-				font-size: 1.4em;
-				font-family: $fuenteTexto;
-				border-radius: 7px;
-				padding: .2em;
-				border: 1px solid #fff;
-				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
-					  -webkit-animation-name: cambiarColor;
-  animation-name: cambiarColor;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;	
-			}
+		text-align: center;			
 		}
 	}
-@-webkit-keyframes cambiarColor {
-  0% {
-    border: 1px solid pink;
-  }
-  100% {
-    border: 1px solid #fff;
-  }
-}
 
-@keyframes cambiarColor {
-  0% {
-   border:1px solid pink;
-  }
-  100% {
-    border: 1px solid #fff;
-  }
-}
+	.conta__contaLink__contaTexto{
+		margin-bottom: 0;
+		font-size: 1.4em;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+		font-family: $fuenteTexto;						 
+	 	animation-name: cambiarColor;
+		animation-duration: 5s;				 
+		animation-iteration-count: infinite;
+	}
+
+		.conta__contaLink__contaTexto:hover {
+			transition: all 0.2s ease;	
+		   	animation-name: horizontall;
+		  	animation-duration: 1s;
+		  	animation-timing-function: ease-in-out;
+		  	animation-iteration-count: 1;
+		}	
+
+			@keyframes horizontall {
+			  16.65% {   
+			    transform: translateX(8px);
+			  }
+			  33.3% {   
+			    transform: translateX(-6px);
+			  }
+			  49.95% {   
+			    transform: translateX(4px);
+			  }
+			  66.6% {
+			    transform: translateX(-2px);
+			  }
+			  83.25% { 
+			    transform: translateX(1px);
+			  }
+			  100% { 
+			    transform: translateX(0);
+			  }
+			}
 
 
+			@keyframes cambiarColor {
+			  0% {
+			    color:  $colNeutro;  
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			  }
+			  25% {
+			  	 color:  #041085;
+				 text-shadow: 0 1px 1px rgba(252, 248, 232, 0.5);
+			  }
+			   50% {
+			    color:  $colNeutro;  
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			  }
+			   75% {
+			  	color:  #041085;
+			 	text-shadow: 0 1px 1px rgba(252, 248, 232, 0.5);
+			  }
+			  100% {
+			    color:  $colNeutro;  
+				text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+			  }
+			}
 
 	.rrss {
 		grid-area: rrss;
@@ -1656,8 +1699,7 @@ p{
 				height: auto;
 				margin-left: 0.4em;
 			}
-		}
-	
+		}	
 }
 
 
@@ -1683,17 +1725,8 @@ p{
 
 
 /* #####  FOOTER - fin  ############################################################################################################ */
-/* */
-/* */
-/* */
-/* ################################################################################################################################ */
-/* ######          RESPONSIVE - inicio           ################################################################################## */
-/* ################################################################################################################################ */
+	
 
-	@import 'responsive';	
-
-
-/* #####  RESPONSIVE - fin  ##############################################################################################################*/
 
 
 

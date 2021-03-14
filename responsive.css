@@ -21,6 +21,10 @@
 		font-size: .9rem;
 	}
 
+	.logos {
+		height: 100%;
+		width: auto;
+	}
 	/*PAG CONTACTO*/
 
 	#formu {
@@ -32,7 +36,7 @@
 	}
 
 	/*####################################################################################################################################*/
-	@media (max-width: 1400px) {
+	@media (min-width: 1201px) and (max-width: 1400px) {
 
 		/*HEADER*/
 
@@ -40,19 +44,20 @@
 			font-size: 2.9rem;
 		}
 
-		#tituloSecu h2 {
-			font-size: 1.65rem;
-			margin-top: .16em;
+		
+		#tituloSecu h2{
+			font-size: 1.6rem;
+			margin-top: .15em;
 		}
 
 		/*PAG CONTACTO*/
 
 		#imgCtc {
-			width: 90%;
+			width: 85%;
 		}
 
 		#formu {
-			top: 30em;
+			top: 29em;
 		}
 
 		#contContenido {
@@ -84,7 +89,7 @@
 		}
 
 		#tituloSecu h2{
-			font-size: 1.5rem;
+			font-size: 1.4rem;
 			margin-top: .15em;
 		}
 
@@ -103,7 +108,7 @@
 		/*PÁG INICIO*/
 
 		.logos {
-			height: 90%;
+			height: 83%;
 			width: auto;
 		}
 
@@ -228,18 +233,19 @@
 
 		/*PAG CONTACTO*/
 
-		#imgCtc {
-			width: 90%;
+			#imgCtc {
+			width: 85%;
 		}
 
 		#formu {
-			top: 24.7em;
+			top: 24em;
 		}
 
 		#contContenido {
 			padding: 6em 1em 6em 1em;	
 			width: 70%;
 		}
+	
 
 	}
 
@@ -259,6 +265,14 @@
 			font-size: .65rem;
 		}
 
+		.logos {
+			height: 80%;
+			width: auto;
+		}
+
+			#formu {
+			top: 22em;
+		}
 
 	}
 	/*####################################################################################################################################*/
@@ -301,7 +315,7 @@
 		/*PÁG INICIO*/
 
 		.logos {
-			height: 60%;
+			height: 63%;
 			width: auto;
 		}
 
