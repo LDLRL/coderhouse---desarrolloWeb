@@ -45,6 +45,7 @@ Santiago de Chile, marzo de 2021<br>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ldlrl&show_icons=true&locale=en&layout=compact" alt="ldlrl" /></p>
 <br>
 
-##  
+## ¡Gracias por tu visita!
+<br>
 <p align="center">
   <img src="./img/oops.jpg" alt="Frase: Aunque haya obstáculos en el camino siempre sigue adelante" width="300px" /></p>
