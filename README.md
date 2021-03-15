@@ -23,15 +23,18 @@
 Sitio orientado a lectura infantil, con publicación de fábulas y  cuentos clásicos que contienen enseñanzas de valores, así también publicaciones de cuentos escritos por los niños usuarios del sitio.
 
 ### FINALIDAD:
-📚 📖
-Enseñar y fortalecer los Valores en los niños por medio de Cuentos; Fomentar e inspirar el hábito de la Lectura y Escritura Infantil. 
+📚  Enseñar y fortalecer los Valores en los niños por medio de Cuentos.<br>
+📖  Fomentar e inspirar el hábito de la Lectura y Escritura Infantil. 
 
 ### USUARIOS OBJETIVO: 
 👧👦👨‍👨‍👦‍👦
 Niños y Padres con niños. Enfocado a menores de 12 años.
 
+### ENLACE: 
+🟢✔(https://ldlrl.github.io/DesarrolladorWeb-curso/)
+
 ## AUTORÍA:
-* Lorena De La Riva<br>
+* © Lorena De La Riva<br>
 ESTUDIANTE CODERHOUSE<br>
 Santiago de Chile, marzo de 2021<br>
 
