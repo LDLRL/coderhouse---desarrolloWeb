@@ -39,12 +39,12 @@ Niños y Padres con niños. Enfocado a menores de 12 años.
 
 <br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ldlrl&show_icons=true&locale=en&layout=compact" alt="ldlrl" /></p><br><br><br><br><br>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ldlrl&show_icons=true&locale=en&layout=compact" alt="ldlrl" /></p><br><br><br><br><br><br>
 
 <br>
 
 ## AUTORÍA:
-<br>
+
 * © Lorena De La Riva<br>
 ESTUDIANTE CODERHOUSE<br>
 Santiago de Chile, marzo de 2021<br>
