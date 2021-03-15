@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Pagina no encontrada</title>
-	<link rel="stylesheet" href="./estiloss/css/estiloss.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+	<style>
+		
+#oops {
+	display: grid;
+	align-items: center;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"imgOops"
+	"oops2";
+	margin: 1% 0 1% 0;
 
+	.imgOops {
+		grid-area: imgOops;
+		margin: 0 auto 0 auto;
+		padding: 0 2em;
+	}	
+}
+
+#oops2 {
+	grid-gap: oops2;
+	text-align: center;
+	font-family: $fuenteTexto; 	
+	margin: 0 auto 0 auto;
+	padding: .5em 2em;
+}
+	#oops2 h4 {
+		color:$colApoyo2;
+		font-size: $fuenteTamH4;
+		font-weight: 600;
+	}
+
+	#oops2 a {
+		text-decoration: none;
+		color:$colApoyo3;
+		font-size: $fuenteExtrag;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		font-weight: 600;		 
+	}
+
+	</style>
+	
 	
 </head>
 
@@ -23,11 +53,11 @@
 	<main>
 		<div id="oops">
 
-			<a href="../index.html" class="imgOops"><img  src="../img/oops.jpg" alt="Página no encontrada, Imagen para redirigir a página de Inicio"></a>	
+			<a href="./index.html" class="imgOops"><img  src="./img/oops.jpg" alt="Página no encontrada, Imagen para redirigir a página de Inicio"></a>	
 
 			<div id="oops2">
 				<h4> Lo sentimos, no podemos encontrar la Página que buscas.</h4>
-				<a href="../index.html">Ir a la página Inicio</a>
+				<a href="./index.html">Ir a la página Inicio</a>
 			</div> 
 			
 			
@@ -36,9 +66,6 @@
 
 	</main>
 
-	<div class="pagNoEncontrada">
-		
-	</div>
 
 	</body>
 
