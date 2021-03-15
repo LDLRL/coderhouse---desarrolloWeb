@@ -2460,7 +2460,7 @@ del proyecto para mejor adecuación y visualización.
     font-size: .9rem; } }
 
 /*####################################################################################################################################*/
-@media only screen and (min-width: 630px) and (max-width: 767px) {
+@media only screen and (min-width: 630px) and (max-width: 768px) {
   /*BODY*/
   #fondo {
     background-size: 45%; }
@@ -2646,7 +2646,7 @@ del proyecto para mejor adecuación y visualización.
     font-size: 1rem; } }
 
 /*####################################################################################################################################*/
-@media only screen and (min-width: 767px) and (max-width: 990px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
   /*HEADER*/
   #fondo {
     background-size: 40%;
