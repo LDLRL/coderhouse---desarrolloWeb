@@ -426,6 +426,19 @@ del proyecto para mejor adecuación y visualización.
 		margin-left: auto;
 	}
 
+	.menuMedio5{
+		width: 90%;	
+	}
+
+	.menuMedio5  nav{
+		display: block;
+		margin: .5em 0 3em 0;
+	}
+
+	.menuMedio5  nav a {
+		font-size: 1.1rem;			
+	}
+
 	/*FOOTER*/
 
 	#donde h5 {
@@ -923,6 +936,19 @@ del proyecto para mejor adecuación y visualización.
 		padding: 0;		
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	.menuMedio5 {
+		width: 90%;	
+	}
+
+	.menuMedio5 nav {
+		display: block;
+		margin: .5em 0 2em 0;
+	}
+
+	.menuMedio5  nav a {
+		font-size: 1.1rem;			
 	}
 
 	/*FOOTER*/
@@ -1423,6 +1449,18 @@ del proyecto para mejor adecuación y visualización.
 		margin-left: auto;
 	}
 
+	.menuMedio5 {
+		width: 90%;	
+	}
+
+	.menuMedio5  nav{
+		display: block;
+		margin: .5em 0 3em 0;
+	}
+	.menuMedio5  nav a {
+		font-size: 1.1rem;			
+	}
+
 	/*FOOTER*/
 
 	#donde h5 {
@@ -1919,6 +1957,19 @@ del proyecto para mejor adecuación y visualización.
 		margin-left: auto;
 	}
 
+	.menuMedio5 {
+		width: 85%;	
+	}
+
+	.menuMedio5  nav {
+		display: block;
+		margin: .5em 0 2em 0;
+	}
+
+	.menuMedio5  nav a {
+		font-size: 1.1rem;			
+	}
+
 	/*FOOTER*/
 
 	.mapa {
@@ -2082,7 +2133,7 @@ del proyecto para mejor adecuación y visualización.
 		width: 95%;
 	}
 
-	.menuMedio2 nav a, .menuMedio4 nav a {
+	.menuMedio2 nav a {
 		font-size: .9rem;
 	}
 
@@ -2217,6 +2268,11 @@ del proyecto para mejor adecuación y visualización.
 		font-size: 1.1rem;
 	}
 
+	.menuMedio4 {
+		margin: 2% auto 0 auto;
+		width: 95%; 
+	}
+
 	/*PAG CLUB*/
 
 	.fondoClub {
@@ -2294,9 +2350,12 @@ del proyecto para mejor adecuación y visualización.
 		margin-left: auto;
 	}
 
-	.menuMedio4 {
-		margin: 2% auto 0 auto;
-		width: 95%; 
+	.menuMedio5 { 
+		width: 95%;
+	}
+
+	.menuMedio5 nav a, .menuMedio4 nav a {
+		font-size: .9rem;
 	}
 
 	/*FOOTER*/
@@ -2384,7 +2443,7 @@ del proyecto para mejor adecuación y visualización.
 		width: auto;
 	}
 
-	.registrate, .menuMedio2{
+	.registrate, .menuMedio2 {
 		width: 90%;
 	}
 
@@ -2397,7 +2456,7 @@ del proyecto para mejor adecuación y visualización.
 		background-size: 45%;
 	}
 
-	.menuMedio2  nav a {
+	.menuMedio2 nav a {
 		font-size: 1rem;
 	}
 
@@ -2503,7 +2562,8 @@ del proyecto para mejor adecuación y visualización.
 	}
 
 	.menuMedio4 {
-		width: 90%;
+		margin: 2% auto 0 auto;
+		width: 90%; 
 	}
 
 	/*PÁG CLUB*/
@@ -2544,9 +2604,12 @@ del proyecto para mejor adecuación y visualización.
 		margin-left: auto;
 	}
 
-	.menuMedio4 {
-		margin: 2% auto 0 auto;
-		width: 95%; 
+	.menuMedio5 {
+		width: 90%;
+	}
+
+	.menuMedio5 nav a {
+		font-size: 1rem;
 	}
 
 	/*FOOTER*/
@@ -2615,6 +2678,14 @@ del proyecto para mejor adecuación y visualización.
 
 	#formuCtc {
 		top: 21.5em;
+	}
+
+	.menuMedio5 {
+		width: 85%;
+	}
+
+	.menuMedio5 nav a {
+		font-size: 1rem;
 	}
 
 	/*PÁG CLUB*/
@@ -2692,7 +2763,7 @@ del proyecto para mejor adecuación y visualización.
 		background-size: 45%;
 	}
 
-	.menuMedio2  nav a {
+	.menuMedio2 nav a {
 		font-size: 1.2rem;
 	}
 
@@ -2812,6 +2883,14 @@ del proyecto para mejor adecuación y visualización.
 		padding: 6em 1em 6em 1em;	
 		width: 70%;
 	}
+
+	.menuMedio5 {
+		width: 80%;
+	}
+
+	.menuMedio5 nav a {
+		font-size: 1.2rem;
+	}
 	
 
 }
@@ -2844,6 +2923,14 @@ del proyecto para mejor adecuación y visualización.
 	#contContenido {
 		padding: 6em 1em 6em 1em;	
 		width: 70%;
+	}
+
+	.menuMedio5 {
+		width: 80%;
+	}
+
+	.menuMedio5 nav a {
+		font-size: 1.2rem;
 	}
 
 }

@@ -817,7 +817,7 @@ en las hojas SCSS (CSS) */
 .fondoCuenta {
   display: grid;
   grid-template-rows: 1fr auto auto;
-  grid-template-areas: "cuentaCuento"	 "datosRegistro" "menuMedio1";
+  grid-template-areas: "cuentaCuento"	 "datosRegistro" "menuMedio4";
   align-items: center;
   justify-items: center;
   width: 100%;
@@ -954,6 +954,7 @@ en las hojas SCSS (CSS) */
         border-bottom: 1px solid #3394F3; }
 
 .menuMedio4 {
+  grid-area: menuMedio4;
   width: 85%;
   margin: 2% auto 2% auto; }
 
@@ -1101,8 +1102,8 @@ en las hojas SCSS (CSS) */
 .fondoContacto {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: "formuCtc";
+  grid-template-rows: auto auto;
+  grid-template-areas: "formuCtc" "menuMedio5";
   align-items: center;
   justify-items: center;
   margin: 5% 0 10% 0; }
@@ -1164,6 +1165,11 @@ en las hojas SCSS (CSS) */
   font-weight: 600;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #F33394; }
+
+.menuMedio5 {
+  grid-area: menuMedio5;
+  width: 70%;
+  margin: 2% auto 2% auto; }
 
 /* *****    CONTACTO - final ******************************************************************************************************* */
 /* */
@@ -1554,6 +1560,13 @@ del proyecto para mejor adecuación y visualización.
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
+  .menuMedio5 {
+    width: 90%; }
+  .menuMedio5 nav {
+    display: block;
+    margin: .5em 0 3em 0; }
+  .menuMedio5 nav a {
+    font-size: 1.1rem; }
   /*FOOTER*/
   #donde h5 {
     font-size: .8rem; }
@@ -1828,6 +1841,13 @@ del proyecto para mejor adecuación y visualización.
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
+  .menuMedio5 {
+    width: 90%; }
+  .menuMedio5 nav {
+    display: block;
+    margin: .5em 0 2em 0; }
+  .menuMedio5 nav a {
+    font-size: 1.1rem; }
   /*FOOTER*/
   #donde h5 {
     font-size: .9rem; }
@@ -2104,6 +2124,13 @@ del proyecto para mejor adecuación y visualización.
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
+  .menuMedio5 {
+    width: 90%; }
+  .menuMedio5 nav {
+    display: block;
+    margin: .5em 0 3em 0; }
+  .menuMedio5 nav a {
+    font-size: 1.1rem; }
   /*FOOTER*/
   #donde h5 {
     font-size: 1.1rem; }
@@ -2377,6 +2404,13 @@ del proyecto para mejor adecuación y visualización.
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
+  .menuMedio5 {
+    width: 85%; }
+  .menuMedio5 nav {
+    display: block;
+    margin: .5em 0 2em 0; }
+  .menuMedio5 nav a {
+    font-size: 1.1rem; }
   /*FOOTER*/
   .mapa {
     border-top: 0.19em solid #3394F3; }
@@ -2465,7 +2499,7 @@ del proyecto para mejor adecuación y visualización.
     width: 90%; }
   .menuMedio2 {
     width: 95%; }
-  .menuMedio2 nav a, .menuMedio4 nav a {
+  .menuMedio2 nav a {
     font-size: .9rem; }
   /*PAG PORQUE*/
   .fondoPorque {
@@ -2535,6 +2569,9 @@ del proyecto para mejor adecuación y visualización.
   .cuentaCuento div p {
     padding-top: .7em;
     font-size: 1.1rem; }
+  .menuMedio4 {
+    margin: 2% auto 0 auto;
+    width: 95%; }
   /*PAG CLUB*/
   .fondoClub {
     grid-template-columns: 1fr;
@@ -2583,9 +2620,10 @@ del proyecto para mejor adecuación y visualización.
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
-  .menuMedio4 {
-    margin: 2% auto 0 auto;
+  .menuMedio5 {
     width: 95%; }
+  .menuMedio5 nav a, .menuMedio4 nav a {
+    font-size: .9rem; }
   /*FOOTER*/
   .mapa {
     background-size: 43%; }
@@ -2696,6 +2734,7 @@ del proyecto para mejor adecuación y visualización.
   .instrucciones {
     padding-top: 0; }
   .menuMedio4 {
+    margin: 2% auto 0 auto;
     width: 90%; }
   /*PÁG CLUB*/
   .fondoClub {
@@ -2721,9 +2760,10 @@ del proyecto para mejor adecuación y visualización.
     padding: 0;
     margin-right: auto;
     margin-left: auto; }
-  .menuMedio4 {
-    margin: 2% auto 0 auto;
-    width: 95%; }
+  .menuMedio5 {
+    width: 90%; }
+  .menuMedio5 nav a {
+    font-size: 1rem; }
   /*FOOTER*/
   .mapa {
     background-size: 35%; }
@@ -2760,6 +2800,10 @@ del proyecto para mejor adecuación y visualización.
     width: 85%; }
   #formuCtc {
     top: 21.5em; }
+  .menuMedio5 {
+    width: 85%; }
+  .menuMedio5 nav a {
+    font-size: 1rem; }
   /*PÁG CLUB*/
   .fondoClub {
     display: grid;
@@ -2862,7 +2906,11 @@ del proyecto para mejor adecuación y visualización.
     top: 24em; }
   #contContenido {
     padding: 6em 1em 6em 1em;
-    width: 70%; } }
+    width: 70%; }
+  .menuMedio5 {
+    width: 80%; }
+  .menuMedio5 nav a {
+    font-size: 1.2rem; } }
 
 /*####################################################################################################################################*/
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -2879,7 +2927,11 @@ del proyecto para mejor adecuación y visualización.
     top: 27em; }
   #contContenido {
     padding: 6em 1em 6em 1em;
-    width: 70%; } }
+    width: 70%; }
+  .menuMedio5 {
+    width: 80%; }
+  .menuMedio5 nav a {
+    font-size: 1.2rem; } }
 
 /*####################################################################################################################################*/
 @media only screen and (min-width: 1400px) {
