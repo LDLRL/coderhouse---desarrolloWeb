@@ -1,23 +1,23 @@
 
 <h1 align = "center"> Hola 😊, soy Lorena </h1>
-<h3 align = "center"> Presento la descripción de mi proyecto " Había Una Vez "</h3>
+<h3 align = "center"> Presento la descripción de mi proyecto "Sitio: Había Una Vez "</h3>
 
 
 - 💻🤓 Actualmente estoy aprendiendo ** Desarrollo WEB **
 
 
 
-# **Sitio: ✩ Había una Vez ✩**
+# **✩ Había una Vez ✩**
 ![Niños](./img/manos2.png)
 
 ### DESCRIPCIÓN DEL SITIO: 
-Sitio orientado a lectura infantil, con publicación de fábulas y  cuentos clásicos que contienen enseñanza de valores, así también publicación de cuentos escritos por los niños usuarios del sitio.
+Sitio orientado a lectura infantil, con publicación de fábulas y  cuentos clásicos que contienen enseñanzas de valores, así también publicaciones de cuentos escritos por los niños usuarios del sitio.
 
 ### OBJETIVO GENERAL: 
-Enseñanzar y fortalecer los Valores en los niños usando Cuentos, fomentar e inspirar el hábito de la Lectura y escritura Infantil. 
+Enseñar y fortalecer los Valores en los niños por medio de Cuentos; Fomentar e inspirar el hábito de la Lectura y Escritura Infantil. 
 
 ### USUARIOS OBJETIVO: 
-Niños y padres con niños. Enfocado a menores de 12 años.
+Niños y Padres con niños. Enfocado a menores de 12 años.
 
 ## AUTORÍA:
 * Lorena De La Riva<br>
@@ -30,4 +30,4 @@ Santiago de Chile, marzo de 2021<br>
 
 
 <p align="center">
-  <img src="./img/oops.jpg" alt="Frase: Aunque haya obstáculos en el camino siempre sigue adelante" width="200px" /></p>
+  <img src="./img/oops.jpg" alt="Frase: Aunque haya obstáculos en el camino siempre sigue adelante" width="300px" /></p>

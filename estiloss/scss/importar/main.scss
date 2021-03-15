@@ -119,6 +119,7 @@
 			#registrate1 p:hover {	
 				color: $colApoyo1;				
 				text-shadow:
+				0 1px 1px rgba(0,0,0,0.1),
 				0 0 4px rgba(252, 248, 232, 1),
 				0 0 8px rgba(252, 248, 232, 1),
 				0 0 10px rgba(252, 248, 232, 1),
@@ -128,6 +129,7 @@
 			#registrate2 p:hover {	
 				color: $colApoyo3;	
 				text-shadow:
+				0 1px 1px rgba(0,0,0,0.1),
 				0 0 4px rgba(252, 248, 232, 1),
 				0 0 8px rgba(252, 248, 232, 1),
 				0 0 10px rgba(252, 248, 232, 1),
@@ -281,8 +283,8 @@
 		border: 2px solid $colPrincipal;
 		background-image: url("../../img/t.png");
 		background-repeat: no-repeat;
-		background-size: 35%;
-		background-position: 80% 30%;
+		background-size: 32%;
+		background-position: 80% 60%;
 		border-radius: 15px;	
 	}
 
@@ -680,7 +682,7 @@
 
 	.modal-header{
 		background-image: url("../../img/44.png");
-		background-size: 15%;
+		background-size: 23%;
 		background-color: $colGeneral;
 		color: $colPrincipal;
 		font-family: $fuenteSub;

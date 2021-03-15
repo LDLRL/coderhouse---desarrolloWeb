@@ -343,11 +343,11 @@ en las hojas SCSS (CSS) */
 
 #registrate1 p:hover {
   color: #F39233;
-  text-shadow: 0 0 4px #fcf8e8, 0 0 8px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8; }
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 4px #fcf8e8, 0 0 8px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8; }
 
 #registrate2 p:hover {
   color: #F33394;
-  text-shadow: 0 0 4px #fcf8e8, 0 0 8px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8; }
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 4px #fcf8e8, 0 0 8px #fcf8e8, 0 0 10px #fcf8e8, 0 0 12px #fcf8e8; }
 
 #sliderTa {
   grid-area: sliderTa;
@@ -466,8 +466,8 @@ en las hojas SCSS (CSS) */
   border: 2px solid #3394F3;
   background-image: url("../../img/t.png");
   background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: 80% 30%;
+  background-size: 32%;
+  background-position: 80% 60%;
   border-radius: 15px; }
 
 /*menu auxilar*/
@@ -776,7 +776,7 @@ en las hojas SCSS (CSS) */
   background-color: #FFFFFF; }
   .modal-content .modal-header {
     background-image: url("../../img/44.png");
-    background-size: 15%;
+    background-size: 23%;
     background-color: #fcf8e8;
     color: #3394F3;
     font-family: "Chilanka", cursive; }
