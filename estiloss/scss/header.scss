@@ -33,7 +33,6 @@
 			background-size: 22%;	
 			animation-name: fondoAnimado;
 			animation-duration: 30s;
-
 		  	animation-timing-function: ease;
 		  	animation-iteration-count: 1;
 			grid-area: fondo;
@@ -94,9 +93,7 @@
 						font-family: $fuenteSub;
 						height: 30px;	
 						font-weight: bolder;						
-					}
-
-			
+					}	
 				
 
 /* ***** MENUS - INICIO  *********************************************************************************************************** */
@@ -174,7 +171,6 @@
 		text-align: center;
 		background-color: $colNeutro;
 	}
-
 	
 #menuPrincipal { 	
 	font-family: $fuenteTexto;
@@ -217,7 +213,6 @@
 		color: $colPrincipal;
 		font-weight: bold;		
 	}	
-
 }
 	
 	#nave { 
@@ -260,10 +255,7 @@
 		color: $colNeutro;
 		text-align: center;
 		text-shadow: 0 1px 1px rgba(0,0,0,0.3);
-	}
-
-	
-	
+	}	
 
 
 /* *****   MENUS - fin   *********************************************************************************************************** */

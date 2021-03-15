@@ -2,7 +2,7 @@
 /*VARIABLES y MIXINs*/
 /* */
 /* */
-/*colores - tipoFuentes - tamañoFuentes*/
+/*colores - tipografías - tamañoFuentes*/
 /*azulCeleste*/
 /*blancoN*/
 /*naranja*/
@@ -22,7 +22,7 @@
   text-decoration: none;
   font-size: 1rem; }
 
-/*inicio - Arreglos por desconfiguración al insertar librerías Bootstrap*/
+/*inicio - Arreglos por desconfiguración al insertar librerías Bootstrap.*/
 img {
   width: 100%;
   max-width: 100%;
@@ -33,7 +33,8 @@ p {
   margin: 0; }
 
 /*fin - Arreglos por desconfiguración al insertar librerías Bootstrap*/
-/* */
+/*Asimismo, a necesidad, se han adecuado estilos de elementos bootstrap en las respectivas etiquetas
+en las hojas SCSS (CSS) */
 /* ################################################################################################################################ */
 /* algunos valores se dejan en px de manera intencional para mantener tamaños absolutos en diferentes queries*/
 /* ################################################################################################################################ */
@@ -1356,7 +1357,7 @@ p {
 /* ######          RESPONSIVE - inicio           ################################################################################## */
 /* ################################################################################################################################ */
 /*
-- Se consideran como base los breakpoints usados por Bootstrap, añadiendose algunos breakpoints extras según necesidad específica
+- Se consideran como referencia los breakpoints usados por Bootstrap, añadiéndose algunos breakpoints extras según necesidad específica
 del proyecto para mejor adecuación y visualización. 
 - Se utiliza el modelo Mobile First.
 */
