@@ -32,10 +32,6 @@ Niños y Padres con niños. Enfocado a menores de 12 años.
 ### ENLACE: 
 🟢✔(https://ldlrl.github.io/DesarrolladorWeb-curso/)
 
-## AUTORÍA:
-* © Lorena De La Riva<br>
-ESTUDIANTE CODERHOUSE<br>
-Santiago de Chile, marzo de 2021<br>
 
 ## HERRAMIENTAS:
 
@@ -44,6 +40,11 @@ Santiago de Chile, marzo de 2021<br>
 <br>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ldlrl&show_icons=true&locale=en&layout=compact" alt="ldlrl" /></p>
 <br>
+
+## AUTORÍA:
+* © Lorena De La Riva<br>
+ESTUDIANTE CODERHOUSE<br>
+Santiago de Chile, marzo de 2021<br>
 
 ## ¡Gracias por tu visita!
 <br>
