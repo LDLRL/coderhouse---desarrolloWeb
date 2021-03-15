@@ -5,7 +5,7 @@
 
 
 
-- 💻🤓 Actualmente estoy aprendiendo ** Desarrollo WEB **
+- 💻🤓 Actualmente estoy aprendiendo ** Desarrollo WEB ** con CODERHOUSE.
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ldlrl&label=Profile%20views&color=0e75b6&style=flat" alt="ldlrl" /> </p>
@@ -47,7 +47,7 @@ Niños y Padres con niños. Enfocado a menores de 12 años.
 
 * © Lorena De La Riva<br>
 ESTUDIANTE CODERHOUSE<br>
-Santiago de Chile, marzo de 2021<br>
+Marzo de 2021<br>
 
 ## ¡Gracias por tu visita!
 <br>
